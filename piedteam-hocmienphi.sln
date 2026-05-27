@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "piedteam-hocmienphi.api", "piedteam-hocmienphi.api\piedteam-hocmienphi.api.csproj", "{10DBD66E-2B6C-41F2-827C-661A9BB944C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "piedteam-hocmienphi.service", "piedteam-hocmienphi.service\piedteam-hocmienphi.service.csproj", "{1820BC5D-3B22-49F1-881B-19622EA4ECC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "piedteam-hocmienphi.repository", "piedteam-hocmienphi.repository\piedteam-hocmienphi.repository.csproj", "{16436C25-ADAB-4ECC-92CC-54AE61CB0468}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10DBD66E-2B6C-41F2-827C-661A9BB944C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DBD66E-2B6C-41F2-827C-661A9BB944C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DBD66E-2B6C-41F2-827C-661A9BB944C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DBD66E-2B6C-41F2-827C-661A9BB944C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1820BC5D-3B22-49F1-881B-19622EA4ECC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1820BC5D-3B22-49F1-881B-19622EA4ECC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1820BC5D-3B22-49F1-881B-19622EA4ECC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1820BC5D-3B22-49F1-881B-19622EA4ECC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16436C25-ADAB-4ECC-92CC-54AE61CB0468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16436C25-ADAB-4ECC-92CC-54AE61CB0468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16436C25-ADAB-4ECC-92CC-54AE61CB0468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16436C25-ADAB-4ECC-92CC-54AE61CB0468}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
