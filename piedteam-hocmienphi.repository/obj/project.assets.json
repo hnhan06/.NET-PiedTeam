@@ -2263,11 +2263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PiedTeam\\C#\\piedteam-hocmienphi\\piedteam-hocmienphi.repository\\piedteam-hocmienphi.repository.csproj",
+      "projectUniqueName": "E:\\PiedTeam\\CS\\piedteam-hocmienphi\\piedteam-hocmienphi.repository\\piedteam-hocmienphi.repository.csproj",
       "projectName": "piedteam-hocmienphi.repository",
-      "projectPath": "E:\\PiedTeam\\C#\\piedteam-hocmienphi\\piedteam-hocmienphi.repository\\piedteam-hocmienphi.repository.csproj",
+      "projectPath": "E:\\PiedTeam\\CS\\piedteam-hocmienphi\\piedteam-hocmienphi.repository\\piedteam-hocmienphi.repository.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\PiedTeam\\C#\\piedteam-hocmienphi\\piedteam-hocmienphi.repository\\obj\\",
+      "outputPath": "E:\\PiedTeam\\CS\\piedteam-hocmienphi\\piedteam-hocmienphi.repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2330,7 +2330,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\User\\.dotnet\\sdk\\8.0.421/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.422/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,16 @@
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\bin\Debug\net8.0\piedteam-hocmienphi.service.deps.json
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\bin\Debug\net8.0\piedteam-hocmienphi.service.dll
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\bin\Debug\net8.0\piedteam-hocmienphi.service.pdb
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\bin\Debug\net8.0\piedteam-hocmienphi.repository.dll
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\bin\Debug\net8.0\piedteam-hocmienphi.repository.pdb
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.csproj.AssemblyReference.cache
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.GeneratedMSBuildEditorConfig.editorconfig
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.AssemblyInfoInputs.cache
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.AssemblyInfo.cs
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.csproj.CoreCompileInputs.cache
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.sourcelink.json
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam.0219A16A.Up2Date
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.dll
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\refint\piedteam-hocmienphi.service.dll
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\piedteam-hocmienphi.service.pdb
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.service\obj\Debug\net8.0\ref\piedteam-hocmienphi.service.dll

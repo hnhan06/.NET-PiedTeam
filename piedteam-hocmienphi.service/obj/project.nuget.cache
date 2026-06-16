@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6gQp+Z/Hhpk=",
+  "dgSpecHash": "jhufT31jEfI=",
   "success": true,
-  "projectFilePath": "E:\\PiedTeam\\C#\\piedteam-hocmienphi\\piedteam-hocmienphi.service\\piedteam-hocmienphi.service.csproj",
+  "projectFilePath": "E:\\PiedTeam\\CS\\piedteam-hocmienphi\\piedteam-hocmienphi.service\\piedteam-hocmienphi.service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",

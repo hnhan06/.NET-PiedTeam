@@ -1,0 +1,15 @@
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\bin\Debug\net8.0\piedteam-hocmienphi.repository.deps.json
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\bin\Debug\net8.0\piedteam-hocmienphi.repository.runtimeconfig.json
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\bin\Debug\net8.0\piedteam-hocmienphi.repository.dll
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\bin\Debug\net8.0\piedteam-hocmienphi.repository.pdb
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.csproj.AssemblyReference.cache
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.AssemblyInfoInputs.cache
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.AssemblyInfo.cs
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.csproj.CoreCompileInputs.cache
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.sourcelink.json
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.dll
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\refint\piedteam-hocmienphi.repository.dll
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.pdb
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\piedteam-hocmienphi.repository.genruntimeconfig.cache
+E:\PiedTeam\CS\piedteam-hocmienphi\piedteam-hocmienphi.repository\obj\Debug\net8.0\ref\piedteam-hocmienphi.repository.dll
