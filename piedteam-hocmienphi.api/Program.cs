@@ -102,6 +102,7 @@ app.Run();
             // POST /api/applyRequest/{id}/review
             // Khi duyệt đơn Admin sẽ chọn đồng ý hoặc từ chối
             // Nếu từ chối phải có lý do
+            // Khi duyệt đơn xong thì role của User phải được đổi thành Mentor
             // Khi duyệt đơn, hệ thống sẽ thông báo cho User về kq của đơn apply đó
 
 // App này bao gồm nhiều người xài:

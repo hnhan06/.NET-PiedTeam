@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using piedteam_hocmienphi.repository;
 using piedteam_hocmienphi.repository.entity;
 using piedteam_hocmienphi.repository.enums;
@@ -57,7 +58,11 @@ public class ApplyRequestController : ControllerBase
         // FE: public List<Guid> CategoryIds
         // Trong DB thì lưu trữ bằng Entity ApplyRequestCategory
         // Làm sao biến 1 List<Guid> -> 1 List<ApplyRequestCategory>
-        // => Dùng select để ánh xạ
+        // => Dùng select để ánh xạ, x lúc này tượng trưng cho 1 CategoryId
+        
+        // FE chỉ truyền cho mình 1 list requestBody.CategoryIds
+        // Nhưng mà những dữ liệu mà mentor mong muốn được mentoring category thì nó nằm ở bảng ApplyRequestCategory
+        // Vậy nên mình phải ánh xạ từ list requestBody.CategoryIds sang list ApplyRequestCategory
         var applyRequestCategories  = requestBody.CategoryIds.Select(
             x => new ApplyRequestCategory()
             {
@@ -66,6 +71,8 @@ public class ApplyRequestController : ControllerBase
                 CategoryId = x
             }
         );
+        // req1 | cate1 (kinh tế)
+        // req2 | cate2 (phần mềm)
         
         _dbcontext.ApplyRequestCategories.AddRange(applyRequestCategories);
         _dbcontext.SaveChanges();
@@ -74,26 +81,207 @@ public class ApplyRequestController : ControllerBase
     }
     
     [HttpGet("")]
-    public IActionResult GetAllApplyRequest()
+    public IActionResult GetAllApplyRequest(string? searchTerm = null, 
+        ApplyRequestStatus? status = null,
+        DateTimeOffset? fromDate = null,
+        DateTimeOffset? toDate = null,
+        Guid[]? categoryIds = null, // filter theo category
+        int pageIndex = 1, 
+        int pageSize = 10)
     {
-        return Ok();
+        var query = _dbcontext.ApplyRequests.Where(x => x.IsDeleted == false);
+
+        if (searchTerm != null)
+        {
+            query = query.Where(x =>
+                x.Description.Contains(searchTerm) ||
+                x.User.FirstName.Contains(searchTerm) ||
+                x.User.LastName.Contains(searchTerm));
+        }
+        // đó giờ chúng ta chỉ tìm kiếm ở table hiện tại thôi
+        // x.Description.Contains(searchTerm) ||
+        // còn 2 thằng dưới thì nó update lên tí
+        // x.User.FirstName.Contains(searchTerm) ||
+        // x.User.LastName.Contains(searchTerm));
+        // lúc này thì nó sẽ tự động join sang table User để tìm kiếm
+
+        // if (fromDate != null)
+        // {
+        //     
+        // }
+        
+        //categoryIds là những CategoryId mà FE muốn tìm kiếm | muốn filter
+        // Tôi muốn tìm những lá đơn thuộc loại Category này
+        // VD: tôi muốn tìm những lá đơn thuộc "Kinh tế"
+            // Mentor A apply có thể loại là Kinh tế -> lấy
+            // Mentor B apply có thể loại là Nấu ăn & Kinh tế -> lấy
+        if (categoryIds != null && categoryIds.Length > 0)
+        {
+            query = query.Where(x => x.ApplyRequestCategories.Any(apC => categoryIds.Contains(apC.CategoryId)));
+        }
+
+        if (status != null)
+        {
+            query = query.Where(x => x.Status == status);
+        }
+
+        var selectedQuery = query.Select(x => new Response.GetApplyRequestResponse()
+        {
+            Id = x.Id,
+            Description = x.Description,
+            CvLink = x.CvLink,
+            Status = x.Status,
+            RejectReason = x.RejectionReason,
+            User = new service.UserService.Response.GetAllUserResponse()
+            {
+                FirstName = x.User.FirstName,
+                LastName = x.User.LastName,
+                Email = x.User.Email,
+                Age = x.User.Age
+            },
+            Categories = x.ApplyRequestCategories.Select(apC => new service.CategoryService.Response.GetAllParentCategoryResponse()
+            {
+                Id = apC.Category.Id,
+                Name = apC.Category.Name
+            }).ToList()
+        });
+
+        selectedQuery = selectedQuery.Skip((pageIndex - 1) * pageSize).Take(pageSize);
+        
+        var result = selectedQuery.ToList();
+        
+        return Ok(result);
     }
     
     [HttpGet("me")]
-    public IActionResult GetMyApplyRequest()
+    public IActionResult GetMyApplyRequest(Guid userId, 
+        ApplyRequestStatus? status = null, 
+        int pageIndex = 1, 
+        int pageSize = 10)
     {
-        return Ok();
+        var query = _dbcontext.ApplyRequests.Where(x => x.IsDeleted == false);
+        
+        query = query.Where(x => x.UserId == userId);
+
+        if (status != null)
+        {
+            query = query.Where(x => x.Status == status);
+        }
+
+        var selectedQuery = query.Select(x => new Response.GetApplyRequestResponse()
+        {
+            Id = x.Id,
+            Description = x.Description,
+            CvLink = x.CvLink,
+            Status = x.Status,
+            RejectReason = x.RejectionReason,
+            User = new service.UserService.Response.GetAllUserResponse()
+            {
+                FirstName = x.User.FirstName,
+                LastName = x.User.LastName,
+                Email = x.User.Email,
+                Age = x.User.Age
+            },
+            Categories = x.ApplyRequestCategories.Select(apC => new service.CategoryService.Response.GetAllParentCategoryResponse()
+            {
+                Id = apC.Category.Id,
+                Name = apC.Category.Name
+            }).ToList()
+        });
+
+        selectedQuery = selectedQuery.Skip((pageIndex - 1) * pageSize).Take(pageSize);
+        
+        var result = selectedQuery.ToList();
+        
+        return Ok(result);
     }
     
     [HttpGet("{id}")]
-    public IActionResult GetApplyRequestDetail()
+    public IActionResult GetApplyRequestDetail(Guid id)
     {
-        return Ok();
+        var query = _dbcontext.ApplyRequests.Where(x => x.IsDeleted == false);
+        
+        query = query.Where(x => x.Id == id );
+
+        var selectedQuery = query.Select(x => new Response.GetApplyRequestResponse()
+        {
+            Id = x.Id,
+            Description = x.Description,
+            CvLink = x.CvLink,
+            Status = x.Status,
+            RejectReason = x.RejectionReason,
+            User = new service.UserService.Response.GetAllUserResponse()
+            {
+                FirstName = x.User.FirstName,
+                LastName = x.User.LastName,
+                Email = x.User.Email,
+                Age = x.User.Age
+            },
+            Categories = x.ApplyRequestCategories.Select(apC => new service.CategoryService.Response.GetAllParentCategoryResponse()
+            {
+                Id = apC.Category.Id,
+                Name = apC.Category.Name
+            }).ToList()
+        });
+        
+        var result = selectedQuery.FirstOrDefault();
+        
+        return Ok(result);
     }
     
     [HttpPost("{id}/review")]
-    public IActionResult ReviewApplyRequest()
+    public IActionResult ReviewApplyRequest(Guid id, Request.ReviewApplyRequestRequest requestBody)
     {
+        var query = _dbcontext.ApplyRequests.Where(x => x.IsDeleted == false);
+        
+        query = query.Where(x => x.Id == id );
+
+        query = query.Include(x => x.User)
+            .Include(x => x.ApplyRequestCategories);
+        
+        var applyRequest = query.FirstOrDefault();
+
+        if (applyRequest == null)
+        {
+            return NotFound();
+        }
+
+        if (requestBody.IsApproved)
+        {
+            applyRequest.Status = ApplyRequestStatus.Approved;
+            applyRequest.User.Role = "Mentor";  // bị lỗi null
+            // Tại sao api call lại bị null
+            // Auto Join nó chỉ hđ khi mình sử dụng Select thôi
+            // Còn ở đây nếu mà muốn chấm ra User xài thì mình phải sử dụng Include để join thủ công
+            
+            // Tạo mới entity Mentor và Category cho mentor đó
+            var mentor = new Mentor()
+            {
+                Id = Guid.NewGuid(),
+                UserId = applyRequest.UserId
+            };
+            _dbcontext.Mentors.Add(mentor);
+            _dbcontext.SaveChanges();
+
+            var mentorCategories = applyRequest.ApplyRequestCategories.Select(x => new MentorCategory()
+            {
+                Id = Guid.NewGuid(),
+                MentorId = mentor.Id,
+                CategoryId = x.CategoryId
+            });
+            _dbcontext.MentorCategories.AddRange(mentorCategories);
+            _dbcontext.SaveChanges();
+
+        }
+        else
+        {
+            applyRequest.Status = ApplyRequestStatus.Rejected;
+            applyRequest.RejectionReason = requestBody.Reason;
+        }
+        
+        _dbcontext.ApplyRequests.Update(applyRequest);
+        _dbcontext.SaveChanges();
+        
         return Ok();
     }
 }

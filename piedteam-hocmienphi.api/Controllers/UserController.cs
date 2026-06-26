@@ -1,7 +1,9 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using piedteam_hocmienphi.repository;
 using piedteam_hocmienphi.repository.entity;
 using piedteam_hocmienphi.service.UserService;
+using piedteam_hocmienphi.service.Utils.JwtService;
 
 namespace piedteam_hocmienphi.api.Controllers;
 
@@ -10,11 +12,15 @@ namespace piedteam_hocmienphi.api.Controllers;
 // Note | Annotation
 public class UserController : ControllerBase
 {
-    public readonly AppDbContext _dbContext;
-    public UserController(AppDbContext dbContext)
+    private readonly AppDbContext _dbContext;
+    private readonly JwtOptions _jwtOptions = new();
+    
+    public UserController(AppDbContext dbContext, IConfiguration configuration)
     {
         _dbContext = dbContext;
+        configuration.GetSection(nameof(JwtOptions)).Bind(_jwtOptions);
     }
+    
     // Endpoint có tên khác là các APIs
     // VD: POST /api/auth/login     //Login
     // VD: POST /api/auth/register  //Đăng ký
@@ -195,10 +201,69 @@ public class UserController : ControllerBase
     }
     
     [HttpPost("Login")]
-    public IActionResult Login()
+    public IActionResult Login(string email, string password)
     {
-        //Lấy tất cả user trong DB
-        return Ok("Đây là user có trong DB");
+        /*
+         // Tại sao phải login
+        // - Vì phải giới hạn quyền hạn đc gọi đến resource
+        // VD: bạn phải là User (đã đky hệ thống) thì bạn mới đc mua hàng
+        
+        // Authentication & Authorization
+            Authen: bạn có được quyền vào hệ thống của tôi không
+            Author: sau khi vào hệ thống thì bạn có quyền gì
+                    VD: Admin có quyền tạo
+                        Mentor có quyền tạo lịch rãnh
+                        
+            Vậy thì thông thường, cta dùng kỹ thuật gì để xác thực và phân quyền?
+            - Thông thường mình hay sử dụng JWT để xác thực và phân quyền
+            
+            JWT: Json Web Token là 1 chuỗi token đc mã hóa, truyền giữa Client (Frontend) và Server (Backend) 
+                để xác thực và phân quyền
+            
+            JWT gồm 3 phần:
+                Header: chứa thông tin về thuật toán mã hóa và loại token
+                Payload: chứa thông tin về người dùng và quyền hạn của nguười dùng
+                Signature: chứa chữ ký số để xác thực token (sign(header+payload, secret))
+         */
+        
+        /*
+         // Đầu tiên phải tìm kiếm cái tài khoản với email đó có tồn tại k
+            // Nếu mà có thì mới tính tiếp đc
+                // Tiếp tục so sánh password người dùng vào với password có trong DB
+                // Nếu mà trùng thì bạn chính là chủ nhận của tài khoản -> trả ra JWT token cho bạn để xác thực và phân quyền
+                // Nếu mà k trùng, bạn k phải chủ nhân của tài khoản thì cút
+            // Nếu mà k tồn tại email thì cút
+         */
+        
+        var query = _dbContext.Users.Where(x => x.IsDeleted == false);
+
+        query = query.Where(x => x.Email.Equals(email));
+
+        var user = query.FirstOrDefault();
+        if (user == null)
+        {
+            return BadRequest("Email không tồn tại");
+        }
+
+        if (user.Password != password)
+        {
+            return BadRequest("Password không đúng");
+        }
+        
+        // claims đai diện cho các thông tin nằm trong payload của jwt
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Email, user.Email),
+            new Claim(ClaimTypes.Name, user.FirstName + " " + user.LastName),
+            new Claim(ClaimTypes.Role, user.Role)
+            // Quan trọng: Claim này (new Claim(ClaimTypes.Role, user.Role),) sẽ giúp mình phân quyền
+            
+        };
+        
+        var token = JwtService.GenerateToken(claims, _jwtOptions);
+        
+        return Ok(token);
     }
     
     [HttpPost("ForgotPassword")]
