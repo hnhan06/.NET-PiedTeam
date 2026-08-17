@@ -1,5 +1,13 @@
 using Microsoft.EntityFrameworkCore;
+using piedteam_hocmienphi.api.Extensions;
+using piedteam_hocmienphi.api.Middlewares;
 using piedteam_hocmienphi.repository;
+using piedteam_hocmienphi.service.Utils.BackgroundJob;
+using Quartz;
+using UserService = piedteam_hocmienphi.service.UserService;
+using MailService = piedteam_hocmienphi.service.Utils.Mail;
+using MediaService = piedteam_hocmienphi.service.Utils.MediaService;
+using CloudinaryService = piedteam_hocmienphi.service.Utils.CloudinaryService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,18 +23,62 @@ builder.Services.AddDbContext<AppDbContext>(
     )
 );
 
+builder.Services.AddJwtServices(builder.Configuration);
+builder.Services.AddSwaggerServices();
+
+builder.Services.AddScoped<UserService.IService, UserService.Service>();
+builder.Services.AddScoped<MailService.IService, MailService.Service>();
+builder.Services.AddScoped<MediaService.IService, CloudinaryService.Service>();
+
+builder.Services.AddTransient<GlobalExceptionHandlerMiddleware>();
+
+builder.Services.AddQuartz(options =>
+{
+    var sendAdvertisingJobKey = new JobKey(nameof(SendAdvertisingJob));
+    var triggerName = sendAdvertisingJobKey + "-trigger";
+
+    options.AddJob<SendAdvertisingJob>(sendAdvertisingJobKey)
+        .AddTrigger(trigger =>
+            trigger.ForJob(sendAdvertisingJobKey)
+                .WithIdentity(triggerName)
+                .WithCronSchedule("0 0 7 * * ?", cronBuilder =>
+                        cronBuilder.InTimeZone(TimeZoneUtils.GetVietnamTimeZone())
+                )
+                // 7h sáng mỗi ngày theo giờ server
+                // Giây | Phút | Giờ | Ngày | Tháng | Ngày trong tuần
+                
+                // Value: Số, * (mỗi ngày, mỗi tháng, lặp lại), ? (k chỉ định)
+        );
+});
+
+builder.Services.AddQuartzHostedService(opts =>
+{
+    opts.WaitForJobsToComplete = true;
+    // chay xong job thi moi dc shutdown
+});
+
+// Từ dòng app này đổ lên trên thì mình khai báo những đồ chơi mà mình xài, không cần quan tâm thứ tự
 var app = builder.Build();
+// Từ dòng app này trở xuống, apply những đồ chơi vào server, quan trọng thứ tự apply
+
+app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
+// Phải đặt đầu tiên bên dưới app
+// Để mọi request đều phải đi qua nó, có trường hợp nào quăng lỗi còn xử lí nhanh luôn
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    // app.UseSwagger();
+    // app.UseSwaggerUI();
+    app.UseSwaggerAPI();
 }
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+// Phải đặt sau authen author
+// Vì xác thực phân quyền rồi mới vào Controller
 
 app.Run();
 

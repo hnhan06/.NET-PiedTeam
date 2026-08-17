@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http;
+
 namespace piedteam_hocmienphi.service.UserService;
 
 public class Request
@@ -14,5 +16,6 @@ public class Request
     {
         public string Age { get; set; }
         public string Phone { get; set; }
+        public IFormFile? Avatar { get; set; }
     }
 }

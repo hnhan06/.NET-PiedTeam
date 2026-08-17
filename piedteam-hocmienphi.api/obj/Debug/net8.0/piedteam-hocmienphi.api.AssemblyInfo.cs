@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("piedteam-hocmienphi.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4620ec1b703fec71449a1c12dd384411c2414ba6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dc94527331cb6a6463d88d4f1931a2902b6068c")]
 [assembly: System.Reflection.AssemblyProductAttribute("piedteam-hocmienphi.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("piedteam-hocmienphi.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

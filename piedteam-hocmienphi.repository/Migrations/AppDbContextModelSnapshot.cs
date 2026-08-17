@@ -220,6 +220,9 @@ namespace piedteam_hocmienphi.repository.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Avatar")
+                        .HasColumnType("text");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -250,6 +253,9 @@ namespace piedteam_hocmienphi.repository.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<DateOnly>("SendDate")
+                        .HasColumnType("date");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Email")
@@ -260,7 +266,7 @@ namespace piedteam_hocmienphi.repository.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a18a9572-9186-49ff-b605-e2712c1efbe2"),
+                            Id = new Guid("d20d8174-7916-4b81-b970-34d487f14ae8"),
                             Age = "20",
                             Email = "ahihi0@gmail.com",
                             FirstName = "John0",
@@ -268,11 +274,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe0",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("328c7c68-e920-4c71-9435-7744d32972f8"),
+                            Id = new Guid("d9ee69f9-2b68-40b8-921c-5ab5d4c1be0d"),
                             Age = "20",
                             Email = "ahihi1@gmail.com",
                             FirstName = "John1",
@@ -280,11 +287,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe1",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0af456be-6f8d-49cc-b71a-e86cffdba76b"),
+                            Id = new Guid("fb9199c2-8977-4270-9bae-cc5e7ea37623"),
                             Age = "20",
                             Email = "ahihi2@gmail.com",
                             FirstName = "John2",
@@ -292,11 +300,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe2",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2830d680-f928-460b-b693-ddc11f8a6a37"),
+                            Id = new Guid("5d0ef78f-b131-4083-9858-70d8032f7e93"),
                             Age = "20",
                             Email = "ahihi3@gmail.com",
                             FirstName = "John3",
@@ -304,11 +313,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe3",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c7855a69-fa5a-423c-a2e1-04e44f49f8ed"),
+                            Id = new Guid("a729a688-eb0c-465a-89a3-1bbf74634bf3"),
                             Age = "20",
                             Email = "ahihi4@gmail.com",
                             FirstName = "John4",
@@ -316,11 +326,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe4",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a964c6eb-d2c0-4f06-b38c-b0c0df0d4556"),
+                            Id = new Guid("c117025b-adc2-4535-a937-48746046be31"),
                             Age = "20",
                             Email = "ahihi5@gmail.com",
                             FirstName = "John5",
@@ -328,11 +339,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe5",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("288fd8a7-c68b-43d5-82ef-e79ba3d104cf"),
+                            Id = new Guid("406d5d16-87ed-4bf2-a26a-e47c2ebc11a2"),
                             Age = "20",
                             Email = "ahihi6@gmail.com",
                             FirstName = "John6",
@@ -340,11 +352,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe6",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1062a285-c216-4ad6-87e3-fa381903b52b"),
+                            Id = new Guid("cbad6c72-e5ef-4c9f-9434-3abf20615dac"),
                             Age = "20",
                             Email = "ahihi7@gmail.com",
                             FirstName = "John7",
@@ -352,11 +365,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe7",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b1f3ebbc-268b-4f84-81c4-4b1c81d57356"),
+                            Id = new Guid("97142d45-7b3b-45f3-9a92-a7099eb13c4e"),
                             Age = "20",
                             Email = "ahihi8@gmail.com",
                             FirstName = "John8",
@@ -364,11 +378,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe8",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d3e84ea4-4556-47f4-ab4a-1fccf79600bc"),
+                            Id = new Guid("93649182-07d4-414f-ae92-8d2022bc8f0e"),
                             Age = "20",
                             Email = "ahihi9@gmail.com",
                             FirstName = "John9",
@@ -376,11 +391,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe9",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e57fe1cc-a783-48dc-a71d-e46304d64c4c"),
+                            Id = new Guid("7d21cc7c-0fda-4e63-955d-bbbd6366f971"),
                             Age = "20",
                             Email = "ahihi10@gmail.com",
                             FirstName = "John10",
@@ -388,11 +404,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe10",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ef88b6b7-68d3-41ea-80cf-853b43e33eed"),
+                            Id = new Guid("f399a715-2d67-4ab4-ae25-a03a73b9af0c"),
                             Age = "20",
                             Email = "ahihi11@gmail.com",
                             FirstName = "John11",
@@ -400,11 +417,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe11",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("51fecd55-5c57-4e17-94f8-ff7a270ef9d7"),
+                            Id = new Guid("a6fc64aa-4ed5-4431-9e4d-718e050e34dc"),
                             Age = "20",
                             Email = "ahihi12@gmail.com",
                             FirstName = "John12",
@@ -412,11 +430,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe12",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("70b32fc6-334f-49c5-a9ef-c7a356e489e8"),
+                            Id = new Guid("b9527f1c-32d3-46f5-a66c-343901b435d6"),
                             Age = "20",
                             Email = "ahihi13@gmail.com",
                             FirstName = "John13",
@@ -424,11 +443,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe13",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3cbf67e5-92a7-476a-b736-a01c6a029d9a"),
+                            Id = new Guid("4e39d7c2-f37d-4a40-8b16-8612947a2bf2"),
                             Age = "20",
                             Email = "ahihi14@gmail.com",
                             FirstName = "John14",
@@ -436,11 +456,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe14",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("29acd45b-17a8-44ba-a765-30ff5c3fd771"),
+                            Id = new Guid("468625cf-4764-4ddb-8c35-c9ae6c6e9275"),
                             Age = "20",
                             Email = "ahihi15@gmail.com",
                             FirstName = "John15",
@@ -448,11 +469,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe15",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e936cfb9-894f-4afc-ad98-32d6b209e7b1"),
+                            Id = new Guid("23d7301e-b46b-4f08-a739-7f9f18b92862"),
                             Age = "20",
                             Email = "ahihi16@gmail.com",
                             FirstName = "John16",
@@ -460,11 +482,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe16",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f6ce7a1a-a0c8-4470-89b4-6fc82b8f5cb4"),
+                            Id = new Guid("f3a0f06a-d067-4185-b649-96b59b9cfc7c"),
                             Age = "20",
                             Email = "ahihi17@gmail.com",
                             FirstName = "John17",
@@ -472,11 +495,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe17",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d990dd6b-0c4c-469f-9a18-bdac8a9f76b4"),
+                            Id = new Guid("0b3165aa-8d18-4d12-a31e-d48b33cef301"),
                             Age = "20",
                             Email = "ahihi18@gmail.com",
                             FirstName = "John18",
@@ -484,11 +508,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe18",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0749a941-3173-4856-a3aa-e49408d6be86"),
+                            Id = new Guid("12262abf-f8d6-4a58-b07e-8777ebe593bb"),
                             Age = "20",
                             Email = "ahihi19@gmail.com",
                             FirstName = "John19",
@@ -496,11 +521,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe19",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("04f6ea98-4c34-4e02-a107-1106a5fe3e65"),
+                            Id = new Guid("98ba4271-14e8-41a5-af68-7031ecb3d1db"),
                             Age = "20",
                             Email = "ahihi20@gmail.com",
                             FirstName = "John20",
@@ -508,11 +534,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe20",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("64d83fb9-06b5-4958-b3ab-698576788dec"),
+                            Id = new Guid("59d53e7d-a6e7-42dd-8ada-920fc980f44d"),
                             Age = "20",
                             Email = "ahihi21@gmail.com",
                             FirstName = "John21",
@@ -520,11 +547,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe21",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a0ee1980-9d96-4854-934b-be14c08da1ed"),
+                            Id = new Guid("bbf3b6f3-f862-435d-b927-1057e8fb1647"),
                             Age = "20",
                             Email = "ahihi22@gmail.com",
                             FirstName = "John22",
@@ -532,11 +560,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe22",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("142cfe43-978d-45c5-abc3-3177e0cccabe"),
+                            Id = new Guid("188aa044-f3a4-43bf-8761-afe7e6894b21"),
                             Age = "20",
                             Email = "ahihi23@gmail.com",
                             FirstName = "John23",
@@ -544,11 +573,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe23",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("04923561-990d-4db8-aba3-6d97ca955ce0"),
+                            Id = new Guid("520dda99-eef9-42ab-afba-d7fd61feee28"),
                             Age = "20",
                             Email = "ahihi24@gmail.com",
                             FirstName = "John24",
@@ -556,11 +586,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe24",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4e1c3b79-b835-4224-88f3-b8a202e957fe"),
+                            Id = new Guid("40947648-cf21-459a-a41a-d46572bea0d0"),
                             Age = "20",
                             Email = "ahihi25@gmail.com",
                             FirstName = "John25",
@@ -568,11 +599,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe25",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("809a08b9-7d8a-4db9-8594-c75e6e148340"),
+                            Id = new Guid("047e771c-5f66-41e0-881e-5d393aa7f6ad"),
                             Age = "20",
                             Email = "ahihi26@gmail.com",
                             FirstName = "John26",
@@ -580,11 +612,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe26",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c1e29391-d82a-485d-82a0-e2f90c8091de"),
+                            Id = new Guid("5f9c7d16-498e-412e-9b68-bb27272a0f91"),
                             Age = "20",
                             Email = "ahihi27@gmail.com",
                             FirstName = "John27",
@@ -592,11 +625,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe27",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bb75965f-4f2b-4113-99aa-8e8c27ba7a28"),
+                            Id = new Guid("5de35f30-17d8-46ad-92d2-b032b71d052c"),
                             Age = "20",
                             Email = "ahihi28@gmail.com",
                             FirstName = "John28",
@@ -604,11 +638,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe28",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ea440238-3e54-4b2f-84de-419fad31aa41"),
+                            Id = new Guid("197c3b1f-4117-4e16-baba-4b4faab296e1"),
                             Age = "20",
                             Email = "ahihi29@gmail.com",
                             FirstName = "John29",
@@ -616,11 +651,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe29",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cab16d73-d7f2-4aec-8c50-a97a3b20dd67"),
+                            Id = new Guid("7ea81356-0d7f-446d-bf0f-09b3de240e9c"),
                             Age = "20",
                             Email = "ahihi30@gmail.com",
                             FirstName = "John30",
@@ -628,11 +664,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe30",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3e929ed9-a5d5-43f1-ad01-c6bf6f04561b"),
+                            Id = new Guid("7af5ecfc-56ee-4825-8e22-bea047ee99ac"),
                             Age = "20",
                             Email = "ahihi31@gmail.com",
                             FirstName = "John31",
@@ -640,11 +677,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe31",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c1275813-9b66-4778-b38a-cbb1a5656d99"),
+                            Id = new Guid("0845c5cc-7312-4622-b385-5d9a28fffc7d"),
                             Age = "20",
                             Email = "ahihi32@gmail.com",
                             FirstName = "John32",
@@ -652,11 +690,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe32",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("79c9c5a1-2e36-44dd-85d8-b187067c67a8"),
+                            Id = new Guid("7b3582bd-bf56-420c-b005-e390100634da"),
                             Age = "20",
                             Email = "ahihi33@gmail.com",
                             FirstName = "John33",
@@ -664,11 +703,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe33",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5c2c9cc8-6f87-4180-9e7e-c499359c8541"),
+                            Id = new Guid("46b74180-882b-4e55-ad72-7e7353660803"),
                             Age = "20",
                             Email = "ahihi34@gmail.com",
                             FirstName = "John34",
@@ -676,11 +716,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe34",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6bf7a9e6-e0bf-4e41-b190-1595961a4f7d"),
+                            Id = new Guid("17864b4a-02b8-4bde-a953-8c2c6c54d019"),
                             Age = "20",
                             Email = "ahihi35@gmail.com",
                             FirstName = "John35",
@@ -688,11 +729,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe35",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6d4c41d6-b024-47fc-8ff5-1dd5f6b7313c"),
+                            Id = new Guid("12268185-d588-4327-adde-09b8a1cb4dc5"),
                             Age = "20",
                             Email = "ahihi36@gmail.com",
                             FirstName = "John36",
@@ -700,11 +742,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe36",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5e6b6157-7b80-4740-bd32-d60a5f9b5868"),
+                            Id = new Guid("aa42e81b-9a49-4fb7-9ecb-2df8f6c23938"),
                             Age = "20",
                             Email = "ahihi37@gmail.com",
                             FirstName = "John37",
@@ -712,11 +755,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe37",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5ff1472e-3dfd-4010-a331-4307ae2ea62e"),
+                            Id = new Guid("61da8731-f986-4da6-b692-f5a7d8cb3fd4"),
                             Age = "20",
                             Email = "ahihi38@gmail.com",
                             FirstName = "John38",
@@ -724,11 +768,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe38",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d8ef5d6c-7e4c-4079-a148-338c4a1bb68b"),
+                            Id = new Guid("7678d390-9e56-4f1f-bf63-acd9dee3d9a6"),
                             Age = "20",
                             Email = "ahihi39@gmail.com",
                             FirstName = "John39",
@@ -736,11 +781,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe39",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6a7654f7-8c6c-4dc5-ab38-a9b6491fcc94"),
+                            Id = new Guid("de8f19be-e9d9-44e7-a80e-a80ce0ab7f97"),
                             Age = "20",
                             Email = "ahihi40@gmail.com",
                             FirstName = "John40",
@@ -748,11 +794,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe40",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6da844ba-4177-4221-9cd6-3b6dfd5e25d3"),
+                            Id = new Guid("27ac0584-5621-4e51-9d4a-947a7273f9a1"),
                             Age = "20",
                             Email = "ahihi41@gmail.com",
                             FirstName = "John41",
@@ -760,11 +807,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe41",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("42a8a3e6-03f7-416c-bd59-54e438fe8bc0"),
+                            Id = new Guid("866ab9c3-8b89-4b06-ba77-6779cc422fdb"),
                             Age = "20",
                             Email = "ahihi42@gmail.com",
                             FirstName = "John42",
@@ -772,11 +820,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe42",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("240208f3-373a-4b05-8aec-fddbebb53dcb"),
+                            Id = new Guid("74fcb4f8-0911-4dcf-9481-39c45adc7b0c"),
                             Age = "20",
                             Email = "ahihi43@gmail.com",
                             FirstName = "John43",
@@ -784,11 +833,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe43",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a41f0b2c-52d1-48e7-8d09-761a448f3654"),
+                            Id = new Guid("720c5c81-08dc-4eaa-89a3-82e0561f2cad"),
                             Age = "20",
                             Email = "ahihi44@gmail.com",
                             FirstName = "John44",
@@ -796,11 +846,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe44",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("23d4c77e-e9ce-40bf-b062-79c18c76a725"),
+                            Id = new Guid("aaf6a330-def6-4309-8135-def8fe7621ef"),
                             Age = "20",
                             Email = "ahihi45@gmail.com",
                             FirstName = "John45",
@@ -808,11 +859,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe45",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ab0006e9-d14c-4191-819e-fc5590270988"),
+                            Id = new Guid("ef8b5c35-38c8-48f4-bdbd-add6f6cdf9e2"),
                             Age = "20",
                             Email = "ahihi46@gmail.com",
                             FirstName = "John46",
@@ -820,11 +872,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe46",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7f7124d4-5904-4589-a4cc-cdc2f593e62d"),
+                            Id = new Guid("a86fe055-4e77-40e1-823d-38ac08a0348f"),
                             Age = "20",
                             Email = "ahihi47@gmail.com",
                             FirstName = "John47",
@@ -832,11 +885,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe47",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7f676eb5-4321-4788-aaec-407e9621a0a2"),
+                            Id = new Guid("b5a80c4b-cbcc-48fb-af21-9e1945e2f44c"),
                             Age = "20",
                             Email = "ahihi48@gmail.com",
                             FirstName = "John48",
@@ -844,11 +898,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe48",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("db42e35f-5b2d-44ae-b4f1-e847770db668"),
+                            Id = new Guid("38e9ec8d-0b6e-4c27-a48c-a70db7340170"),
                             Age = "20",
                             Email = "ahihi49@gmail.com",
                             FirstName = "John49",
@@ -856,11 +911,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe49",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("362136fd-9015-4efa-824d-557f1f166bbb"),
+                            Id = new Guid("4534688d-6ba1-4217-85d7-7700875534cc"),
                             Age = "20",
                             Email = "ahihi50@gmail.com",
                             FirstName = "John50",
@@ -868,11 +924,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe50",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8d79ef3e-d91c-495a-bc19-09c1ec773ff2"),
+                            Id = new Guid("d3186e61-91cc-4aa6-9a11-6fafe13adbfd"),
                             Age = "20",
                             Email = "ahihi51@gmail.com",
                             FirstName = "John51",
@@ -880,11 +937,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe51",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bfb5a5bd-34d4-4590-8795-d2e63429c983"),
+                            Id = new Guid("5bdfe541-c6b5-42ab-a288-de3b0320d168"),
                             Age = "20",
                             Email = "ahihi52@gmail.com",
                             FirstName = "John52",
@@ -892,11 +950,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe52",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d47a3234-9c71-47d3-bdad-fb07a2c19290"),
+                            Id = new Guid("6a51e240-e0f4-43d7-9348-adba8b200ca6"),
                             Age = "20",
                             Email = "ahihi53@gmail.com",
                             FirstName = "John53",
@@ -904,11 +963,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe53",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("70014005-6b59-4bde-a9b6-916c6eb38259"),
+                            Id = new Guid("324036dc-9ef7-4e3a-80ac-189773c8cbb1"),
                             Age = "20",
                             Email = "ahihi54@gmail.com",
                             FirstName = "John54",
@@ -916,11 +976,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe54",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cc3cca35-cb7f-45e7-843c-b9880ddc3181"),
+                            Id = new Guid("76770567-84f8-437b-83a6-8d2c9bfb091f"),
                             Age = "20",
                             Email = "ahihi55@gmail.com",
                             FirstName = "John55",
@@ -928,11 +989,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe55",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("710dcb96-9c29-4ad8-b953-74578d9d82a5"),
+                            Id = new Guid("37a624c0-597f-41c3-a9b9-3a10008464d9"),
                             Age = "20",
                             Email = "ahihi56@gmail.com",
                             FirstName = "John56",
@@ -940,11 +1002,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe56",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("63ea3060-2809-499f-8b1a-7f48a46ef967"),
+                            Id = new Guid("61f148af-7806-4c4b-a954-0df905742f09"),
                             Age = "20",
                             Email = "ahihi57@gmail.com",
                             FirstName = "John57",
@@ -952,11 +1015,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe57",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4f2b951c-1bda-44b7-bdc2-3fe9ec2313cb"),
+                            Id = new Guid("9c2e49c9-e46a-4339-8ea9-acba200ed783"),
                             Age = "20",
                             Email = "ahihi58@gmail.com",
                             FirstName = "John58",
@@ -964,11 +1028,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe58",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("807c820c-73ca-4d12-b627-a3a86715c3d0"),
+                            Id = new Guid("baa3b549-58cc-40c8-b3cc-a3acf6b760e6"),
                             Age = "20",
                             Email = "ahihi59@gmail.com",
                             FirstName = "John59",
@@ -976,11 +1041,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe59",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4fac9b78-2f46-427e-b91e-53fd7dbb32ed"),
+                            Id = new Guid("a167a722-2169-470b-a74a-6826ce57b50b"),
                             Age = "20",
                             Email = "ahihi60@gmail.com",
                             FirstName = "John60",
@@ -988,11 +1054,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe60",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("89193bac-f10e-40cc-ace5-82c27b1bab11"),
+                            Id = new Guid("3ad5fbf7-39af-4750-8e3f-2a207b56478b"),
                             Age = "20",
                             Email = "ahihi61@gmail.com",
                             FirstName = "John61",
@@ -1000,11 +1067,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe61",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("042aabe4-83e4-4fc4-9957-0537f0e5702e"),
+                            Id = new Guid("eb07e57f-1a1d-41ce-b5ff-e83939ff07fd"),
                             Age = "20",
                             Email = "ahihi62@gmail.com",
                             FirstName = "John62",
@@ -1012,11 +1080,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe62",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("728ed56e-2410-4e8d-82ab-b2cf34e6c325"),
+                            Id = new Guid("521bfc2b-7eaa-4039-8785-1485545995c7"),
                             Age = "20",
                             Email = "ahihi63@gmail.com",
                             FirstName = "John63",
@@ -1024,11 +1093,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe63",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d40d0efd-ef5d-4fe3-937f-10265965babf"),
+                            Id = new Guid("f7ae3e89-df79-4905-b239-fae3a46e43c1"),
                             Age = "20",
                             Email = "ahihi64@gmail.com",
                             FirstName = "John64",
@@ -1036,11 +1106,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe64",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("625b1fb9-8fcd-4a41-b970-4cfb99d91ece"),
+                            Id = new Guid("c1e96788-3e48-4224-a686-f120d88726b7"),
                             Age = "20",
                             Email = "ahihi65@gmail.com",
                             FirstName = "John65",
@@ -1048,11 +1119,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe65",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c812882e-05a4-4bd9-aba4-de020317e547"),
+                            Id = new Guid("860c460e-ae9d-426d-bd57-50a83b6725e2"),
                             Age = "20",
                             Email = "ahihi66@gmail.com",
                             FirstName = "John66",
@@ -1060,11 +1132,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe66",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("49e913e4-38de-4f28-876c-174c041cee35"),
+                            Id = new Guid("c0951cf4-8f56-42bd-b9b7-a764e7f90046"),
                             Age = "20",
                             Email = "ahihi67@gmail.com",
                             FirstName = "John67",
@@ -1072,11 +1145,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe67",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("35ce01c3-8e22-4d81-af39-a676be018c9d"),
+                            Id = new Guid("17d34b70-91ac-4515-a890-4c5e70f4f61d"),
                             Age = "20",
                             Email = "ahihi68@gmail.com",
                             FirstName = "John68",
@@ -1084,11 +1158,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe68",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d32841ad-d514-4e14-80f8-e2ee09c13bfc"),
+                            Id = new Guid("1c2023d8-0204-4335-bce8-beb3634d5b73"),
                             Age = "20",
                             Email = "ahihi69@gmail.com",
                             FirstName = "John69",
@@ -1096,11 +1171,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe69",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("43f65fb8-998f-41ce-a1f8-ddb9ec5147ff"),
+                            Id = new Guid("6c8e9285-3d9f-41bc-b0ad-038d2d3c8549"),
                             Age = "20",
                             Email = "ahihi70@gmail.com",
                             FirstName = "John70",
@@ -1108,11 +1184,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe70",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c815a3ce-472b-48e0-9da3-723bb0788a41"),
+                            Id = new Guid("dce1a31c-d92f-4649-b065-a01bb759fa62"),
                             Age = "20",
                             Email = "ahihi71@gmail.com",
                             FirstName = "John71",
@@ -1120,11 +1197,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe71",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("39c96290-eee1-4802-9654-205eea70d90b"),
+                            Id = new Guid("ed4ced59-c657-4acc-9867-cfc9ee4e3e0e"),
                             Age = "20",
                             Email = "ahihi72@gmail.com",
                             FirstName = "John72",
@@ -1132,11 +1210,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe72",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6f244342-8dd2-4ef3-a39f-7104536fb2d0"),
+                            Id = new Guid("2f5dbc94-2dda-4a42-a07d-7430a0ef64df"),
                             Age = "20",
                             Email = "ahihi73@gmail.com",
                             FirstName = "John73",
@@ -1144,11 +1223,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe73",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1ddf9904-81f7-4e73-8ee6-0517e98e8faf"),
+                            Id = new Guid("96220a53-5f4f-4868-a100-0b6b7fd5a688"),
                             Age = "20",
                             Email = "ahihi74@gmail.com",
                             FirstName = "John74",
@@ -1156,11 +1236,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe74",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eaa28fff-dfc9-4105-87c8-f8d5fcafa728"),
+                            Id = new Guid("a972c103-4879-4a48-96ea-c8557e93e387"),
                             Age = "20",
                             Email = "ahihi75@gmail.com",
                             FirstName = "John75",
@@ -1168,11 +1249,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe75",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d3c8c538-cf55-4537-a4fe-390f0bec367e"),
+                            Id = new Guid("4448e711-e1e2-43ad-a7a7-a7485e6c185a"),
                             Age = "20",
                             Email = "ahihi76@gmail.com",
                             FirstName = "John76",
@@ -1180,11 +1262,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe76",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9bee06d8-2c9e-45e5-bfa3-e1efca8724df"),
+                            Id = new Guid("e63f3ced-ba47-4f03-9c70-c16c4485a3a8"),
                             Age = "20",
                             Email = "ahihi77@gmail.com",
                             FirstName = "John77",
@@ -1192,11 +1275,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe77",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("52b587af-c5c4-4e9a-89e1-3f1793be3e4b"),
+                            Id = new Guid("495f3b1c-4820-45aa-b4f0-e93ad424f20a"),
                             Age = "20",
                             Email = "ahihi78@gmail.com",
                             FirstName = "John78",
@@ -1204,11 +1288,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe78",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("befa7fb7-1d8b-49cd-afcf-d0c73987c97a"),
+                            Id = new Guid("c832f22d-7906-4f1d-8799-57c74e71589a"),
                             Age = "20",
                             Email = "ahihi79@gmail.com",
                             FirstName = "John79",
@@ -1216,11 +1301,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe79",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("93c439f3-9515-4074-a6e3-16801ad35902"),
+                            Id = new Guid("d2477855-1ee0-4318-928a-a144796f401b"),
                             Age = "20",
                             Email = "ahihi80@gmail.com",
                             FirstName = "John80",
@@ -1228,11 +1314,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe80",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("02d374ae-ff19-4c9d-b1c8-cc893545edcc"),
+                            Id = new Guid("99429c27-3544-49d9-999b-1802288c227c"),
                             Age = "20",
                             Email = "ahihi81@gmail.com",
                             FirstName = "John81",
@@ -1240,11 +1327,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe81",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8591d1f1-3c97-4f2a-9edc-ef2c38354c8c"),
+                            Id = new Guid("f5c23cef-de25-4982-ae7d-b875ca15bc6d"),
                             Age = "20",
                             Email = "ahihi82@gmail.com",
                             FirstName = "John82",
@@ -1252,11 +1340,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe82",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e4051cfa-4868-4191-8d92-25cf16dea65e"),
+                            Id = new Guid("1355ff8e-f862-4219-9da3-db22071eadd7"),
                             Age = "20",
                             Email = "ahihi83@gmail.com",
                             FirstName = "John83",
@@ -1264,11 +1353,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe83",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3595dcee-b847-4068-ae0d-433cf79a9eef"),
+                            Id = new Guid("10f23c8f-d234-49c9-89a1-dde03b7e97d7"),
                             Age = "20",
                             Email = "ahihi84@gmail.com",
                             FirstName = "John84",
@@ -1276,11 +1366,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe84",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("804d293c-8524-4d82-b98a-85ea23c1ca73"),
+                            Id = new Guid("072bf953-9bbb-443b-8549-c53011da9cd3"),
                             Age = "20",
                             Email = "ahihi85@gmail.com",
                             FirstName = "John85",
@@ -1288,11 +1379,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe85",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d02e34b1-f0df-4a53-9ffc-93eee90019d0"),
+                            Id = new Guid("34ed4390-f576-4262-a095-bbb6b7fed380"),
                             Age = "20",
                             Email = "ahihi86@gmail.com",
                             FirstName = "John86",
@@ -1300,11 +1392,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe86",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fae29dc3-8025-4c53-8255-2f42ca6d3dd3"),
+                            Id = new Guid("af8c7f22-ddc5-446d-b662-856ff7dd8928"),
                             Age = "20",
                             Email = "ahihi87@gmail.com",
                             FirstName = "John87",
@@ -1312,11 +1405,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe87",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0628c414-3928-40a2-80db-a15dd5e12bc4"),
+                            Id = new Guid("e2e940a6-7e82-4084-af11-bce3d4ce06ee"),
                             Age = "20",
                             Email = "ahihi88@gmail.com",
                             FirstName = "John88",
@@ -1324,11 +1418,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe88",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e7441861-30e5-467a-8041-f032b4391251"),
+                            Id = new Guid("c88429ff-293f-4717-8fbb-626872d43346"),
                             Age = "20",
                             Email = "ahihi89@gmail.com",
                             FirstName = "John89",
@@ -1336,11 +1431,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe89",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("26f6da81-0190-47c1-b2bf-2e7da7e15897"),
+                            Id = new Guid("c274eec9-3d7b-4919-a62c-dc03d7a1cfb5"),
                             Age = "20",
                             Email = "ahihi90@gmail.com",
                             FirstName = "John90",
@@ -1348,11 +1444,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe90",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b19940d0-2831-4db5-89f9-7d1c4ab71a9d"),
+                            Id = new Guid("c93026d5-c333-45c3-a443-ab5cba6d8ff8"),
                             Age = "20",
                             Email = "ahihi91@gmail.com",
                             FirstName = "John91",
@@ -1360,11 +1457,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe91",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("954b59c9-6f1d-46a7-9e86-b7d5ac56bb12"),
+                            Id = new Guid("12e6dbf0-79f4-44b0-a401-206db9992f4d"),
                             Age = "20",
                             Email = "ahihi92@gmail.com",
                             FirstName = "John92",
@@ -1372,11 +1470,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe92",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4a29b069-6c34-4d03-8a2e-83d923ffd79a"),
+                            Id = new Guid("ae507dcb-03bb-45b9-ac8d-be5fa3c0e84c"),
                             Age = "20",
                             Email = "ahihi93@gmail.com",
                             FirstName = "John93",
@@ -1384,11 +1483,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe93",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0c01b078-464d-47a3-acc1-6fdf2b792fb9"),
+                            Id = new Guid("ae2a378d-7901-4be3-a77d-a452434f7846"),
                             Age = "20",
                             Email = "ahihi94@gmail.com",
                             FirstName = "John94",
@@ -1396,11 +1496,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe94",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9cefbcbb-ee19-455e-8cfa-69d68fe911bf"),
+                            Id = new Guid("97218aea-1703-4231-95af-68d7f5cb33cb"),
                             Age = "20",
                             Email = "ahihi95@gmail.com",
                             FirstName = "John95",
@@ -1408,11 +1509,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe95",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("287af77f-2bef-464b-8edc-d0ee3d9da5e1"),
+                            Id = new Guid("ae737f64-e511-4810-bcb0-bfd868ddf68d"),
                             Age = "20",
                             Email = "ahihi96@gmail.com",
                             FirstName = "John96",
@@ -1420,11 +1522,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe96",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5ec852f2-f86e-4209-9c92-5317048a8244"),
+                            Id = new Guid("4bde9f22-d1d0-45a1-b2a3-46016158ae36"),
                             Age = "20",
                             Email = "ahihi97@gmail.com",
                             FirstName = "John97",
@@ -1432,11 +1535,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe97",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3753c851-e8ef-4b7d-8d51-b394367b4440"),
+                            Id = new Guid("61f8f250-eb9d-476f-a7d5-d438d25ad762"),
                             Age = "20",
                             Email = "ahihi98@gmail.com",
                             FirstName = "John98",
@@ -1444,11 +1548,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe98",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d15b1b93-9249-446b-b776-a278efefd5e0"),
+                            Id = new Guid("632cac70-87b5-4bf0-b8fc-d4268fd5499e"),
                             Age = "20",
                             Email = "ahihi99@gmail.com",
                             FirstName = "John99",
@@ -1456,11 +1561,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe99",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5dab4c69-549b-4fc0-ad9f-137d1927bcfc"),
+                            Id = new Guid("c7705a2b-4495-4a07-bdad-98490cd1d8b7"),
                             Age = "20",
                             Email = "ahihi100@gmail.com",
                             FirstName = "John100",
@@ -1468,11 +1574,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe100",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4d6baaff-2501-49ba-bcfb-39968fae1d71"),
+                            Id = new Guid("764c7047-32df-4fd3-8065-d288714b5055"),
                             Age = "20",
                             Email = "ahihi101@gmail.com",
                             FirstName = "John101",
@@ -1480,11 +1587,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe101",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("73904787-94c2-45e2-b5a0-1a18747d9181"),
+                            Id = new Guid("0bfaa3a8-f74f-4997-a28f-89836c37ed12"),
                             Age = "20",
                             Email = "ahihi102@gmail.com",
                             FirstName = "John102",
@@ -1492,11 +1600,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe102",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ef79054f-49b8-4006-8ce8-d8750c8abc83"),
+                            Id = new Guid("615d627e-76ab-4265-98ff-5b28a811a4b2"),
                             Age = "20",
                             Email = "ahihi103@gmail.com",
                             FirstName = "John103",
@@ -1504,11 +1613,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe103",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0e1933af-8fd1-4a3d-b8b6-baa0fbb90b6e"),
+                            Id = new Guid("e016dd19-621c-44f2-9568-4a4b3c8b89f2"),
                             Age = "20",
                             Email = "ahihi104@gmail.com",
                             FirstName = "John104",
@@ -1516,11 +1626,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe104",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cd920d00-6e22-4b0a-b202-09d0b9b0b7e3"),
+                            Id = new Guid("47d844ee-dd70-41ab-b509-988a67fd9b58"),
                             Age = "20",
                             Email = "ahihi105@gmail.com",
                             FirstName = "John105",
@@ -1528,11 +1639,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe105",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4d08cad6-d776-4ce3-955e-fdbe5dce2c63"),
+                            Id = new Guid("0d88d084-a5fc-41ff-b62e-15c2d564c038"),
                             Age = "20",
                             Email = "ahihi106@gmail.com",
                             FirstName = "John106",
@@ -1540,11 +1652,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe106",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eb66798b-e239-4d59-83c5-06a134b8abdb"),
+                            Id = new Guid("945c452d-fd90-40eb-b7f0-5f288e17024c"),
                             Age = "20",
                             Email = "ahihi107@gmail.com",
                             FirstName = "John107",
@@ -1552,11 +1665,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe107",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("67daa7f7-116b-4b4c-a196-d2b465df3ee7"),
+                            Id = new Guid("e99545ea-acc8-4753-9fa8-f679153b1c0e"),
                             Age = "20",
                             Email = "ahihi108@gmail.com",
                             FirstName = "John108",
@@ -1564,11 +1678,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe108",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9c2a0cea-6f92-4cd2-921f-bb364161d47a"),
+                            Id = new Guid("876fa95c-319d-4afa-91d3-d1714edb8867"),
                             Age = "20",
                             Email = "ahihi109@gmail.com",
                             FirstName = "John109",
@@ -1576,11 +1691,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe109",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("785774c9-8957-4d56-9c5c-cc0617bc39f9"),
+                            Id = new Guid("eaa6f34e-185e-4431-b1b4-cd40bbe63d81"),
                             Age = "20",
                             Email = "ahihi110@gmail.com",
                             FirstName = "John110",
@@ -1588,11 +1704,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe110",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f6fde85f-494a-4964-a18f-2ae47a66dfcb"),
+                            Id = new Guid("e933dea3-590b-4185-be03-6c2f325079bf"),
                             Age = "20",
                             Email = "ahihi111@gmail.com",
                             FirstName = "John111",
@@ -1600,11 +1717,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe111",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bdfcf00b-77e7-4914-8346-d50a51c4e406"),
+                            Id = new Guid("9254efad-858d-4e76-9e91-7c099e347635"),
                             Age = "20",
                             Email = "ahihi112@gmail.com",
                             FirstName = "John112",
@@ -1612,11 +1730,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe112",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2cd1b96f-db49-4943-b5ac-cabc0d7d8c65"),
+                            Id = new Guid("298ca489-bf30-4216-ba8c-e161c6ee5676"),
                             Age = "20",
                             Email = "ahihi113@gmail.com",
                             FirstName = "John113",
@@ -1624,11 +1743,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe113",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8492c461-f329-4696-985f-bba91a92a3ab"),
+                            Id = new Guid("dd718cfa-d640-4416-9202-d7f654298e22"),
                             Age = "20",
                             Email = "ahihi114@gmail.com",
                             FirstName = "John114",
@@ -1636,11 +1756,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe114",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9ad11260-1ec9-442c-9187-d97af561baff"),
+                            Id = new Guid("9b19825f-4088-4b60-9385-b542df112a19"),
                             Age = "20",
                             Email = "ahihi115@gmail.com",
                             FirstName = "John115",
@@ -1648,11 +1769,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe115",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("41975929-387d-42c2-94cd-23aec768c981"),
+                            Id = new Guid("c0aec550-d97c-4805-a3e3-8ba1a250dfac"),
                             Age = "20",
                             Email = "ahihi116@gmail.com",
                             FirstName = "John116",
@@ -1660,11 +1782,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe116",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("51d457dd-0f71-4c61-a62a-341fb8f89918"),
+                            Id = new Guid("c47225a7-4a68-4ab9-a240-2d7ede91f22b"),
                             Age = "20",
                             Email = "ahihi117@gmail.com",
                             FirstName = "John117",
@@ -1672,11 +1795,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe117",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("29f7404b-03b1-4a9a-8031-77e4a9c7953f"),
+                            Id = new Guid("97a5c379-6864-4835-bedd-5350f0da12bc"),
                             Age = "20",
                             Email = "ahihi118@gmail.com",
                             FirstName = "John118",
@@ -1684,11 +1808,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe118",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8f3ad4e8-67a9-464a-8079-98fa5cc7d859"),
+                            Id = new Guid("7c7451ba-7c8d-441b-bc72-ecda0e0d7885"),
                             Age = "20",
                             Email = "ahihi119@gmail.com",
                             FirstName = "John119",
@@ -1696,11 +1821,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe119",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("67699205-cbdb-491e-b952-3e4479f2e1f8"),
+                            Id = new Guid("1fa81ea5-6a24-4e98-9422-df628d7ebbd3"),
                             Age = "20",
                             Email = "ahihi120@gmail.com",
                             FirstName = "John120",
@@ -1708,11 +1834,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe120",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1e7dfb8c-8ba6-4be4-b08d-91a95099f442"),
+                            Id = new Guid("d677757a-6e0b-4e70-9d10-7288f49182a3"),
                             Age = "20",
                             Email = "ahihi121@gmail.com",
                             FirstName = "John121",
@@ -1720,11 +1847,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe121",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("16cae94f-9a73-4475-8c0d-557cd26472e4"),
+                            Id = new Guid("f4eb21fb-232b-493c-ab48-c5f88885ea57"),
                             Age = "20",
                             Email = "ahihi122@gmail.com",
                             FirstName = "John122",
@@ -1732,11 +1860,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe122",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8264c1cd-dd47-4c11-9f0f-883f6c4259ae"),
+                            Id = new Guid("bae60995-7afe-4f6f-841f-9fa4157c4a72"),
                             Age = "20",
                             Email = "ahihi123@gmail.com",
                             FirstName = "John123",
@@ -1744,11 +1873,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe123",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("23f8bf20-d143-4c24-8555-6ed09c80cfff"),
+                            Id = new Guid("dc2d3409-57ee-4094-8629-3cb59f7abd1f"),
                             Age = "20",
                             Email = "ahihi124@gmail.com",
                             FirstName = "John124",
@@ -1756,11 +1886,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe124",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9a761bab-45bd-46af-a5f3-5dbdd54163d6"),
+                            Id = new Guid("8b22a99d-74dc-4457-a727-94b4a19a5f21"),
                             Age = "20",
                             Email = "ahihi125@gmail.com",
                             FirstName = "John125",
@@ -1768,11 +1899,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe125",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e8b3f359-2a86-475d-8e2f-fd8cac07efd7"),
+                            Id = new Guid("8e4971af-4b93-46ae-bfdb-f25d739dee18"),
                             Age = "20",
                             Email = "ahihi126@gmail.com",
                             FirstName = "John126",
@@ -1780,11 +1912,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe126",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("486ba1b1-751a-445c-964b-ca4121fce0bd"),
+                            Id = new Guid("f953c8da-777a-437d-b558-9085969a3335"),
                             Age = "20",
                             Email = "ahihi127@gmail.com",
                             FirstName = "John127",
@@ -1792,11 +1925,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe127",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("101a09d0-ee8e-42f4-bdf7-e711c6d2b5ba"),
+                            Id = new Guid("65f47cb7-08ca-4b44-b164-5ff05417d2ac"),
                             Age = "20",
                             Email = "ahihi128@gmail.com",
                             FirstName = "John128",
@@ -1804,11 +1938,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe128",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d3c9a5de-6fe0-4b99-a011-9e6a986054b1"),
+                            Id = new Guid("c5f0da8d-f664-433f-a7c6-441ced563e8f"),
                             Age = "20",
                             Email = "ahihi129@gmail.com",
                             FirstName = "John129",
@@ -1816,11 +1951,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe129",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7d3a79c8-d153-4256-9165-b018fe8f9f39"),
+                            Id = new Guid("fe6ea244-bdb1-439c-a9de-bfafdbdc0965"),
                             Age = "20",
                             Email = "ahihi130@gmail.com",
                             FirstName = "John130",
@@ -1828,11 +1964,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe130",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f3cd8c45-8fa7-4287-9e8d-8feeafa0ecf7"),
+                            Id = new Guid("20c06f26-e516-4d1f-9de8-cb5897ccf4fb"),
                             Age = "20",
                             Email = "ahihi131@gmail.com",
                             FirstName = "John131",
@@ -1840,11 +1977,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe131",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a325eb5f-933d-4ba5-8bad-9c20e35f8eba"),
+                            Id = new Guid("fbda1357-c467-4137-b371-ec5ef10c4624"),
                             Age = "20",
                             Email = "ahihi132@gmail.com",
                             FirstName = "John132",
@@ -1852,11 +1990,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe132",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fc74ce7b-1870-40fb-875e-46fe723457fb"),
+                            Id = new Guid("72ae0bb2-82cd-4de1-84b0-f973685b686c"),
                             Age = "20",
                             Email = "ahihi133@gmail.com",
                             FirstName = "John133",
@@ -1864,11 +2003,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe133",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0ddcb965-7cb5-4e37-bae6-0e363de44acd"),
+                            Id = new Guid("7d0b82ca-7d52-45c0-9543-4c4ff39df610"),
                             Age = "20",
                             Email = "ahihi134@gmail.com",
                             FirstName = "John134",
@@ -1876,11 +2016,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe134",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1f1829e3-4ca7-4181-b0ff-8edf59458a7f"),
+                            Id = new Guid("72fc2c65-566c-4e0a-81b6-8eb54c921086"),
                             Age = "20",
                             Email = "ahihi135@gmail.com",
                             FirstName = "John135",
@@ -1888,11 +2029,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe135",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6fb7b8cd-0dc6-4b00-bc02-e6d78d978644"),
+                            Id = new Guid("e02260ca-0158-4132-aaeb-dfb1e5d99f41"),
                             Age = "20",
                             Email = "ahihi136@gmail.com",
                             FirstName = "John136",
@@ -1900,11 +2042,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe136",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("51ccda46-66a1-475c-a51f-c7a15c850c53"),
+                            Id = new Guid("93ea5500-43c2-4285-8bd0-4b41acf20382"),
                             Age = "20",
                             Email = "ahihi137@gmail.com",
                             FirstName = "John137",
@@ -1912,11 +2055,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe137",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0f579a1f-445f-4828-91ad-e3ad54cc6583"),
+                            Id = new Guid("444dce1f-49d8-406c-9bd5-68c5d2df2140"),
                             Age = "20",
                             Email = "ahihi138@gmail.com",
                             FirstName = "John138",
@@ -1924,11 +2068,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe138",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a49fcf61-893a-42ce-8e7e-ee77577ebb4d"),
+                            Id = new Guid("a7a952f4-766d-42c0-bac9-2375030d99ad"),
                             Age = "20",
                             Email = "ahihi139@gmail.com",
                             FirstName = "John139",
@@ -1936,11 +2081,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe139",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("66334631-2aba-49c1-b95d-1d647bbad208"),
+                            Id = new Guid("586b7cf6-6840-43b3-a02a-93a933268330"),
                             Age = "20",
                             Email = "ahihi140@gmail.com",
                             FirstName = "John140",
@@ -1948,11 +2094,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe140",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0ccadaa4-f125-4bd1-b69b-d6b50a04e923"),
+                            Id = new Guid("31e9c987-9a0e-4187-a482-42257608c6e8"),
                             Age = "20",
                             Email = "ahihi141@gmail.com",
                             FirstName = "John141",
@@ -1960,11 +2107,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe141",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("590b5dd4-b992-49a7-8ca6-627ac13452e8"),
+                            Id = new Guid("1adc900f-59b0-4415-9e4b-ae75446d4147"),
                             Age = "20",
                             Email = "ahihi142@gmail.com",
                             FirstName = "John142",
@@ -1972,11 +2120,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe142",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ab9baeb5-008d-4e42-b0cd-0fed91c51b4c"),
+                            Id = new Guid("15d6257a-772d-49bf-bae0-8291d7a3bd8c"),
                             Age = "20",
                             Email = "ahihi143@gmail.com",
                             FirstName = "John143",
@@ -1984,11 +2133,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe143",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("71e35622-79df-4b80-94ac-4f0bd67fe85c"),
+                            Id = new Guid("5cf8dba0-8349-4f07-8321-bed91edaaa62"),
                             Age = "20",
                             Email = "ahihi144@gmail.com",
                             FirstName = "John144",
@@ -1996,11 +2146,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe144",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("15d03a8b-03f7-46e1-b9f0-426ca164cc92"),
+                            Id = new Guid("f987c685-3d24-4bb5-8ca1-88b4a31cb93a"),
                             Age = "20",
                             Email = "ahihi145@gmail.com",
                             FirstName = "John145",
@@ -2008,11 +2159,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe145",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("db9187aa-80a7-4d42-a9c6-3f4e0ae3238f"),
+                            Id = new Guid("fd9df6f1-ea4a-45fd-88e0-34e9c3295f56"),
                             Age = "20",
                             Email = "ahihi146@gmail.com",
                             FirstName = "John146",
@@ -2020,11 +2172,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe146",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b9e9746d-cb60-4d7c-acd9-5fe3286c7805"),
+                            Id = new Guid("daecfbba-5291-4c43-872c-aa9e985c8723"),
                             Age = "20",
                             Email = "ahihi147@gmail.com",
                             FirstName = "John147",
@@ -2032,11 +2185,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe147",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7c28ff88-a5f4-4b86-a69b-6711e5a2fb00"),
+                            Id = new Guid("bf2e1e01-ba8c-4e71-add9-21b1c3b3150a"),
                             Age = "20",
                             Email = "ahihi148@gmail.com",
                             FirstName = "John148",
@@ -2044,11 +2198,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe148",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fa9cde65-b722-4826-8893-d881e9f6bbec"),
+                            Id = new Guid("436ceafb-3e7c-43db-8594-2c2190e848a1"),
                             Age = "20",
                             Email = "ahihi149@gmail.com",
                             FirstName = "John149",
@@ -2056,11 +2211,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe149",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d68a035c-a25e-46be-948b-3362853b6e58"),
+                            Id = new Guid("e7df0317-f409-44bd-b28b-90c83e023ce3"),
                             Age = "20",
                             Email = "ahihi150@gmail.com",
                             FirstName = "John150",
@@ -2068,11 +2224,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe150",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("075dbcc1-cee1-49d2-b69a-ec4e85ffb211"),
+                            Id = new Guid("80577223-a495-4336-90b5-8f4e3399974d"),
                             Age = "20",
                             Email = "ahihi151@gmail.com",
                             FirstName = "John151",
@@ -2080,11 +2237,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe151",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1e198772-7c3e-4c6f-a876-67e3f5c46454"),
+                            Id = new Guid("4e01a43a-45c2-48bc-b9b0-949f6cfc7099"),
                             Age = "20",
                             Email = "ahihi152@gmail.com",
                             FirstName = "John152",
@@ -2092,11 +2250,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe152",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e8a9b93c-cbb8-4124-a9aa-79de0b4d17bb"),
+                            Id = new Guid("54319901-21aa-461c-94a8-eaf701b69940"),
                             Age = "20",
                             Email = "ahihi153@gmail.com",
                             FirstName = "John153",
@@ -2104,11 +2263,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe153",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fdfe4b8d-57b7-434c-af39-5cb9cb1cc0e5"),
+                            Id = new Guid("a14a7a25-12b6-4998-b89f-30378fcd3b8f"),
                             Age = "20",
                             Email = "ahihi154@gmail.com",
                             FirstName = "John154",
@@ -2116,11 +2276,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe154",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9355749f-a867-49a5-9c81-5dfd57b7d78c"),
+                            Id = new Guid("4be44d35-ab29-4842-923f-270433494c81"),
                             Age = "20",
                             Email = "ahihi155@gmail.com",
                             FirstName = "John155",
@@ -2128,11 +2289,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe155",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("934a2d30-888d-43b6-9b7e-92c68c30d194"),
+                            Id = new Guid("969baebd-9b93-4059-ac95-ab94383f121b"),
                             Age = "20",
                             Email = "ahihi156@gmail.com",
                             FirstName = "John156",
@@ -2140,11 +2302,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe156",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("27584205-d4b3-472d-936c-000fac924f49"),
+                            Id = new Guid("cc47a980-55c9-4340-88e9-54a3f356e206"),
                             Age = "20",
                             Email = "ahihi157@gmail.com",
                             FirstName = "John157",
@@ -2152,11 +2315,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe157",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("49f65745-cf01-453a-bf86-b4eab2c9781b"),
+                            Id = new Guid("beac39f7-03d7-43ec-ace5-8d0fc399f6ea"),
                             Age = "20",
                             Email = "ahihi158@gmail.com",
                             FirstName = "John158",
@@ -2164,11 +2328,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe158",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("942f6596-1608-41e4-a1be-443bf3394e3a"),
+                            Id = new Guid("66525706-a393-4d27-aacb-3911cb848f28"),
                             Age = "20",
                             Email = "ahihi159@gmail.com",
                             FirstName = "John159",
@@ -2176,11 +2341,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe159",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f48fac91-a681-4c79-b04d-0e76e4ceeb1c"),
+                            Id = new Guid("fdeab16b-3eac-4c28-a447-cd02dcf2c5f8"),
                             Age = "20",
                             Email = "ahihi160@gmail.com",
                             FirstName = "John160",
@@ -2188,11 +2354,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe160",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bfa2e4a2-ae76-4055-b9ef-1978e250d102"),
+                            Id = new Guid("124c328e-db1b-4401-bfac-e288acb878bb"),
                             Age = "20",
                             Email = "ahihi161@gmail.com",
                             FirstName = "John161",
@@ -2200,11 +2367,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe161",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6814c8a2-f17b-4b3c-bac7-b9fbab1f1281"),
+                            Id = new Guid("a940c9f1-53bd-4f83-ae41-8764a0a8b703"),
                             Age = "20",
                             Email = "ahihi162@gmail.com",
                             FirstName = "John162",
@@ -2212,11 +2380,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe162",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("93069e6b-2945-44ab-8e5c-073f6a433b7d"),
+                            Id = new Guid("2e9232fe-4781-452b-9b44-f732eb59acb5"),
                             Age = "20",
                             Email = "ahihi163@gmail.com",
                             FirstName = "John163",
@@ -2224,11 +2393,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe163",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("02297f86-dcc5-41a0-94c8-8fa3b87d4627"),
+                            Id = new Guid("da578077-d9b5-4987-b201-cfbd7f021cf3"),
                             Age = "20",
                             Email = "ahihi164@gmail.com",
                             FirstName = "John164",
@@ -2236,11 +2406,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe164",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3da179e6-c8fe-4bb4-b6ae-751009cf4698"),
+                            Id = new Guid("91675990-6cf2-48b2-86f2-4b75409ad089"),
                             Age = "20",
                             Email = "ahihi165@gmail.com",
                             FirstName = "John165",
@@ -2248,11 +2419,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe165",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2b45ab78-e3b4-4caf-beaf-e51debc66cf2"),
+                            Id = new Guid("e4c063a9-ee22-4574-9a49-649adf7e4149"),
                             Age = "20",
                             Email = "ahihi166@gmail.com",
                             FirstName = "John166",
@@ -2260,11 +2432,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe166",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1da14bf9-8568-4021-8480-d5b5ba644359"),
+                            Id = new Guid("a4a5b5ff-4c3c-4974-ab45-03e015fa0633"),
                             Age = "20",
                             Email = "ahihi167@gmail.com",
                             FirstName = "John167",
@@ -2272,11 +2445,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe167",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("abf72a0a-9ddc-4003-aa80-416513dc6eb3"),
+                            Id = new Guid("692fb672-9e87-4650-ac0c-56caffab42ab"),
                             Age = "20",
                             Email = "ahihi168@gmail.com",
                             FirstName = "John168",
@@ -2284,11 +2458,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe168",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0bb534cd-6598-4f19-9fe8-fab6677271d5"),
+                            Id = new Guid("80a4fb04-b292-4123-875f-7a5396e3e768"),
                             Age = "20",
                             Email = "ahihi169@gmail.com",
                             FirstName = "John169",
@@ -2296,11 +2471,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe169",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("45f2ddfb-31c5-4042-a111-672d5c55dbc2"),
+                            Id = new Guid("acb17901-2545-40c4-9f5f-d952d69d48da"),
                             Age = "20",
                             Email = "ahihi170@gmail.com",
                             FirstName = "John170",
@@ -2308,11 +2484,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe170",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("038d89c6-2b4b-4f33-8235-a8e38e3e8ce3"),
+                            Id = new Guid("6921ddc6-472c-4953-a06d-1240aaad0cd1"),
                             Age = "20",
                             Email = "ahihi171@gmail.com",
                             FirstName = "John171",
@@ -2320,11 +2497,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe171",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0f7b7269-6cf2-4fcf-a067-4f0835e00434"),
+                            Id = new Guid("7990548b-bc6d-468d-8a24-206863e0ddd1"),
                             Age = "20",
                             Email = "ahihi172@gmail.com",
                             FirstName = "John172",
@@ -2332,11 +2510,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe172",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0e6235b3-557d-40fc-a89f-6e3988bc2bef"),
+                            Id = new Guid("f1447ed4-9b61-440b-ab49-fa91e47741e1"),
                             Age = "20",
                             Email = "ahihi173@gmail.com",
                             FirstName = "John173",
@@ -2344,11 +2523,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe173",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("44af281c-52bb-4f44-a72f-9646e424b9af"),
+                            Id = new Guid("33904d33-c343-4ad9-bb6c-144a744778aa"),
                             Age = "20",
                             Email = "ahihi174@gmail.com",
                             FirstName = "John174",
@@ -2356,11 +2536,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe174",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c4f43abb-bde0-4a36-833a-db14e59f0c8d"),
+                            Id = new Guid("6537893c-3753-4977-8b7d-ade53c6107c5"),
                             Age = "20",
                             Email = "ahihi175@gmail.com",
                             FirstName = "John175",
@@ -2368,11 +2549,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe175",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d1cc33d1-eb59-42ba-ab5c-ee839bc0eb5c"),
+                            Id = new Guid("35e17c0d-8d67-458d-bd11-6539e6924bb2"),
                             Age = "20",
                             Email = "ahihi176@gmail.com",
                             FirstName = "John176",
@@ -2380,11 +2562,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe176",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("59779113-8c41-4512-b9ac-bb4838119de8"),
+                            Id = new Guid("479a99bc-b088-4464-9f3b-73271db6907c"),
                             Age = "20",
                             Email = "ahihi177@gmail.com",
                             FirstName = "John177",
@@ -2392,11 +2575,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe177",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f887170d-1a05-4696-a735-627180278a9e"),
+                            Id = new Guid("6156cc18-4090-42f9-8a21-877e1ae19079"),
                             Age = "20",
                             Email = "ahihi178@gmail.com",
                             FirstName = "John178",
@@ -2404,11 +2588,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe178",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("84f9bd42-d90c-43d2-984b-d6012a511362"),
+                            Id = new Guid("bd90ffad-47bf-4b0a-97f0-c469ccdaf817"),
                             Age = "20",
                             Email = "ahihi179@gmail.com",
                             FirstName = "John179",
@@ -2416,11 +2601,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe179",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5261dbb2-0ed2-4172-91c7-e32a593ac7b3"),
+                            Id = new Guid("ce036b6a-f036-4296-a673-e6894f170ee1"),
                             Age = "20",
                             Email = "ahihi180@gmail.com",
                             FirstName = "John180",
@@ -2428,11 +2614,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe180",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f61eee4b-e5d3-4dd3-b875-7d44d9446f66"),
+                            Id = new Guid("20d03152-ccd6-4822-bdb8-ffc38fd79bd9"),
                             Age = "20",
                             Email = "ahihi181@gmail.com",
                             FirstName = "John181",
@@ -2440,11 +2627,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe181",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("92a73274-5951-4e56-8410-64a9141ca3a4"),
+                            Id = new Guid("b5457c41-764b-4903-bdc9-0f3b2e16c1cc"),
                             Age = "20",
                             Email = "ahihi182@gmail.com",
                             FirstName = "John182",
@@ -2452,11 +2640,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe182",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c63f717e-a98f-44ff-b133-0b624e10bf86"),
+                            Id = new Guid("091012e5-5c5b-4a19-9adc-431134e2b6ce"),
                             Age = "20",
                             Email = "ahihi183@gmail.com",
                             FirstName = "John183",
@@ -2464,11 +2653,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe183",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8691101a-d5be-47ec-8f64-2dff1556d7c4"),
+                            Id = new Guid("79601aa1-6be5-4206-a37b-ca10fd9e7ab9"),
                             Age = "20",
                             Email = "ahihi184@gmail.com",
                             FirstName = "John184",
@@ -2476,11 +2666,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe184",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a2614c44-72e4-4829-82ad-b8aee7ca778b"),
+                            Id = new Guid("3339c41e-b9a9-4f03-aaf4-13c42410e305"),
                             Age = "20",
                             Email = "ahihi185@gmail.com",
                             FirstName = "John185",
@@ -2488,11 +2679,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe185",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fe64ee6e-ee94-4a68-bb0d-5afa9ac6f4c4"),
+                            Id = new Guid("a4126ab3-0046-4b6d-a40e-11cc591b0b90"),
                             Age = "20",
                             Email = "ahihi186@gmail.com",
                             FirstName = "John186",
@@ -2500,11 +2692,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe186",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("526fb75e-5526-4485-be30-4262272226c1"),
+                            Id = new Guid("fd284347-5c1a-4a98-aba3-d0a08f46aa7c"),
                             Age = "20",
                             Email = "ahihi187@gmail.com",
                             FirstName = "John187",
@@ -2512,11 +2705,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe187",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("32c3d1c3-da18-4abe-a215-4d3b6df79e86"),
+                            Id = new Guid("626160ec-c03b-4c1a-9acf-058121924702"),
                             Age = "20",
                             Email = "ahihi188@gmail.com",
                             FirstName = "John188",
@@ -2524,11 +2718,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe188",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fc86586e-b050-4061-bd86-6445a3d9cfb4"),
+                            Id = new Guid("4ae2c1de-b9be-4c49-bac1-7856ad0dbbd4"),
                             Age = "20",
                             Email = "ahihi189@gmail.com",
                             FirstName = "John189",
@@ -2536,11 +2731,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe189",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e17ff61b-32f3-4e65-9fc5-1ef534c30f4d"),
+                            Id = new Guid("97ac2325-84e5-4db4-882d-42ef2f9ba0f5"),
                             Age = "20",
                             Email = "ahihi190@gmail.com",
                             FirstName = "John190",
@@ -2548,11 +2744,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe190",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("17c81437-b28d-4d5f-a38c-323619a9d0e4"),
+                            Id = new Guid("373b6ce5-b695-42f6-aef3-8e11407b43fd"),
                             Age = "20",
                             Email = "ahihi191@gmail.com",
                             FirstName = "John191",
@@ -2560,11 +2757,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe191",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b4c3e4bb-2b73-4979-a209-f02cb4e135a8"),
+                            Id = new Guid("6f9b0f13-50b9-4e7c-9e17-9d6477df874b"),
                             Age = "20",
                             Email = "ahihi192@gmail.com",
                             FirstName = "John192",
@@ -2572,11 +2770,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe192",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4626eef4-f2bc-41ae-b33e-fc4aac3f4a81"),
+                            Id = new Guid("92302573-38ec-489f-b49b-22f3de252a92"),
                             Age = "20",
                             Email = "ahihi193@gmail.com",
                             FirstName = "John193",
@@ -2584,11 +2783,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe193",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ad23204d-e720-42d1-85a8-873a479a5d25"),
+                            Id = new Guid("f2ab5513-bff2-4060-9482-bdcf08879bd8"),
                             Age = "20",
                             Email = "ahihi194@gmail.com",
                             FirstName = "John194",
@@ -2596,11 +2796,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe194",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e769fd5e-a506-42bb-84b0-efce60fb1221"),
+                            Id = new Guid("ab22b677-b511-4967-978a-f797c7bd4994"),
                             Age = "20",
                             Email = "ahihi195@gmail.com",
                             FirstName = "John195",
@@ -2608,11 +2809,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe195",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fd6574ac-a083-4b86-a122-7027cee9f588"),
+                            Id = new Guid("8a0e7f0b-9c00-4235-99b7-e37456c8abcc"),
                             Age = "20",
                             Email = "ahihi196@gmail.com",
                             FirstName = "John196",
@@ -2620,11 +2822,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe196",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3dcc564b-56cc-46ad-904e-d311d040e94d"),
+                            Id = new Guid("70f460ae-0540-474c-9d31-0cb2adbaae08"),
                             Age = "20",
                             Email = "ahihi197@gmail.com",
                             FirstName = "John197",
@@ -2632,11 +2835,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe197",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("24892ee0-0248-47d0-beda-0197ecf6a95d"),
+                            Id = new Guid("839c0332-e188-4c00-82cd-5a35a85f6285"),
                             Age = "20",
                             Email = "ahihi198@gmail.com",
                             FirstName = "John198",
@@ -2644,11 +2848,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe198",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9c9f25d5-b954-494b-8f49-9a16e5f93106"),
+                            Id = new Guid("2c582b64-affc-4db6-9883-0c094e22c446"),
                             Age = "20",
                             Email = "ahihi199@gmail.com",
                             FirstName = "John199",
@@ -2656,11 +2861,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe199",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b0f7e403-1cbf-40ce-a9be-c2de05ed4120"),
+                            Id = new Guid("8256eb03-107b-4866-a354-720705c5d640"),
                             Age = "20",
                             Email = "ahihi200@gmail.com",
                             FirstName = "John200",
@@ -2668,11 +2874,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe200",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cb918659-6960-4f57-afd7-d2018261015c"),
+                            Id = new Guid("40023e75-6fb7-4112-95b3-24b8698fe470"),
                             Age = "20",
                             Email = "ahihi201@gmail.com",
                             FirstName = "John201",
@@ -2680,11 +2887,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe201",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("84113341-1e4e-44ad-b852-baa62124ef25"),
+                            Id = new Guid("c2ed73f2-e2e0-4f7c-8331-dab1a0f378cd"),
                             Age = "20",
                             Email = "ahihi202@gmail.com",
                             FirstName = "John202",
@@ -2692,11 +2900,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe202",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6a2037bf-cd6b-40b1-9617-dfd22b16e1e9"),
+                            Id = new Guid("42bae14c-dbd3-448b-994f-f440366b4e57"),
                             Age = "20",
                             Email = "ahihi203@gmail.com",
                             FirstName = "John203",
@@ -2704,11 +2913,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe203",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0c4b0fae-1a8d-4802-bf2e-5d8cf429c1e9"),
+                            Id = new Guid("6e395731-6cb5-4eab-b9ed-3034241c7720"),
                             Age = "20",
                             Email = "ahihi204@gmail.com",
                             FirstName = "John204",
@@ -2716,11 +2926,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe204",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a0149b2b-3564-447d-be6e-4ce997f96d99"),
+                            Id = new Guid("97315d50-e365-4c65-8ff9-f8bcf67d2caa"),
                             Age = "20",
                             Email = "ahihi205@gmail.com",
                             FirstName = "John205",
@@ -2728,11 +2939,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe205",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("73a8a127-9447-41b2-b050-07c11555b13b"),
+                            Id = new Guid("f4d935ae-c012-46d0-9749-2afe433a3854"),
                             Age = "20",
                             Email = "ahihi206@gmail.com",
                             FirstName = "John206",
@@ -2740,11 +2952,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe206",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3b4ee46e-1b78-4c5f-8fb4-902fd0b25b2f"),
+                            Id = new Guid("3c8e3397-4bd0-4fae-b2a3-f00009a840ab"),
                             Age = "20",
                             Email = "ahihi207@gmail.com",
                             FirstName = "John207",
@@ -2752,11 +2965,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe207",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ac39809a-8b56-486d-81c9-c344fe448f86"),
+                            Id = new Guid("b3fedeef-ab31-4b72-b771-ff5aa9c1ad7c"),
                             Age = "20",
                             Email = "ahihi208@gmail.com",
                             FirstName = "John208",
@@ -2764,11 +2978,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe208",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c8f328e7-49ba-40db-8b89-22e4af82ea7b"),
+                            Id = new Guid("f305ef9b-afce-402e-aa37-b523075388a0"),
                             Age = "20",
                             Email = "ahihi209@gmail.com",
                             FirstName = "John209",
@@ -2776,11 +2991,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe209",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7f173621-1e5f-4eec-8c1c-290957b6056a"),
+                            Id = new Guid("70d50c8a-7707-4aec-947f-d0114aaa18c5"),
                             Age = "20",
                             Email = "ahihi210@gmail.com",
                             FirstName = "John210",
@@ -2788,11 +3004,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe210",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e51e3462-019f-4e0f-86e2-42450fd4af60"),
+                            Id = new Guid("2611f537-3581-45d9-b9d9-921f2a3465f5"),
                             Age = "20",
                             Email = "ahihi211@gmail.com",
                             FirstName = "John211",
@@ -2800,11 +3017,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe211",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("59292adf-39b7-42e8-aee8-4a7005165589"),
+                            Id = new Guid("e10f074b-ca91-4a64-a0f8-416e6280a329"),
                             Age = "20",
                             Email = "ahihi212@gmail.com",
                             FirstName = "John212",
@@ -2812,11 +3030,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe212",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c638079c-b675-4484-a752-305f40a82beb"),
+                            Id = new Guid("46af0da7-628e-4449-a4ce-40a1e552141e"),
                             Age = "20",
                             Email = "ahihi213@gmail.com",
                             FirstName = "John213",
@@ -2824,11 +3043,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe213",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("429ad707-a314-4620-bdef-778aac88d62a"),
+                            Id = new Guid("2b167399-e1ba-4f4d-9a66-1f34f9d1bac3"),
                             Age = "20",
                             Email = "ahihi214@gmail.com",
                             FirstName = "John214",
@@ -2836,11 +3056,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe214",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("caff99df-71c6-4a12-9c24-c21bdd4efbb4"),
+                            Id = new Guid("3ee9767f-8c68-4c1b-9c43-cbc5f76e20e0"),
                             Age = "20",
                             Email = "ahihi215@gmail.com",
                             FirstName = "John215",
@@ -2848,11 +3069,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe215",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("003be722-6104-48ef-b906-2ec4c37f0b65"),
+                            Id = new Guid("bcd25399-13b3-4e9e-a60c-67ea40d13317"),
                             Age = "20",
                             Email = "ahihi216@gmail.com",
                             FirstName = "John216",
@@ -2860,11 +3082,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe216",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("69ca5758-6e9a-4a64-a175-b29103970647"),
+                            Id = new Guid("ae7b6a39-dc1a-4b5d-a007-ec0b3b62b1cc"),
                             Age = "20",
                             Email = "ahihi217@gmail.com",
                             FirstName = "John217",
@@ -2872,11 +3095,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe217",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3c470120-3033-495e-8ba0-bc0081ae3fe0"),
+                            Id = new Guid("c5187a1b-88e4-4f6c-8820-4e2a68cf8313"),
                             Age = "20",
                             Email = "ahihi218@gmail.com",
                             FirstName = "John218",
@@ -2884,11 +3108,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe218",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b11c943a-d8bd-42db-9c6a-4c411e661cb1"),
+                            Id = new Guid("2262cbdf-f334-4f3d-9793-f9501893f650"),
                             Age = "20",
                             Email = "ahihi219@gmail.com",
                             FirstName = "John219",
@@ -2896,11 +3121,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe219",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f84065fe-267f-4a5e-b386-7d84dba68b12"),
+                            Id = new Guid("5c6bacb8-909a-4f31-9d34-7083e444b6da"),
                             Age = "20",
                             Email = "ahihi220@gmail.com",
                             FirstName = "John220",
@@ -2908,11 +3134,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe220",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7c659ffe-2253-4d6c-aafc-d9f6ced1f5e5"),
+                            Id = new Guid("37503617-40d4-48e6-b7c4-4d7c3240d470"),
                             Age = "20",
                             Email = "ahihi221@gmail.com",
                             FirstName = "John221",
@@ -2920,11 +3147,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe221",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4ff5474f-329f-4ef3-a489-373bd0de1c91"),
+                            Id = new Guid("74cf5147-167a-48de-aa50-64aa2cb98a1b"),
                             Age = "20",
                             Email = "ahihi222@gmail.com",
                             FirstName = "John222",
@@ -2932,11 +3160,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe222",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dfc0b42d-12c5-4db3-b598-7e97f60b82c7"),
+                            Id = new Guid("0d635e17-b4c1-4267-895f-51dccafc7cc9"),
                             Age = "20",
                             Email = "ahihi223@gmail.com",
                             FirstName = "John223",
@@ -2944,11 +3173,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe223",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3a23ca3d-0a04-4711-a4b9-e9ca8169bdac"),
+                            Id = new Guid("e0558a1b-d224-47a6-85c2-900cb6c398de"),
                             Age = "20",
                             Email = "ahihi224@gmail.com",
                             FirstName = "John224",
@@ -2956,11 +3186,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe224",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("579b3ff4-db3a-4b40-8363-433b2c36ead7"),
+                            Id = new Guid("614d4e5d-d826-4d9b-8368-3462b2a725cc"),
                             Age = "20",
                             Email = "ahihi225@gmail.com",
                             FirstName = "John225",
@@ -2968,11 +3199,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe225",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9b981e5b-1070-405a-a3f4-948c72b4948c"),
+                            Id = new Guid("64f9e277-3327-4ce3-b1be-5ed849004459"),
                             Age = "20",
                             Email = "ahihi226@gmail.com",
                             FirstName = "John226",
@@ -2980,11 +3212,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe226",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8ae15839-00c6-4c26-9bdf-106f8e2f7b80"),
+                            Id = new Guid("c9c52404-1457-4e4d-bda8-da40efbe8209"),
                             Age = "20",
                             Email = "ahihi227@gmail.com",
                             FirstName = "John227",
@@ -2992,11 +3225,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe227",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("840d9639-e762-4bf3-9d10-b3b6f1427bbb"),
+                            Id = new Guid("218066b1-4186-4469-93f1-f3cc8a7f49bf"),
                             Age = "20",
                             Email = "ahihi228@gmail.com",
                             FirstName = "John228",
@@ -3004,11 +3238,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe228",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b49d3eab-2b4a-4f11-bf75-ccb262a93ef0"),
+                            Id = new Guid("fd9b46e2-efa0-44bd-a61d-32d4aea1bf0a"),
                             Age = "20",
                             Email = "ahihi229@gmail.com",
                             FirstName = "John229",
@@ -3016,11 +3251,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe229",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0fa69132-f92b-40b0-addf-a0b9ac5f6700"),
+                            Id = new Guid("f49d3223-313d-43bd-82d4-a8c9c43e32b9"),
                             Age = "20",
                             Email = "ahihi230@gmail.com",
                             FirstName = "John230",
@@ -3028,11 +3264,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe230",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ee5cc1ab-6005-45b6-a3e4-dd6e10a25c9d"),
+                            Id = new Guid("061ab9d3-573c-42a4-947d-89d47e6fc0f0"),
                             Age = "20",
                             Email = "ahihi231@gmail.com",
                             FirstName = "John231",
@@ -3040,11 +3277,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe231",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6913e0af-280b-4650-a891-796ebcb57db2"),
+                            Id = new Guid("f3d93ecb-952a-4a4a-9755-8aa217bcfcf4"),
                             Age = "20",
                             Email = "ahihi232@gmail.com",
                             FirstName = "John232",
@@ -3052,11 +3290,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe232",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2cbf386c-be2e-43a2-a307-c557aae2af1b"),
+                            Id = new Guid("ecd72bd3-716d-402b-9969-d84eb363a291"),
                             Age = "20",
                             Email = "ahihi233@gmail.com",
                             FirstName = "John233",
@@ -3064,11 +3303,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe233",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a15bbdbc-41b0-4ebd-bd8f-6520df3d2757"),
+                            Id = new Guid("5939b1b3-f131-491c-bc1c-511ffc9fb82e"),
                             Age = "20",
                             Email = "ahihi234@gmail.com",
                             FirstName = "John234",
@@ -3076,11 +3316,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe234",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ffe7e74a-b32a-4ea8-8721-bfc5f2b30a77"),
+                            Id = new Guid("77be7fd1-413d-4dc8-acd5-423469e7874f"),
                             Age = "20",
                             Email = "ahihi235@gmail.com",
                             FirstName = "John235",
@@ -3088,11 +3329,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe235",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c78756aa-e69d-4fcf-b8b3-9bccfc58bc33"),
+                            Id = new Guid("ce626767-e829-41d2-85ea-94671c0ba98b"),
                             Age = "20",
                             Email = "ahihi236@gmail.com",
                             FirstName = "John236",
@@ -3100,11 +3342,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe236",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eada3c5d-00c3-49e0-ac78-034675cb03b9"),
+                            Id = new Guid("be0c365a-91b6-4a5d-ba02-2cf24b33dfd0"),
                             Age = "20",
                             Email = "ahihi237@gmail.com",
                             FirstName = "John237",
@@ -3112,11 +3355,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe237",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c66911e6-b891-4f88-81e0-d552f76f4c5c"),
+                            Id = new Guid("c5fe9f1c-66fe-4818-99bc-d74ee3e0f488"),
                             Age = "20",
                             Email = "ahihi238@gmail.com",
                             FirstName = "John238",
@@ -3124,11 +3368,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe238",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("106e0d07-add1-439d-a031-62386e9f928b"),
+                            Id = new Guid("6785d417-3679-42a7-9ff3-095d9f969d5b"),
                             Age = "20",
                             Email = "ahihi239@gmail.com",
                             FirstName = "John239",
@@ -3136,11 +3381,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe239",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("81c57fde-4707-4558-a110-47968af2b2b4"),
+                            Id = new Guid("a2e3ac22-8327-4776-8046-7c352214d0b8"),
                             Age = "20",
                             Email = "ahihi240@gmail.com",
                             FirstName = "John240",
@@ -3148,11 +3394,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe240",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("61579d10-99cc-4af7-be4e-5c74e5578319"),
+                            Id = new Guid("9a1d2d64-9e63-4260-9dcd-101ed322355b"),
                             Age = "20",
                             Email = "ahihi241@gmail.com",
                             FirstName = "John241",
@@ -3160,11 +3407,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe241",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ba25019d-a519-4c6c-b651-8f68346cc03c"),
+                            Id = new Guid("c73b2879-69a2-4791-a985-e4662cdc6bf5"),
                             Age = "20",
                             Email = "ahihi242@gmail.com",
                             FirstName = "John242",
@@ -3172,11 +3420,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe242",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2fb0861e-5023-486a-9082-3d7d53e1143e"),
+                            Id = new Guid("b3d48964-53a8-43e9-8f4c-a69087b19a5d"),
                             Age = "20",
                             Email = "ahihi243@gmail.com",
                             FirstName = "John243",
@@ -3184,11 +3433,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe243",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8247fa5a-41e7-4cc2-b377-0d9d77be6d8b"),
+                            Id = new Guid("67757405-18ac-4ce8-90c5-de34c959f139"),
                             Age = "20",
                             Email = "ahihi244@gmail.com",
                             FirstName = "John244",
@@ -3196,11 +3446,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe244",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("42325f42-f260-4370-b291-59aea5d746d3"),
+                            Id = new Guid("6bd10181-347f-4093-ae8f-b419442c0ea5"),
                             Age = "20",
                             Email = "ahihi245@gmail.com",
                             FirstName = "John245",
@@ -3208,11 +3459,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe245",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ecfe3aa7-a74e-4bfe-86d1-eecb61d044df"),
+                            Id = new Guid("34f2756a-ba5a-490a-b361-cf21496b3fec"),
                             Age = "20",
                             Email = "ahihi246@gmail.com",
                             FirstName = "John246",
@@ -3220,11 +3472,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe246",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("28efdfab-17ca-4e49-8731-6bce1ce5d400"),
+                            Id = new Guid("e3ce2032-4df7-468c-b231-166f53989919"),
                             Age = "20",
                             Email = "ahihi247@gmail.com",
                             FirstName = "John247",
@@ -3232,11 +3485,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe247",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3cacc644-1be5-4ffc-ba4b-8305ba72d31d"),
+                            Id = new Guid("d17cb20a-84ef-4bd7-8ead-07587d1674ac"),
                             Age = "20",
                             Email = "ahihi248@gmail.com",
                             FirstName = "John248",
@@ -3244,11 +3498,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe248",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("424b7936-dc64-4429-89c8-bb21f59e64a1"),
+                            Id = new Guid("3663b205-1500-44b6-852a-a7a267b7322b"),
                             Age = "20",
                             Email = "ahihi249@gmail.com",
                             FirstName = "John249",
@@ -3256,11 +3511,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe249",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("faa54111-fd60-4abb-b076-88ef86bb08b0"),
+                            Id = new Guid("68eb58d8-0b60-4c74-92ac-bed6093e1a3c"),
                             Age = "20",
                             Email = "ahihi250@gmail.com",
                             FirstName = "John250",
@@ -3268,11 +3524,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe250",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fc30fa5b-ed7e-4e07-a274-9bf9c783b126"),
+                            Id = new Guid("3eea510f-6265-4d69-a4f7-cef257ee6533"),
                             Age = "20",
                             Email = "ahihi251@gmail.com",
                             FirstName = "John251",
@@ -3280,11 +3537,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe251",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("856ff837-d225-4207-b495-130c5a8ba000"),
+                            Id = new Guid("94b330c2-7e1b-45ff-9a73-8c0e053f3fbe"),
                             Age = "20",
                             Email = "ahihi252@gmail.com",
                             FirstName = "John252",
@@ -3292,11 +3550,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe252",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3016c92b-fe45-44f1-8beb-68986ed8ef47"),
+                            Id = new Guid("068c13ef-767f-4a51-bac8-dfd0172d1969"),
                             Age = "20",
                             Email = "ahihi253@gmail.com",
                             FirstName = "John253",
@@ -3304,11 +3563,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe253",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b60f7121-c944-41a7-beb0-a6f16f04a1f4"),
+                            Id = new Guid("c4cfd1f1-ee1d-40e1-b73f-979015332f32"),
                             Age = "20",
                             Email = "ahihi254@gmail.com",
                             FirstName = "John254",
@@ -3316,11 +3576,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe254",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e4fdde70-06d2-4232-b6d9-e6d5da049226"),
+                            Id = new Guid("93f59330-4bc1-4b1b-b7bc-05c5f77e3e9d"),
                             Age = "20",
                             Email = "ahihi255@gmail.com",
                             FirstName = "John255",
@@ -3328,11 +3589,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe255",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("07bbc99b-5e40-4808-8571-951c15b6d3da"),
+                            Id = new Guid("d2fcf2d3-825d-45a0-926f-6e64ab3dcb10"),
                             Age = "20",
                             Email = "ahihi256@gmail.com",
                             FirstName = "John256",
@@ -3340,11 +3602,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe256",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c1c33f4e-a811-46c9-8473-2559cf9057c8"),
+                            Id = new Guid("23795a9b-b39b-4c8d-80d1-01a4153f8b23"),
                             Age = "20",
                             Email = "ahihi257@gmail.com",
                             FirstName = "John257",
@@ -3352,11 +3615,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe257",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eef3e703-840f-4896-8680-fe70ffbed257"),
+                            Id = new Guid("154246c9-69b5-45a6-b916-91c7308178b3"),
                             Age = "20",
                             Email = "ahihi258@gmail.com",
                             FirstName = "John258",
@@ -3364,11 +3628,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe258",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ae939b32-7157-41c6-865a-b2e9fff78549"),
+                            Id = new Guid("dc764b8b-1e83-4cd8-a835-8c17f13747f1"),
                             Age = "20",
                             Email = "ahihi259@gmail.com",
                             FirstName = "John259",
@@ -3376,11 +3641,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe259",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("19b929e1-cf52-4d5a-92ac-3c1d944a578d"),
+                            Id = new Guid("48bf25b2-2208-44f8-b5c6-f1a6ac32da5f"),
                             Age = "20",
                             Email = "ahihi260@gmail.com",
                             FirstName = "John260",
@@ -3388,11 +3654,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe260",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4f5e1929-cf9f-41ab-b8cc-51c8d59b8e2e"),
+                            Id = new Guid("cdcd64ad-64fc-4fbf-adf7-954b3205ed85"),
                             Age = "20",
                             Email = "ahihi261@gmail.com",
                             FirstName = "John261",
@@ -3400,11 +3667,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe261",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("72477f3c-b5d0-472d-bfbd-7e4444a974d3"),
+                            Id = new Guid("49c823e9-773c-440e-9ac3-37d767604d76"),
                             Age = "20",
                             Email = "ahihi262@gmail.com",
                             FirstName = "John262",
@@ -3412,11 +3680,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe262",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("71ad4cde-3690-413b-8e33-08e57d02857e"),
+                            Id = new Guid("9750943b-d932-4589-997c-6784cada8d16"),
                             Age = "20",
                             Email = "ahihi263@gmail.com",
                             FirstName = "John263",
@@ -3424,11 +3693,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe263",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("210fb3bf-bc8f-44cf-8b42-72f4ce62e912"),
+                            Id = new Guid("952a822f-4e9c-4e72-bf21-f9b6bb8e12f7"),
                             Age = "20",
                             Email = "ahihi264@gmail.com",
                             FirstName = "John264",
@@ -3436,11 +3706,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe264",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("03f13c22-db9a-4292-8ee0-539abac4dafd"),
+                            Id = new Guid("c164cd47-f4d9-4439-b5e6-c20047fcd526"),
                             Age = "20",
                             Email = "ahihi265@gmail.com",
                             FirstName = "John265",
@@ -3448,11 +3719,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe265",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cd6c8279-26c9-4ec4-8180-50d822dae154"),
+                            Id = new Guid("49517d1f-b4a3-4c12-96c5-6c849a79f9d2"),
                             Age = "20",
                             Email = "ahihi266@gmail.com",
                             FirstName = "John266",
@@ -3460,11 +3732,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe266",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("151c9d14-2ca0-4f40-962f-bfac8e332042"),
+                            Id = new Guid("baaa8243-e7c8-4cd3-bf62-ac411f4e0144"),
                             Age = "20",
                             Email = "ahihi267@gmail.com",
                             FirstName = "John267",
@@ -3472,11 +3745,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe267",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cf24fbf4-93fc-4c36-ab39-60a75d90d136"),
+                            Id = new Guid("51019623-197d-4838-8900-8bba5ab4517e"),
                             Age = "20",
                             Email = "ahihi268@gmail.com",
                             FirstName = "John268",
@@ -3484,11 +3758,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe268",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("376c2f28-67fb-4c4b-a3d8-358256515271"),
+                            Id = new Guid("e7b75331-8338-43ae-ad65-2d48d154e10f"),
                             Age = "20",
                             Email = "ahihi269@gmail.com",
                             FirstName = "John269",
@@ -3496,11 +3771,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe269",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f72defa3-4318-448d-af2a-0dba491a0ee6"),
+                            Id = new Guid("9ca1243e-86f8-4780-8bcb-2778469582d0"),
                             Age = "20",
                             Email = "ahihi270@gmail.com",
                             FirstName = "John270",
@@ -3508,11 +3784,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe270",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b16305ae-34bb-41a7-ac9f-3a0446a61e02"),
+                            Id = new Guid("e44e3e4b-5b1d-46ea-96dd-3ff9403b35a2"),
                             Age = "20",
                             Email = "ahihi271@gmail.com",
                             FirstName = "John271",
@@ -3520,11 +3797,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe271",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bcbe2e28-b401-4c73-b0ba-d6a338ce05dd"),
+                            Id = new Guid("c5a4ddef-7b0b-47f8-b5e1-a28f46c36a80"),
                             Age = "20",
                             Email = "ahihi272@gmail.com",
                             FirstName = "John272",
@@ -3532,11 +3810,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe272",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f5f8827a-9950-4e83-85a5-12bb26115b39"),
+                            Id = new Guid("e47aa922-4791-4344-b8d7-19a6d513d432"),
                             Age = "20",
                             Email = "ahihi273@gmail.com",
                             FirstName = "John273",
@@ -3544,11 +3823,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe273",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1a25a44d-5555-4495-ada8-8b99eaaa957e"),
+                            Id = new Guid("22a422ef-c632-411a-9728-33cbbbbba6d1"),
                             Age = "20",
                             Email = "ahihi274@gmail.com",
                             FirstName = "John274",
@@ -3556,11 +3836,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe274",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ac0cc81e-b480-4edd-9695-db6499319cfd"),
+                            Id = new Guid("8d1469fc-b0d9-487c-b9ef-c2b1264f85b4"),
                             Age = "20",
                             Email = "ahihi275@gmail.com",
                             FirstName = "John275",
@@ -3568,11 +3849,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe275",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("33334a0c-4346-42ee-b399-fc3d116fba0e"),
+                            Id = new Guid("98f611ee-0035-4900-a379-2be82a5ff5db"),
                             Age = "20",
                             Email = "ahihi276@gmail.com",
                             FirstName = "John276",
@@ -3580,11 +3862,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe276",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e6141e11-ae46-4dd6-9d74-f71552653299"),
+                            Id = new Guid("9aea8410-7300-403d-8fe1-b44566f63f7f"),
                             Age = "20",
                             Email = "ahihi277@gmail.com",
                             FirstName = "John277",
@@ -3592,11 +3875,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe277",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bd3b6f00-5ec3-4789-90be-d1327ee593bf"),
+                            Id = new Guid("c003325e-9635-458a-a2bd-f2cf2888f5aa"),
                             Age = "20",
                             Email = "ahihi278@gmail.com",
                             FirstName = "John278",
@@ -3604,11 +3888,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe278",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6824e5d3-917b-4ef1-9475-d85370e3cea8"),
+                            Id = new Guid("88e6a3e7-c883-4f23-a3a3-a9579a26facc"),
                             Age = "20",
                             Email = "ahihi279@gmail.com",
                             FirstName = "John279",
@@ -3616,11 +3901,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe279",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("896a82f8-f641-420b-8cb3-004962fe59cb"),
+                            Id = new Guid("4838dab2-c7f9-4a1e-8505-b9c5d676c361"),
                             Age = "20",
                             Email = "ahihi280@gmail.com",
                             FirstName = "John280",
@@ -3628,11 +3914,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe280",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("696edebb-6cae-4288-a1f8-9c7e7ed97bb8"),
+                            Id = new Guid("fc5e5a23-cc6c-47df-82df-268301ad0ff9"),
                             Age = "20",
                             Email = "ahihi281@gmail.com",
                             FirstName = "John281",
@@ -3640,11 +3927,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe281",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ccc31d10-4b02-487e-90ba-9be17576d4e4"),
+                            Id = new Guid("1d1c6e75-46eb-476a-9db6-7185b0f7392b"),
                             Age = "20",
                             Email = "ahihi282@gmail.com",
                             FirstName = "John282",
@@ -3652,11 +3940,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe282",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9f0d110f-f9f1-4f42-9d4c-7ed9d0f005c5"),
+                            Id = new Guid("1c8b251b-484b-421d-96bc-3df503a64697"),
                             Age = "20",
                             Email = "ahihi283@gmail.com",
                             FirstName = "John283",
@@ -3664,11 +3953,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe283",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6ac6306c-5ce9-41fd-a724-9f3fd851641e"),
+                            Id = new Guid("3a3f7931-b425-49f7-9747-f94388ad66f1"),
                             Age = "20",
                             Email = "ahihi284@gmail.com",
                             FirstName = "John284",
@@ -3676,11 +3966,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe284",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5c031139-c217-47e8-938a-890b97b0d851"),
+                            Id = new Guid("5d04816d-80e8-4e23-be6b-fc74227c080c"),
                             Age = "20",
                             Email = "ahihi285@gmail.com",
                             FirstName = "John285",
@@ -3688,11 +3979,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe285",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d471c051-f38d-467c-8d66-81025543ef72"),
+                            Id = new Guid("fc5eb45d-3135-4338-baa5-cbb70bfeade2"),
                             Age = "20",
                             Email = "ahihi286@gmail.com",
                             FirstName = "John286",
@@ -3700,11 +3992,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe286",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("34186da8-26b4-47c5-bbec-e59c90a1c503"),
+                            Id = new Guid("e76237e7-53b5-4ba0-b360-06c3aa8edf87"),
                             Age = "20",
                             Email = "ahihi287@gmail.com",
                             FirstName = "John287",
@@ -3712,11 +4005,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe287",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("55a1cd81-028e-485e-bc6c-6ac01aebc47d"),
+                            Id = new Guid("25c66187-44b4-4149-add1-d2ad947bcc04"),
                             Age = "20",
                             Email = "ahihi288@gmail.com",
                             FirstName = "John288",
@@ -3724,11 +4018,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe288",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b8a58790-3af8-4719-8e09-895ba6721ed6"),
+                            Id = new Guid("fffb5c26-b112-4cc1-a3e7-5a50104b4851"),
                             Age = "20",
                             Email = "ahihi289@gmail.com",
                             FirstName = "John289",
@@ -3736,11 +4031,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe289",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4d1ec5aa-57d3-4384-93b3-57baf75dc77e"),
+                            Id = new Guid("6570c53d-0698-4b33-868f-6c66a7369014"),
                             Age = "20",
                             Email = "ahihi290@gmail.com",
                             FirstName = "John290",
@@ -3748,11 +4044,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe290",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b653138c-8c94-460c-b74d-b77799be2300"),
+                            Id = new Guid("ddb9e573-16c4-4a78-b2ef-3f714b59f6ab"),
                             Age = "20",
                             Email = "ahihi291@gmail.com",
                             FirstName = "John291",
@@ -3760,11 +4057,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe291",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9557491a-15d6-48af-bb5d-d7284067520b"),
+                            Id = new Guid("9de8aeab-da05-47f0-adc4-1a86b05fec63"),
                             Age = "20",
                             Email = "ahihi292@gmail.com",
                             FirstName = "John292",
@@ -3772,11 +4070,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe292",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d2f00550-18a9-4715-adab-207dbbba773f"),
+                            Id = new Guid("afe93417-ffca-4162-ad36-612a56d2c29a"),
                             Age = "20",
                             Email = "ahihi293@gmail.com",
                             FirstName = "John293",
@@ -3784,11 +4083,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe293",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("177b3544-75b7-4414-8169-4563aa711486"),
+                            Id = new Guid("590f15f0-5ba2-4a3a-b186-66c7d5dc7fd2"),
                             Age = "20",
                             Email = "ahihi294@gmail.com",
                             FirstName = "John294",
@@ -3796,11 +4096,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe294",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("805a6d43-2f87-40b1-9b3e-ebc5246f1966"),
+                            Id = new Guid("5c884146-0fe6-4707-a78f-44a02bd31ac0"),
                             Age = "20",
                             Email = "ahihi295@gmail.com",
                             FirstName = "John295",
@@ -3808,11 +4109,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe295",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("580459e5-de1a-4e92-9e9f-422e34956702"),
+                            Id = new Guid("d7e42573-c934-42bd-9006-e22af0707056"),
                             Age = "20",
                             Email = "ahihi296@gmail.com",
                             FirstName = "John296",
@@ -3820,11 +4122,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe296",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f54393f6-2018-4847-b074-138f8c47a232"),
+                            Id = new Guid("a64084f2-84e5-483f-beb9-84d71e856bc5"),
                             Age = "20",
                             Email = "ahihi297@gmail.com",
                             FirstName = "John297",
@@ -3832,11 +4135,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe297",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1a1c6a20-025d-46a9-afb2-faf1e11a8d47"),
+                            Id = new Guid("e9355186-c186-4d79-87f9-ff88ba3b3e13"),
                             Age = "20",
                             Email = "ahihi298@gmail.com",
                             FirstName = "John298",
@@ -3844,11 +4148,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe298",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0dd53755-5062-483b-8f62-c656565750dd"),
+                            Id = new Guid("603deb08-e641-415d-88ef-6e050dc37f77"),
                             Age = "20",
                             Email = "ahihi299@gmail.com",
                             FirstName = "John299",
@@ -3856,11 +4161,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe299",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ad686046-83db-4beb-84a9-0bb8997b42a8"),
+                            Id = new Guid("a1c18544-347d-48ec-9022-628d0f9f9d17"),
                             Age = "20",
                             Email = "ahihi300@gmail.com",
                             FirstName = "John300",
@@ -3868,11 +4174,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe300",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3fb698dd-6006-4666-85e9-e01d6d784c8e"),
+                            Id = new Guid("c1659004-a7fa-4c3d-8447-de32a5f622e1"),
                             Age = "20",
                             Email = "ahihi301@gmail.com",
                             FirstName = "John301",
@@ -3880,11 +4187,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe301",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ad9e166f-d3e5-4e00-9718-668f7f321ccc"),
+                            Id = new Guid("1562fe2b-dbd9-4291-9680-74348faf8b5b"),
                             Age = "20",
                             Email = "ahihi302@gmail.com",
                             FirstName = "John302",
@@ -3892,11 +4200,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe302",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2f8db84f-d8a2-4b7e-b3f3-3ad0e5ab0e06"),
+                            Id = new Guid("5eaa5737-040e-4e81-93af-2952189bf77d"),
                             Age = "20",
                             Email = "ahihi303@gmail.com",
                             FirstName = "John303",
@@ -3904,11 +4213,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe303",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("721fa3a7-7f0c-4fb4-9eab-2ffbfaca94d2"),
+                            Id = new Guid("1820c1e3-dabc-4a95-8e36-7276aa1fb8a1"),
                             Age = "20",
                             Email = "ahihi304@gmail.com",
                             FirstName = "John304",
@@ -3916,11 +4226,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe304",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("748d1cbe-668f-458b-b6b0-965838663a41"),
+                            Id = new Guid("ede4e8c0-7631-40ea-a7e9-ac60da5266bf"),
                             Age = "20",
                             Email = "ahihi305@gmail.com",
                             FirstName = "John305",
@@ -3928,11 +4239,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe305",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("218c8f6e-a5f6-4192-8ce0-56e1587d712f"),
+                            Id = new Guid("6ab48887-9517-44aa-85e4-3dfecc4bf242"),
                             Age = "20",
                             Email = "ahihi306@gmail.com",
                             FirstName = "John306",
@@ -3940,11 +4252,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe306",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("63b24bcf-cfac-4ec9-9633-ca090d11f067"),
+                            Id = new Guid("0e7d8b4d-66c8-47b9-b08d-447c6e004388"),
                             Age = "20",
                             Email = "ahihi307@gmail.com",
                             FirstName = "John307",
@@ -3952,11 +4265,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe307",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a100613a-63cc-436c-b229-746e0f13ed55"),
+                            Id = new Guid("44fa380f-ce8e-4150-87c1-92f28c40bbf8"),
                             Age = "20",
                             Email = "ahihi308@gmail.com",
                             FirstName = "John308",
@@ -3964,11 +4278,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe308",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a11480c8-0d63-4ee4-9e27-e0d7d0e9d452"),
+                            Id = new Guid("f612e552-75b4-4163-b473-78653b6af156"),
                             Age = "20",
                             Email = "ahihi309@gmail.com",
                             FirstName = "John309",
@@ -3976,11 +4291,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe309",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bc3dd79d-4398-4865-b247-b29b712f54b4"),
+                            Id = new Guid("6506e2a7-4bdc-4183-b973-839df7826612"),
                             Age = "20",
                             Email = "ahihi310@gmail.com",
                             FirstName = "John310",
@@ -3988,11 +4304,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe310",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1111d1c3-472a-4b4b-ab9e-6a8c59734011"),
+                            Id = new Guid("23b77a8b-e053-41a1-b87c-a59c510b693c"),
                             Age = "20",
                             Email = "ahihi311@gmail.com",
                             FirstName = "John311",
@@ -4000,11 +4317,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe311",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f875d603-087a-4281-8794-834ee0c11f22"),
+                            Id = new Guid("d28f7f4c-c926-4242-a7a6-e95fc0f1f9c2"),
                             Age = "20",
                             Email = "ahihi312@gmail.com",
                             FirstName = "John312",
@@ -4012,11 +4330,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe312",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b8bd1fee-1e3c-4b96-a2c3-f8e8005b1d33"),
+                            Id = new Guid("a3e8c903-2579-4b2e-8535-8270d68aa86b"),
                             Age = "20",
                             Email = "ahihi313@gmail.com",
                             FirstName = "John313",
@@ -4024,11 +4343,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe313",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1926ddf9-03a3-4da9-9a8a-765dba3bd056"),
+                            Id = new Guid("5926f023-07fb-4d64-a7bc-63377a35fdd5"),
                             Age = "20",
                             Email = "ahihi314@gmail.com",
                             FirstName = "John314",
@@ -4036,11 +4356,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe314",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0539c62b-446c-4fdd-a358-5b881bbc60ee"),
+                            Id = new Guid("ecde52f6-3135-490c-b9d7-3cb55eac227d"),
                             Age = "20",
                             Email = "ahihi315@gmail.com",
                             FirstName = "John315",
@@ -4048,11 +4369,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe315",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7e3f26c7-1fba-4228-830d-6eaad63ac5e7"),
+                            Id = new Guid("824a963b-ceb6-465d-8248-d40ad82a35be"),
                             Age = "20",
                             Email = "ahihi316@gmail.com",
                             FirstName = "John316",
@@ -4060,11 +4382,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe316",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("14a7dbb2-c085-4d28-ba9b-c77db7dd9142"),
+                            Id = new Guid("24a27582-6110-4b6c-983e-4f34bc50bef8"),
                             Age = "20",
                             Email = "ahihi317@gmail.com",
                             FirstName = "John317",
@@ -4072,11 +4395,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe317",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("50f21b37-1e34-4bf4-937b-18c20c7963d7"),
+                            Id = new Guid("8d2cb5fa-e0aa-4c33-9d2f-8dcd14b86c36"),
                             Age = "20",
                             Email = "ahihi318@gmail.com",
                             FirstName = "John318",
@@ -4084,11 +4408,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe318",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ced3812a-eef0-49ad-9a51-fa81e96890be"),
+                            Id = new Guid("3914070d-30fe-4a20-bd8d-8ff91f22d128"),
                             Age = "20",
                             Email = "ahihi319@gmail.com",
                             FirstName = "John319",
@@ -4096,11 +4421,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe319",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4a3e3dbc-f3b8-4844-af3a-3aa9042cf060"),
+                            Id = new Guid("23e6793d-e604-4eed-b874-f1ba01f3d20c"),
                             Age = "20",
                             Email = "ahihi320@gmail.com",
                             FirstName = "John320",
@@ -4108,11 +4434,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe320",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("47713f20-57e4-45ce-92d8-8db58087e131"),
+                            Id = new Guid("6907fde2-dc63-4b65-a6a1-dd0902ce294f"),
                             Age = "20",
                             Email = "ahihi321@gmail.com",
                             FirstName = "John321",
@@ -4120,11 +4447,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe321",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("384780bf-481f-4df5-aca4-90144d8a1b7b"),
+                            Id = new Guid("5a5ebd6d-87c3-4e5d-a1e8-24b77a9606e9"),
                             Age = "20",
                             Email = "ahihi322@gmail.com",
                             FirstName = "John322",
@@ -4132,11 +4460,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe322",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("45c38d8d-9fc1-4b66-8237-b4371d7ea9cf"),
+                            Id = new Guid("8affb400-fdda-41d3-b52f-d82341d246bc"),
                             Age = "20",
                             Email = "ahihi323@gmail.com",
                             FirstName = "John323",
@@ -4144,11 +4473,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe323",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a7d8635a-a3e6-4366-9b0b-73f8a1b0b74b"),
+                            Id = new Guid("85a584cd-de58-48c5-b56d-8d24d2e2ccd6"),
                             Age = "20",
                             Email = "ahihi324@gmail.com",
                             FirstName = "John324",
@@ -4156,11 +4486,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe324",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4a2e5461-5983-4f8a-bf94-2176a9db5b5f"),
+                            Id = new Guid("3099f28b-9224-4f40-ac68-ecb4aa082129"),
                             Age = "20",
                             Email = "ahihi325@gmail.com",
                             FirstName = "John325",
@@ -4168,11 +4499,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe325",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("baccbbd6-fe83-4c54-987c-d08095a1eef5"),
+                            Id = new Guid("d1b3a55b-220c-4b07-ba05-772d779b8ddb"),
                             Age = "20",
                             Email = "ahihi326@gmail.com",
                             FirstName = "John326",
@@ -4180,11 +4512,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe326",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("10fe0f3d-95bc-47c4-9720-aca2cec5c748"),
+                            Id = new Guid("9c8b41db-326c-4656-9323-8e3fd90d5238"),
                             Age = "20",
                             Email = "ahihi327@gmail.com",
                             FirstName = "John327",
@@ -4192,11 +4525,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe327",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d7d23296-e491-4737-bada-841af89ca97c"),
+                            Id = new Guid("d9b3b820-8fbf-4e4d-ac50-b593894b7ae5"),
                             Age = "20",
                             Email = "ahihi328@gmail.com",
                             FirstName = "John328",
@@ -4204,11 +4538,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe328",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e0c24ed8-9ec1-4041-a229-8a5a92976427"),
+                            Id = new Guid("6ac9fade-4d3a-406b-abab-76ec5f21dbb0"),
                             Age = "20",
                             Email = "ahihi329@gmail.com",
                             FirstName = "John329",
@@ -4216,11 +4551,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe329",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("289a8565-7fc8-4dc0-b0bb-fefbc5f952da"),
+                            Id = new Guid("0ba1a35d-f5c5-4211-a3f2-94ec164e1973"),
                             Age = "20",
                             Email = "ahihi330@gmail.com",
                             FirstName = "John330",
@@ -4228,11 +4564,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe330",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bf03a6ea-cc34-4888-b434-fecd8869ad2a"),
+                            Id = new Guid("441757fc-4e88-48be-a169-1af48ff2c27b"),
                             Age = "20",
                             Email = "ahihi331@gmail.com",
                             FirstName = "John331",
@@ -4240,11 +4577,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe331",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c4a8c2d1-228d-4e36-9783-f573aa57e64d"),
+                            Id = new Guid("d4e1cb7a-0dfa-4081-a2ad-64e1735878e9"),
                             Age = "20",
                             Email = "ahihi332@gmail.com",
                             FirstName = "John332",
@@ -4252,11 +4590,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe332",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bd35d6d0-8e54-42f3-a20b-0645fe6f6b67"),
+                            Id = new Guid("8ea2108e-85b3-4e14-ac3f-a1fdc157da03"),
                             Age = "20",
                             Email = "ahihi333@gmail.com",
                             FirstName = "John333",
@@ -4264,11 +4603,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe333",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1ad439c4-9dd4-411a-a079-d18f9858af4e"),
+                            Id = new Guid("42077d07-1515-4af9-ae53-e3aeddd49dda"),
                             Age = "20",
                             Email = "ahihi334@gmail.com",
                             FirstName = "John334",
@@ -4276,11 +4616,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe334",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6362cca3-f867-495b-91d9-72443fcd4d9c"),
+                            Id = new Guid("61ed532c-5700-449f-af49-df2dbc7b5acf"),
                             Age = "20",
                             Email = "ahihi335@gmail.com",
                             FirstName = "John335",
@@ -4288,11 +4629,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe335",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("da738d58-1875-4cc5-87c4-a63a6728b2db"),
+                            Id = new Guid("9dbe3265-0324-4124-98a5-be0133b06003"),
                             Age = "20",
                             Email = "ahihi336@gmail.com",
                             FirstName = "John336",
@@ -4300,11 +4642,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe336",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2f0861de-55bc-49d2-a44f-7739103b2aaf"),
+                            Id = new Guid("fa5ff31f-7f5e-4377-b6f7-4c5a7ac75fe4"),
                             Age = "20",
                             Email = "ahihi337@gmail.com",
                             FirstName = "John337",
@@ -4312,11 +4655,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe337",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("495875f6-584e-4bbe-839c-8a9cd5ba5b3b"),
+                            Id = new Guid("234c5a5d-4ca5-41d6-a9c4-6d07ff131a63"),
                             Age = "20",
                             Email = "ahihi338@gmail.com",
                             FirstName = "John338",
@@ -4324,11 +4668,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe338",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7a616ee5-5139-471d-8093-ef5b2e4e32e2"),
+                            Id = new Guid("0060b4d9-90ad-40e5-b6a1-b3d68f79e622"),
                             Age = "20",
                             Email = "ahihi339@gmail.com",
                             FirstName = "John339",
@@ -4336,11 +4681,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe339",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fa1e5c13-b954-4114-bfa4-8f01efd2588f"),
+                            Id = new Guid("94dd2dd9-561e-4368-8608-8357588b293e"),
                             Age = "20",
                             Email = "ahihi340@gmail.com",
                             FirstName = "John340",
@@ -4348,11 +4694,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe340",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("201fd673-bcda-47af-97af-394f8fde4c4f"),
+                            Id = new Guid("d4f01e50-b113-4f69-9b7c-5022760205ee"),
                             Age = "20",
                             Email = "ahihi341@gmail.com",
                             FirstName = "John341",
@@ -4360,11 +4707,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe341",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("09453b58-109d-4353-acef-c15d19f9f2dd"),
+                            Id = new Guid("dfab9b95-e658-4e63-9d95-16b7ce8bcec1"),
                             Age = "20",
                             Email = "ahihi342@gmail.com",
                             FirstName = "John342",
@@ -4372,11 +4720,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe342",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c26e837d-e118-4d3a-bb9c-c37f47c6b18d"),
+                            Id = new Guid("a6923a4e-31b2-4a6d-95bc-0d149fb6747c"),
                             Age = "20",
                             Email = "ahihi343@gmail.com",
                             FirstName = "John343",
@@ -4384,11 +4733,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe343",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b4ab4b0f-f0f9-41f3-8c2a-b3c19ae8b7dd"),
+                            Id = new Guid("a293649c-0783-4983-b0da-27fc0a38ff9f"),
                             Age = "20",
                             Email = "ahihi344@gmail.com",
                             FirstName = "John344",
@@ -4396,11 +4746,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe344",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("677f1fd0-6e9c-4cc5-b431-73aaa04eea46"),
+                            Id = new Guid("2cb49e07-75a6-43be-b7cc-576c68a4b9a0"),
                             Age = "20",
                             Email = "ahihi345@gmail.com",
                             FirstName = "John345",
@@ -4408,11 +4759,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe345",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b8d34648-32d0-4d74-9a84-ce532c03d483"),
+                            Id = new Guid("32491dc2-52c5-4dca-ad46-eb8372157cae"),
                             Age = "20",
                             Email = "ahihi346@gmail.com",
                             FirstName = "John346",
@@ -4420,11 +4772,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe346",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("517b1b23-1226-4777-a203-b2c323542feb"),
+                            Id = new Guid("e682bf7d-5c54-46d6-a722-9e2570d12611"),
                             Age = "20",
                             Email = "ahihi347@gmail.com",
                             FirstName = "John347",
@@ -4432,11 +4785,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe347",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8649e6bf-9e66-4e06-a785-6bb08a6d47c8"),
+                            Id = new Guid("0310b867-cf4e-4486-a1c4-fb13a352f619"),
                             Age = "20",
                             Email = "ahihi348@gmail.com",
                             FirstName = "John348",
@@ -4444,11 +4798,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe348",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("778f5fb4-286d-4c40-b2d2-3f612d509a34"),
+                            Id = new Guid("691cd74d-d541-4b02-b6f5-b59146f66b1d"),
                             Age = "20",
                             Email = "ahihi349@gmail.com",
                             FirstName = "John349",
@@ -4456,11 +4811,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe349",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a08af868-0bc4-49e0-952a-84ab78c4a6ec"),
+                            Id = new Guid("31e76ee9-1cc2-4f94-81e7-77897d28cd50"),
                             Age = "20",
                             Email = "ahihi350@gmail.com",
                             FirstName = "John350",
@@ -4468,11 +4824,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe350",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("da28e1b1-4e56-4f94-83c5-d0d9325e9881"),
+                            Id = new Guid("a0714edb-4503-4efc-a5c8-9847111993d6"),
                             Age = "20",
                             Email = "ahihi351@gmail.com",
                             FirstName = "John351",
@@ -4480,11 +4837,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe351",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8441b775-1fed-4522-8e22-3bb5a5aca5fe"),
+                            Id = new Guid("c27cb671-cd77-4d2d-a5e6-41a9010186b4"),
                             Age = "20",
                             Email = "ahihi352@gmail.com",
                             FirstName = "John352",
@@ -4492,11 +4850,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe352",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8c2acb64-8099-4a4d-8690-ce8f9cac3a5e"),
+                            Id = new Guid("abfbb465-41bc-43d7-bf28-aa14ae5ce420"),
                             Age = "20",
                             Email = "ahihi353@gmail.com",
                             FirstName = "John353",
@@ -4504,11 +4863,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe353",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4efb5401-4af4-41c1-b6f9-20b67274ca9f"),
+                            Id = new Guid("190f24d8-0697-4547-b63f-6a7541a8f8cb"),
                             Age = "20",
                             Email = "ahihi354@gmail.com",
                             FirstName = "John354",
@@ -4516,11 +4876,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe354",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4aea2ec4-c9c2-4a29-ac44-4dcfc427f0a8"),
+                            Id = new Guid("f761b432-916a-44a8-b1bd-d2c33368acca"),
                             Age = "20",
                             Email = "ahihi355@gmail.com",
                             FirstName = "John355",
@@ -4528,11 +4889,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe355",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b5d5d37f-c103-4ae4-82da-0bda9ae52b69"),
+                            Id = new Guid("a4f258d3-a37f-4019-9731-5518e853889e"),
                             Age = "20",
                             Email = "ahihi356@gmail.com",
                             FirstName = "John356",
@@ -4540,11 +4902,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe356",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2d712a03-f717-4bf4-928d-63c89ebbe3ca"),
+                            Id = new Guid("9c6d081f-33a5-4245-a6dc-53adb0a1b766"),
                             Age = "20",
                             Email = "ahihi357@gmail.com",
                             FirstName = "John357",
@@ -4552,11 +4915,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe357",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bb7e4532-ca82-4dc5-9667-ea5f50a350d7"),
+                            Id = new Guid("ff3aa208-9ac2-4db6-9ee3-5c981891adb3"),
                             Age = "20",
                             Email = "ahihi358@gmail.com",
                             FirstName = "John358",
@@ -4564,11 +4928,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe358",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("62963f8f-5860-41f8-8737-2edd8c9eb3a3"),
+                            Id = new Guid("7833a99f-4fa6-46a7-ad4a-f072342b0abc"),
                             Age = "20",
                             Email = "ahihi359@gmail.com",
                             FirstName = "John359",
@@ -4576,11 +4941,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe359",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9c0ada8c-49e4-4f8b-a1ea-a721484fa234"),
+                            Id = new Guid("5d1461d2-107d-435f-8e03-172874194dc7"),
                             Age = "20",
                             Email = "ahihi360@gmail.com",
                             FirstName = "John360",
@@ -4588,11 +4954,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe360",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f7e2e237-9ecc-464d-bb3f-2a7bc8645706"),
+                            Id = new Guid("41304073-4513-43c6-9471-dfbffba8b26a"),
                             Age = "20",
                             Email = "ahihi361@gmail.com",
                             FirstName = "John361",
@@ -4600,11 +4967,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe361",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("141dab3a-8738-418f-bfbe-4b8a1fe9ba36"),
+                            Id = new Guid("3f5688a8-6b11-48f5-9d36-c46a28aa5ef8"),
                             Age = "20",
                             Email = "ahihi362@gmail.com",
                             FirstName = "John362",
@@ -4612,11 +4980,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe362",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("760cac19-0d10-42b7-94cd-376d2f11e1cd"),
+                            Id = new Guid("a6141b4b-2e24-4dd7-8c6f-633331f7d8fd"),
                             Age = "20",
                             Email = "ahihi363@gmail.com",
                             FirstName = "John363",
@@ -4624,11 +4993,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe363",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("71bbd454-1310-4e57-9407-d9c5acc0c30c"),
+                            Id = new Guid("85d32ee6-859d-4e75-8bff-13af8058da2b"),
                             Age = "20",
                             Email = "ahihi364@gmail.com",
                             FirstName = "John364",
@@ -4636,11 +5006,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe364",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("61d0c95b-6724-4b00-85e4-c52493cb2c76"),
+                            Id = new Guid("58646770-70c5-4576-8773-d100a477627a"),
                             Age = "20",
                             Email = "ahihi365@gmail.com",
                             FirstName = "John365",
@@ -4648,11 +5019,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe365",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ff4dde7a-5436-40ab-8b2f-4163b950cea0"),
+                            Id = new Guid("c23dd2f6-348b-46f4-a8f2-1368b9569263"),
                             Age = "20",
                             Email = "ahihi366@gmail.com",
                             FirstName = "John366",
@@ -4660,11 +5032,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe366",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8060b51a-053f-4a3e-9825-0e3d4724105d"),
+                            Id = new Guid("7a42fa70-1f54-404d-8a8d-e64d3789eb90"),
                             Age = "20",
                             Email = "ahihi367@gmail.com",
                             FirstName = "John367",
@@ -4672,11 +5045,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe367",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d7ed507d-b7bc-4bfc-957e-2550a8bd375f"),
+                            Id = new Guid("50c5ea27-ee60-4cda-b5ff-638175b5b6c1"),
                             Age = "20",
                             Email = "ahihi368@gmail.com",
                             FirstName = "John368",
@@ -4684,11 +5058,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe368",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2b39bdb3-6c83-4363-bcf0-5e42d93b38c2"),
+                            Id = new Guid("22969501-ac43-47af-9832-10126963cd9c"),
                             Age = "20",
                             Email = "ahihi369@gmail.com",
                             FirstName = "John369",
@@ -4696,11 +5071,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe369",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("453b4286-3640-4bfe-816d-6263ce33e648"),
+                            Id = new Guid("62e1922a-9185-475a-9ded-e7e66110a2d6"),
                             Age = "20",
                             Email = "ahihi370@gmail.com",
                             FirstName = "John370",
@@ -4708,11 +5084,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe370",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cebea46a-099e-41af-b3f5-f5c3f1f98edf"),
+                            Id = new Guid("586e5bf9-1820-47a0-b99e-56733f625083"),
                             Age = "20",
                             Email = "ahihi371@gmail.com",
                             FirstName = "John371",
@@ -4720,11 +5097,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe371",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a746b96f-84c2-4ce5-b922-19776ee49c3c"),
+                            Id = new Guid("931004a7-9601-4025-ab2d-e99f564115bd"),
                             Age = "20",
                             Email = "ahihi372@gmail.com",
                             FirstName = "John372",
@@ -4732,11 +5110,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe372",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f08f7adb-8f44-4f25-bfb7-8f513f8ae555"),
+                            Id = new Guid("dc07a8b2-ae11-4625-91e0-020c674a63b2"),
                             Age = "20",
                             Email = "ahihi373@gmail.com",
                             FirstName = "John373",
@@ -4744,11 +5123,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe373",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d9f3d54a-0f6e-46c2-b97e-f6cc54639c3f"),
+                            Id = new Guid("46e9afd0-d646-437b-84c5-478b1090516c"),
                             Age = "20",
                             Email = "ahihi374@gmail.com",
                             FirstName = "John374",
@@ -4756,11 +5136,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe374",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7c91a27b-5b52-413f-be9d-ffeef584a0b4"),
+                            Id = new Guid("ae0f3dd5-962d-4858-a6d5-7b64e0991db9"),
                             Age = "20",
                             Email = "ahihi375@gmail.com",
                             FirstName = "John375",
@@ -4768,11 +5149,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe375",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2f3749bb-38cf-496a-a0c5-2d189d20256c"),
+                            Id = new Guid("8b27286f-8d70-4c71-a253-9098673abca2"),
                             Age = "20",
                             Email = "ahihi376@gmail.com",
                             FirstName = "John376",
@@ -4780,11 +5162,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe376",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("20b43a95-02d0-4cfe-89a9-31b1bc5990e9"),
+                            Id = new Guid("cc90790f-fc20-407d-9a9f-c30c8fd9659d"),
                             Age = "20",
                             Email = "ahihi377@gmail.com",
                             FirstName = "John377",
@@ -4792,11 +5175,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe377",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f71bd180-7cd6-4db0-901e-e9cea57eaa1d"),
+                            Id = new Guid("4609a331-bf48-43ba-a6e9-e60c371dc034"),
                             Age = "20",
                             Email = "ahihi378@gmail.com",
                             FirstName = "John378",
@@ -4804,11 +5188,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe378",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4cfaa079-8716-42b0-93ba-b17cc01469eb"),
+                            Id = new Guid("93686454-2950-4811-ae16-b1997d2122ff"),
                             Age = "20",
                             Email = "ahihi379@gmail.com",
                             FirstName = "John379",
@@ -4816,11 +5201,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe379",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("840e7ed2-0fa6-4fdb-9bf7-58a3c609b9f8"),
+                            Id = new Guid("8bbf110a-8eb9-47ca-a38e-dc119b687815"),
                             Age = "20",
                             Email = "ahihi380@gmail.com",
                             FirstName = "John380",
@@ -4828,11 +5214,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe380",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e272d837-2575-4409-8bab-aa7fcaefad77"),
+                            Id = new Guid("26992a77-db0b-4be1-bff4-75912466bee6"),
                             Age = "20",
                             Email = "ahihi381@gmail.com",
                             FirstName = "John381",
@@ -4840,11 +5227,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe381",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("76d568f4-d305-4015-ae5f-d072c70bb81f"),
+                            Id = new Guid("fab0730e-4162-4d68-ab4c-49c5e3e1bcba"),
                             Age = "20",
                             Email = "ahihi382@gmail.com",
                             FirstName = "John382",
@@ -4852,11 +5240,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe382",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4c6af444-17be-4c1b-a327-d37898dadb09"),
+                            Id = new Guid("a45968f7-b15a-41f2-8491-e09c845c8c18"),
                             Age = "20",
                             Email = "ahihi383@gmail.com",
                             FirstName = "John383",
@@ -4864,11 +5253,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe383",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1ca6538f-8ac6-4657-bb38-43c9ac2c71ec"),
+                            Id = new Guid("07da6db1-f5d4-498a-9d0b-ea91a23040fb"),
                             Age = "20",
                             Email = "ahihi384@gmail.com",
                             FirstName = "John384",
@@ -4876,11 +5266,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe384",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5deeb9ea-e0c9-4af3-9784-307652c8a5d8"),
+                            Id = new Guid("a3e7b20e-0909-4f7e-882e-b6b271b3ce6f"),
                             Age = "20",
                             Email = "ahihi385@gmail.com",
                             FirstName = "John385",
@@ -4888,11 +5279,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe385",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("db9e65a0-cd8c-4597-bf62-e637aafc231e"),
+                            Id = new Guid("a6a5a650-6140-42c2-9788-1f8cd8b48a28"),
                             Age = "20",
                             Email = "ahihi386@gmail.com",
                             FirstName = "John386",
@@ -4900,11 +5292,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe386",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d26d87f6-85e2-4334-860f-2a784bd92c63"),
+                            Id = new Guid("3c99abd7-bebb-4d86-b4c7-150d37714b18"),
                             Age = "20",
                             Email = "ahihi387@gmail.com",
                             FirstName = "John387",
@@ -4912,11 +5305,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe387",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a4c76605-d29e-4d44-9d41-68b4af7e6b26"),
+                            Id = new Guid("930adb20-5d22-401a-894a-8e5a889c9778"),
                             Age = "20",
                             Email = "ahihi388@gmail.com",
                             FirstName = "John388",
@@ -4924,11 +5318,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe388",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8adade66-a6a1-4f8c-9b36-703d5692cf86"),
+                            Id = new Guid("d5f0c3a4-0060-4b9b-9985-88f463c9cc4a"),
                             Age = "20",
                             Email = "ahihi389@gmail.com",
                             FirstName = "John389",
@@ -4936,11 +5331,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe389",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b6d94202-2b46-4803-a610-5becf2f0b5fc"),
+                            Id = new Guid("259b03ee-17c3-44c6-ab19-016d52387072"),
                             Age = "20",
                             Email = "ahihi390@gmail.com",
                             FirstName = "John390",
@@ -4948,11 +5344,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe390",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("41b8825c-daba-424a-92da-aaaccce67faa"),
+                            Id = new Guid("01037bff-a418-49f9-81f8-4a1b46449e60"),
                             Age = "20",
                             Email = "ahihi391@gmail.com",
                             FirstName = "John391",
@@ -4960,11 +5357,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe391",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f8a60d29-50c4-473c-a375-b55bc801aa6f"),
+                            Id = new Guid("fe49f5f3-567e-44a2-a0ab-a2594c2b2ee6"),
                             Age = "20",
                             Email = "ahihi392@gmail.com",
                             FirstName = "John392",
@@ -4972,11 +5370,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe392",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7fbc333f-deec-4a5d-8845-6097040f73c7"),
+                            Id = new Guid("9845c992-65de-4308-a748-10dbeb8a1e5e"),
                             Age = "20",
                             Email = "ahihi393@gmail.com",
                             FirstName = "John393",
@@ -4984,11 +5383,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe393",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("62c93fcf-d17b-4260-94e2-541cc4ac2cc1"),
+                            Id = new Guid("89aa6242-d6eb-45ce-a649-ef1e44cf0e4f"),
                             Age = "20",
                             Email = "ahihi394@gmail.com",
                             FirstName = "John394",
@@ -4996,11 +5396,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe394",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4b013ae4-0625-4c90-8c05-f4ac3fee39b9"),
+                            Id = new Guid("ec49c091-9491-46bf-a0d3-03650226cec7"),
                             Age = "20",
                             Email = "ahihi395@gmail.com",
                             FirstName = "John395",
@@ -5008,11 +5409,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe395",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1a0d6a79-52c0-44a1-9a7d-985a810f26eb"),
+                            Id = new Guid("b91cb2d4-e152-4ca0-b95e-18288f6b0bee"),
                             Age = "20",
                             Email = "ahihi396@gmail.com",
                             FirstName = "John396",
@@ -5020,11 +5422,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe396",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8b974fe6-b230-4250-ae78-55438d8b6f43"),
+                            Id = new Guid("34a7c72f-725d-448a-81ec-503e38492d95"),
                             Age = "20",
                             Email = "ahihi397@gmail.com",
                             FirstName = "John397",
@@ -5032,11 +5435,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe397",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("901f8336-002d-4e08-b464-6af65bc79ad5"),
+                            Id = new Guid("6723c981-cc01-46da-bb93-b9f19a01b7b8"),
                             Age = "20",
                             Email = "ahihi398@gmail.com",
                             FirstName = "John398",
@@ -5044,11 +5448,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe398",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("359f07d1-5893-463a-9645-1dc2343383e2"),
+                            Id = new Guid("fdc2d172-08da-4cc9-9f4b-ce2f90c659aa"),
                             Age = "20",
                             Email = "ahihi399@gmail.com",
                             FirstName = "John399",
@@ -5056,11 +5461,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe399",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("71b8a6ae-5657-43a8-9d63-826d6ef0532c"),
+                            Id = new Guid("d37d032a-502e-4f2f-ab94-8265a60158d1"),
                             Age = "20",
                             Email = "ahihi400@gmail.com",
                             FirstName = "John400",
@@ -5068,11 +5474,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe400",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dec94893-8593-46e4-a3c1-864bd79c910e"),
+                            Id = new Guid("9c40e304-7641-4717-9121-c25b029ee5db"),
                             Age = "20",
                             Email = "ahihi401@gmail.com",
                             FirstName = "John401",
@@ -5080,11 +5487,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe401",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d1744304-dd3d-46c1-954c-2d63d80cc4d9"),
+                            Id = new Guid("76c8902a-cf4b-4e02-8e3a-1c32bd89ad9a"),
                             Age = "20",
                             Email = "ahihi402@gmail.com",
                             FirstName = "John402",
@@ -5092,11 +5500,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe402",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f4cb2527-ab00-4a58-a330-620aea2af783"),
+                            Id = new Guid("716cb8ca-7cc1-42b2-ba1e-e486d04a6654"),
                             Age = "20",
                             Email = "ahihi403@gmail.com",
                             FirstName = "John403",
@@ -5104,11 +5513,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe403",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8b5abefc-9a07-41a0-8817-f17d01ac3904"),
+                            Id = new Guid("27b97b3a-65b8-4cb4-8976-7f63564a557c"),
                             Age = "20",
                             Email = "ahihi404@gmail.com",
                             FirstName = "John404",
@@ -5116,11 +5526,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe404",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2bf8b57c-cd18-41a9-8b5d-c6b358b22c3b"),
+                            Id = new Guid("754e0cc4-ed8a-42bb-8b05-309ac4fb8bde"),
                             Age = "20",
                             Email = "ahihi405@gmail.com",
                             FirstName = "John405",
@@ -5128,11 +5539,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe405",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("767b0856-a3ed-416f-a657-b27a6c2d1a3c"),
+                            Id = new Guid("684c2939-9ec0-4b44-bb60-a8e524774500"),
                             Age = "20",
                             Email = "ahihi406@gmail.com",
                             FirstName = "John406",
@@ -5140,11 +5552,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe406",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c667720c-4a26-4a7f-9e4b-7c5158e39d4d"),
+                            Id = new Guid("cf7cb543-b6ca-4874-a571-426734eec335"),
                             Age = "20",
                             Email = "ahihi407@gmail.com",
                             FirstName = "John407",
@@ -5152,11 +5565,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe407",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d758d863-3a3d-4bb9-bc78-d70d5e1559c6"),
+                            Id = new Guid("ccdaac5e-f72e-455d-b73c-0ac8ee7cd9e0"),
                             Age = "20",
                             Email = "ahihi408@gmail.com",
                             FirstName = "John408",
@@ -5164,11 +5578,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe408",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4defc3bf-9297-497c-99c7-c1e427514ef5"),
+                            Id = new Guid("bdf72692-abc1-4960-9ce9-70beef2b6253"),
                             Age = "20",
                             Email = "ahihi409@gmail.com",
                             FirstName = "John409",
@@ -5176,11 +5591,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe409",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f53fdfce-2946-4283-892c-3ed443e66f07"),
+                            Id = new Guid("043f7f15-64c6-4051-833c-7f6b56338799"),
                             Age = "20",
                             Email = "ahihi410@gmail.com",
                             FirstName = "John410",
@@ -5188,11 +5604,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe410",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("40ecde51-e643-4825-87d6-5d18109f781b"),
+                            Id = new Guid("46cda1cf-1ebe-41aa-99aa-e7c62308a181"),
                             Age = "20",
                             Email = "ahihi411@gmail.com",
                             FirstName = "John411",
@@ -5200,11 +5617,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe411",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("320441ca-2f7d-44e4-aa76-7092c2618a75"),
+                            Id = new Guid("37c117d3-17ca-4fe4-b6f7-278bae706446"),
                             Age = "20",
                             Email = "ahihi412@gmail.com",
                             FirstName = "John412",
@@ -5212,11 +5630,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe412",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6d192cfd-067b-483e-ad89-74d863fb7658"),
+                            Id = new Guid("8586814a-39f0-4dbd-8061-d2091e15c615"),
                             Age = "20",
                             Email = "ahihi413@gmail.com",
                             FirstName = "John413",
@@ -5224,11 +5643,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe413",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8c221851-6df0-4c63-adda-9dc157bebbce"),
+                            Id = new Guid("aa5d3e85-e5c1-4e12-9d0e-4207aa083726"),
                             Age = "20",
                             Email = "ahihi414@gmail.com",
                             FirstName = "John414",
@@ -5236,11 +5656,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe414",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5fbbbcbc-b4fb-4607-9477-3be986fa9eb9"),
+                            Id = new Guid("67d23fb4-79a2-4ab9-8169-eb4c627ff463"),
                             Age = "20",
                             Email = "ahihi415@gmail.com",
                             FirstName = "John415",
@@ -5248,11 +5669,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe415",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d4302468-1291-43b5-af82-7164cc21ef91"),
+                            Id = new Guid("2b317ecd-8e25-4e62-9f56-5d957633fd7d"),
                             Age = "20",
                             Email = "ahihi416@gmail.com",
                             FirstName = "John416",
@@ -5260,11 +5682,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe416",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f24e0cd4-790b-43b0-b84f-cec720d46d50"),
+                            Id = new Guid("f92b1b92-5bf8-4b37-aa2f-b619d15a2b95"),
                             Age = "20",
                             Email = "ahihi417@gmail.com",
                             FirstName = "John417",
@@ -5272,11 +5695,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe417",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("70adb750-f5b5-4f96-8ae2-6fafbb52307c"),
+                            Id = new Guid("6ad31993-d908-4292-81d0-d908a1905b53"),
                             Age = "20",
                             Email = "ahihi418@gmail.com",
                             FirstName = "John418",
@@ -5284,11 +5708,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe418",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1f6006b7-33e7-430f-9899-913fee48dd3e"),
+                            Id = new Guid("e717b804-a854-40dc-a024-f020022da801"),
                             Age = "20",
                             Email = "ahihi419@gmail.com",
                             FirstName = "John419",
@@ -5296,11 +5721,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe419",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d1da37f1-9a7e-4083-bc7a-265e5d6a92c6"),
+                            Id = new Guid("bb8a909a-4ed2-4099-a699-113709943448"),
                             Age = "20",
                             Email = "ahihi420@gmail.com",
                             FirstName = "John420",
@@ -5308,11 +5734,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe420",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b1d8cffa-d743-44db-94fd-e3f2f80e1f3c"),
+                            Id = new Guid("d148a9e2-61c4-4f1a-909a-2d7ae00a036b"),
                             Age = "20",
                             Email = "ahihi421@gmail.com",
                             FirstName = "John421",
@@ -5320,11 +5747,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe421",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("97df0ba7-d017-466c-9e04-5df324b0efe6"),
+                            Id = new Guid("72093f2a-4b54-4e15-873b-3f17f6ad99df"),
                             Age = "20",
                             Email = "ahihi422@gmail.com",
                             FirstName = "John422",
@@ -5332,11 +5760,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe422",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9c67889e-13c3-4500-88de-1b924c9f9b3f"),
+                            Id = new Guid("b6db0c3b-71c7-4e02-ae1a-ceaf83ce7462"),
                             Age = "20",
                             Email = "ahihi423@gmail.com",
                             FirstName = "John423",
@@ -5344,11 +5773,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe423",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b6523f58-5c94-49aa-8c2a-819c311df333"),
+                            Id = new Guid("54bed1f2-0736-4f64-9c3c-f8d643a4ed7f"),
                             Age = "20",
                             Email = "ahihi424@gmail.com",
                             FirstName = "John424",
@@ -5356,11 +5786,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe424",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("57b41e27-168c-421f-be5c-f109d1359d08"),
+                            Id = new Guid("3d5a0195-ad95-4f33-a6d0-bd7de5856039"),
                             Age = "20",
                             Email = "ahihi425@gmail.com",
                             FirstName = "John425",
@@ -5368,11 +5799,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe425",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9f9ae5b0-4243-4538-b2bb-8e1f1f53665a"),
+                            Id = new Guid("03696ad5-e764-4d85-8cb4-0fce039551a5"),
                             Age = "20",
                             Email = "ahihi426@gmail.com",
                             FirstName = "John426",
@@ -5380,11 +5812,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe426",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1e77cc99-f241-4fbc-b6e5-2cdf4fa5971b"),
+                            Id = new Guid("3b21876e-3d5f-425d-b96a-a46916cd0133"),
                             Age = "20",
                             Email = "ahihi427@gmail.com",
                             FirstName = "John427",
@@ -5392,11 +5825,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe427",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3e1d6b12-b8d1-47d6-9289-4b3d02b89fd4"),
+                            Id = new Guid("f5b6bdcf-c207-4159-977f-e47e8c4cf21e"),
                             Age = "20",
                             Email = "ahihi428@gmail.com",
                             FirstName = "John428",
@@ -5404,11 +5838,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe428",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("03c24a47-1247-462d-8574-d17c85133a61"),
+                            Id = new Guid("59a150af-aa2d-41f6-8218-60c2d6b0e330"),
                             Age = "20",
                             Email = "ahihi429@gmail.com",
                             FirstName = "John429",
@@ -5416,11 +5851,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe429",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fb7b719b-dae1-4417-a001-f9299d70c3a7"),
+                            Id = new Guid("342fbdea-70ab-4975-a989-bb02fdc3fef4"),
                             Age = "20",
                             Email = "ahihi430@gmail.com",
                             FirstName = "John430",
@@ -5428,11 +5864,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe430",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ab1ad339-2731-4204-bd28-21cf7c00901c"),
+                            Id = new Guid("b56b3af1-3618-4630-be1e-fc64800f8685"),
                             Age = "20",
                             Email = "ahihi431@gmail.com",
                             FirstName = "John431",
@@ -5440,11 +5877,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe431",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bfab9a1c-3cc3-4fa9-b7e6-3cce0641cf31"),
+                            Id = new Guid("491e515f-d570-41fc-8ac0-3f42cf2dfc5a"),
                             Age = "20",
                             Email = "ahihi432@gmail.com",
                             FirstName = "John432",
@@ -5452,11 +5890,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe432",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("92e7a9de-d56d-4b5c-ab4b-cd6c23a3f90a"),
+                            Id = new Guid("7c8aed0a-13bf-46da-811e-18b90b579ee6"),
                             Age = "20",
                             Email = "ahihi433@gmail.com",
                             FirstName = "John433",
@@ -5464,11 +5903,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe433",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("654db658-8be8-448a-9df2-334c5fbe13a8"),
+                            Id = new Guid("0a7dee3b-735b-4a29-9a59-6cd87c4ca9be"),
                             Age = "20",
                             Email = "ahihi434@gmail.com",
                             FirstName = "John434",
@@ -5476,11 +5916,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe434",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e4daa681-6ec2-4130-9565-e420416a60e8"),
+                            Id = new Guid("ef7be1f8-4b4d-4210-9d32-39d79a7e0b48"),
                             Age = "20",
                             Email = "ahihi435@gmail.com",
                             FirstName = "John435",
@@ -5488,11 +5929,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe435",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("88d8ed1b-57ae-47aa-be57-a6ace52e706d"),
+                            Id = new Guid("46b75fb8-8bad-4683-a1e6-83610e5161c2"),
                             Age = "20",
                             Email = "ahihi436@gmail.com",
                             FirstName = "John436",
@@ -5500,11 +5942,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe436",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a38f0fc8-99b0-4e78-a39d-fd57f6114976"),
+                            Id = new Guid("323ec54e-f09b-401a-84e1-05aad3b04382"),
                             Age = "20",
                             Email = "ahihi437@gmail.com",
                             FirstName = "John437",
@@ -5512,11 +5955,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe437",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("29506c23-4a71-4b88-b2e8-979ba9c9b66a"),
+                            Id = new Guid("285c920c-e3c7-403b-a528-6a131d6df76b"),
                             Age = "20",
                             Email = "ahihi438@gmail.com",
                             FirstName = "John438",
@@ -5524,11 +5968,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe438",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("37cb97ea-da92-450c-869f-9f424814b856"),
+                            Id = new Guid("2f61eae1-0e8e-43e0-8f00-852f600fc52f"),
                             Age = "20",
                             Email = "ahihi439@gmail.com",
                             FirstName = "John439",
@@ -5536,11 +5981,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe439",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ffdf6439-31cc-4308-aebd-3147d4412de2"),
+                            Id = new Guid("9699dc8f-d0d3-4c48-a68d-a1b9d118d550"),
                             Age = "20",
                             Email = "ahihi440@gmail.com",
                             FirstName = "John440",
@@ -5548,11 +5994,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe440",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ac494f5c-a6e8-46ee-b5a1-4cf40b54c00e"),
+                            Id = new Guid("1158500b-132d-4883-b5c2-b650d54a4ded"),
                             Age = "20",
                             Email = "ahihi441@gmail.com",
                             FirstName = "John441",
@@ -5560,11 +6007,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe441",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("beb2b509-5d44-47c3-a326-7c67d2480be0"),
+                            Id = new Guid("ec6b9031-a371-4f42-ad0d-1112fc1bf5c6"),
                             Age = "20",
                             Email = "ahihi442@gmail.com",
                             FirstName = "John442",
@@ -5572,11 +6020,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe442",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c43d3bf1-a4af-46fd-8c05-fa0613af93f0"),
+                            Id = new Guid("ae19e016-fee7-4321-8a22-005d87790dbc"),
                             Age = "20",
                             Email = "ahihi443@gmail.com",
                             FirstName = "John443",
@@ -5584,11 +6033,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe443",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("10226407-e18d-46eb-b650-f8f6b4c17844"),
+                            Id = new Guid("44598a2c-9644-46c8-90d2-6edd377f6dcd"),
                             Age = "20",
                             Email = "ahihi444@gmail.com",
                             FirstName = "John444",
@@ -5596,11 +6046,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe444",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("40ed3b34-8190-4d04-acae-4e68c9102c34"),
+                            Id = new Guid("a11c6834-42fa-401e-960e-71b5567a39d2"),
                             Age = "20",
                             Email = "ahihi445@gmail.com",
                             FirstName = "John445",
@@ -5608,11 +6059,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe445",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("14eecb2f-0bb0-4ebb-9630-5e7b9956c43b"),
+                            Id = new Guid("606b462a-526a-4b09-b1fe-5a08e3c87311"),
                             Age = "20",
                             Email = "ahihi446@gmail.com",
                             FirstName = "John446",
@@ -5620,11 +6072,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe446",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("991c342c-eb53-4333-b46c-4450cc55363f"),
+                            Id = new Guid("e068040f-c5e5-474c-bb6b-9f33f3b0a726"),
                             Age = "20",
                             Email = "ahihi447@gmail.com",
                             FirstName = "John447",
@@ -5632,11 +6085,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe447",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("61996232-c035-413b-9f3b-ff44e192d164"),
+                            Id = new Guid("4be4d4cb-eabc-4acd-ab55-35f9ab854d05"),
                             Age = "20",
                             Email = "ahihi448@gmail.com",
                             FirstName = "John448",
@@ -5644,11 +6098,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe448",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("764623e1-1000-41dc-beb0-259ca0dbc7a6"),
+                            Id = new Guid("7eff6367-b7b0-4d8a-9729-a4a0ed0c3af2"),
                             Age = "20",
                             Email = "ahihi449@gmail.com",
                             FirstName = "John449",
@@ -5656,11 +6111,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe449",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1e5397d4-414a-4302-84ad-0819a1d35c55"),
+                            Id = new Guid("ad9ccc12-3484-4989-bdbc-66795c076f30"),
                             Age = "20",
                             Email = "ahihi450@gmail.com",
                             FirstName = "John450",
@@ -5668,11 +6124,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe450",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8fd338d2-cb9a-4447-addb-120ef40fd5ee"),
+                            Id = new Guid("f764d7d3-2904-4513-bf16-17302115dc6f"),
                             Age = "20",
                             Email = "ahihi451@gmail.com",
                             FirstName = "John451",
@@ -5680,11 +6137,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe451",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("51b53a84-c22a-4afb-acd6-f0650f4bf1df"),
+                            Id = new Guid("60805b81-6bc8-4883-9e45-917f2939cfea"),
                             Age = "20",
                             Email = "ahihi452@gmail.com",
                             FirstName = "John452",
@@ -5692,11 +6150,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe452",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dfc2b96f-edc7-4a36-8f64-1ff9c42ef512"),
+                            Id = new Guid("84d57c63-f478-4c7e-9375-6d9ba0ce4f55"),
                             Age = "20",
                             Email = "ahihi453@gmail.com",
                             FirstName = "John453",
@@ -5704,11 +6163,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe453",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("07346a65-daf8-4380-897d-83cf58d17ac1"),
+                            Id = new Guid("14feebd1-a4e1-4cff-afec-f9502978e4a4"),
                             Age = "20",
                             Email = "ahihi454@gmail.com",
                             FirstName = "John454",
@@ -5716,11 +6176,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe454",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("98376b95-e3a7-4a54-8872-85bdf376eb42"),
+                            Id = new Guid("40f227df-0535-4000-984e-7dd152c892cc"),
                             Age = "20",
                             Email = "ahihi455@gmail.com",
                             FirstName = "John455",
@@ -5728,11 +6189,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe455",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1bdff6d1-bf57-4a6b-8256-9689b605b244"),
+                            Id = new Guid("873e5f8d-9064-4fee-a7db-125f122ab898"),
                             Age = "20",
                             Email = "ahihi456@gmail.com",
                             FirstName = "John456",
@@ -5740,11 +6202,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe456",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f9538a1b-54d9-4733-9fdf-f97fe2bfa42d"),
+                            Id = new Guid("9fe9382b-a612-42ef-946b-912acef48deb"),
                             Age = "20",
                             Email = "ahihi457@gmail.com",
                             FirstName = "John457",
@@ -5752,11 +6215,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe457",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e3f4d4c2-5902-4692-a92a-3c39213799ce"),
+                            Id = new Guid("f994b5ee-c47b-4b67-8d0c-6b6d50f88b97"),
                             Age = "20",
                             Email = "ahihi458@gmail.com",
                             FirstName = "John458",
@@ -5764,11 +6228,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe458",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b894a871-7199-4c0d-aa4a-3f4f09ef4995"),
+                            Id = new Guid("dae4b5a4-f503-4049-bb18-8582ff0a6c3a"),
                             Age = "20",
                             Email = "ahihi459@gmail.com",
                             FirstName = "John459",
@@ -5776,11 +6241,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe459",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d32f35f7-86fd-4a73-9c06-28963ccc9b5d"),
+                            Id = new Guid("ded650b2-85e6-49af-9e33-05d2b9c3358f"),
                             Age = "20",
                             Email = "ahihi460@gmail.com",
                             FirstName = "John460",
@@ -5788,11 +6254,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe460",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("23bc4b60-cde3-4ae9-a8e7-8116682d716d"),
+                            Id = new Guid("067d6be8-87cd-4a08-a692-a2cadf7a4709"),
                             Age = "20",
                             Email = "ahihi461@gmail.com",
                             FirstName = "John461",
@@ -5800,11 +6267,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe461",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("24af1e86-a880-4952-bf0d-f651a6d5b036"),
+                            Id = new Guid("cc031296-cc3e-49e4-a437-32d557ad72ce"),
                             Age = "20",
                             Email = "ahihi462@gmail.com",
                             FirstName = "John462",
@@ -5812,11 +6280,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe462",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a3997cff-c298-4aed-8196-c40aa5d42360"),
+                            Id = new Guid("bd89ea48-5a55-4300-aa1f-93a00dc36153"),
                             Age = "20",
                             Email = "ahihi463@gmail.com",
                             FirstName = "John463",
@@ -5824,11 +6293,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe463",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9643ebd7-5af7-4fe6-9ad1-3ca2dae98043"),
+                            Id = new Guid("f9fad1c9-44a2-44b9-9518-7ecbf3175810"),
                             Age = "20",
                             Email = "ahihi464@gmail.com",
                             FirstName = "John464",
@@ -5836,11 +6306,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe464",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4e50787b-bdb0-4893-ba95-13bf6611e478"),
+                            Id = new Guid("d7400197-a321-4187-9098-f7488f1b464a"),
                             Age = "20",
                             Email = "ahihi465@gmail.com",
                             FirstName = "John465",
@@ -5848,11 +6319,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe465",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8eb93f57-e63b-46b4-823a-37903127831e"),
+                            Id = new Guid("7dd2da47-cebe-4c14-922b-26f77b19fd43"),
                             Age = "20",
                             Email = "ahihi466@gmail.com",
                             FirstName = "John466",
@@ -5860,11 +6332,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe466",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("19b2a6cf-c849-4cd2-b6d4-087282dc596c"),
+                            Id = new Guid("cac184e2-22fc-449f-bb39-48e818c9d935"),
                             Age = "20",
                             Email = "ahihi467@gmail.com",
                             FirstName = "John467",
@@ -5872,11 +6345,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe467",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2e03009a-2eb5-40c2-8214-1263ed4d2d2c"),
+                            Id = new Guid("9833ce8e-847b-420b-bdff-00c055a5acb9"),
                             Age = "20",
                             Email = "ahihi468@gmail.com",
                             FirstName = "John468",
@@ -5884,11 +6358,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe468",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("26507fd4-3c61-4d3a-8ded-872de15d97c1"),
+                            Id = new Guid("d2484f45-453d-4883-98ab-181ab20c1a11"),
                             Age = "20",
                             Email = "ahihi469@gmail.com",
                             FirstName = "John469",
@@ -5896,11 +6371,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe469",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("390eb77e-e7a9-4fe8-b9c7-6cf09d48622d"),
+                            Id = new Guid("f2a24380-27c0-4817-b4f4-079d83e23a75"),
                             Age = "20",
                             Email = "ahihi470@gmail.com",
                             FirstName = "John470",
@@ -5908,11 +6384,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe470",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("88ef0f81-bd25-49d5-94e2-6ea49b520d40"),
+                            Id = new Guid("1b435626-9409-490f-980c-d21d2b07ea22"),
                             Age = "20",
                             Email = "ahihi471@gmail.com",
                             FirstName = "John471",
@@ -5920,11 +6397,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe471",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cfc02da4-7b37-4f78-9557-50027562b506"),
+                            Id = new Guid("79e82249-f55e-431d-a94a-dda28cb398b4"),
                             Age = "20",
                             Email = "ahihi472@gmail.com",
                             FirstName = "John472",
@@ -5932,11 +6410,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe472",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("461165b3-1395-4c63-8880-abbc1dac61d7"),
+                            Id = new Guid("7127532a-75c7-4e91-8655-8a63cebbc047"),
                             Age = "20",
                             Email = "ahihi473@gmail.com",
                             FirstName = "John473",
@@ -5944,11 +6423,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe473",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f35ef343-1b57-4021-b2b5-0643eeaa1489"),
+                            Id = new Guid("be90a8fe-a603-4990-a02c-b3a7598cfa69"),
                             Age = "20",
                             Email = "ahihi474@gmail.com",
                             FirstName = "John474",
@@ -5956,11 +6436,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe474",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f4e102fc-48f4-43c7-97c4-be880b025034"),
+                            Id = new Guid("fc4ac777-284d-49b2-830e-0b54de73ecce"),
                             Age = "20",
                             Email = "ahihi475@gmail.com",
                             FirstName = "John475",
@@ -5968,11 +6449,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe475",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f49b1f14-174f-4b75-a3d1-a515f3f576de"),
+                            Id = new Guid("a05c0cf0-f85c-4b9f-ba26-730b351b741f"),
                             Age = "20",
                             Email = "ahihi476@gmail.com",
                             FirstName = "John476",
@@ -5980,11 +6462,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe476",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7bc7ad11-55ed-43fc-9dc6-ba954a995bfd"),
+                            Id = new Guid("eb875e44-44a0-4178-b0b1-620c04b50c0b"),
                             Age = "20",
                             Email = "ahihi477@gmail.com",
                             FirstName = "John477",
@@ -5992,11 +6475,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe477",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9d9ef10e-8d6f-4a75-9588-9145bf0e6016"),
+                            Id = new Guid("a665e890-efbb-410d-8062-6978ab574fbd"),
                             Age = "20",
                             Email = "ahihi478@gmail.com",
                             FirstName = "John478",
@@ -6004,11 +6488,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe478",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4cb41db2-037b-41e2-82d9-88f3394b7689"),
+                            Id = new Guid("5d5d6dfb-0fcb-4ce9-a32a-fc1b44063fa9"),
                             Age = "20",
                             Email = "ahihi479@gmail.com",
                             FirstName = "John479",
@@ -6016,11 +6501,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe479",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("de66fa06-c49b-4b87-afed-4e46fbb5965b"),
+                            Id = new Guid("5c512d25-dea9-4d54-9e74-f2330e9363d7"),
                             Age = "20",
                             Email = "ahihi480@gmail.com",
                             FirstName = "John480",
@@ -6028,11 +6514,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe480",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8f660fee-73c4-4923-a139-695def65580f"),
+                            Id = new Guid("41621e7a-421e-4e2a-a72a-4eb23646fa39"),
                             Age = "20",
                             Email = "ahihi481@gmail.com",
                             FirstName = "John481",
@@ -6040,11 +6527,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe481",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("24a7dff5-2604-4bcc-be27-8af9d000e2ef"),
+                            Id = new Guid("0dd36427-5bdc-4d75-b290-30eb21fccf66"),
                             Age = "20",
                             Email = "ahihi482@gmail.com",
                             FirstName = "John482",
@@ -6052,11 +6540,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe482",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("762a2aae-a745-4d0a-84f1-5d4c843d022b"),
+                            Id = new Guid("c4599430-79ba-4649-b526-11355cfe23d3"),
                             Age = "20",
                             Email = "ahihi483@gmail.com",
                             FirstName = "John483",
@@ -6064,11 +6553,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe483",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7d9cd2d4-943a-4a5d-85b8-0b3eaeed8ecf"),
+                            Id = new Guid("5fa12b09-9f9e-41c1-b38d-a194ed7f9f65"),
                             Age = "20",
                             Email = "ahihi484@gmail.com",
                             FirstName = "John484",
@@ -6076,11 +6566,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe484",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("29065af3-9fc8-45ed-b859-2c1e690c759d"),
+                            Id = new Guid("d3c4ba3c-9178-431b-bbc2-23b2cebf452e"),
                             Age = "20",
                             Email = "ahihi485@gmail.com",
                             FirstName = "John485",
@@ -6088,11 +6579,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe485",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0081c874-5ec4-4e9b-a382-265a84ecc6ad"),
+                            Id = new Guid("3644c57f-20d7-47fc-863b-ed69a565d70d"),
                             Age = "20",
                             Email = "ahihi486@gmail.com",
                             FirstName = "John486",
@@ -6100,11 +6592,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe486",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b1527545-fa95-4e08-90f7-df7aaa8b1339"),
+                            Id = new Guid("c7668a6c-25df-4b03-a340-d13c77f311d9"),
                             Age = "20",
                             Email = "ahihi487@gmail.com",
                             FirstName = "John487",
@@ -6112,11 +6605,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe487",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0a59dd45-c757-42c7-83c5-f2f89a18a13f"),
+                            Id = new Guid("8987a595-3c5e-4334-b05e-9300bde58540"),
                             Age = "20",
                             Email = "ahihi488@gmail.com",
                             FirstName = "John488",
@@ -6124,11 +6618,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe488",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("90474e15-52ea-4187-9e79-e9071167c5d1"),
+                            Id = new Guid("c22948a9-90b7-4ecf-86a5-69b3347f4709"),
                             Age = "20",
                             Email = "ahihi489@gmail.com",
                             FirstName = "John489",
@@ -6136,11 +6631,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe489",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4867f80b-177c-48e8-87bf-9f5d2bc7d55a"),
+                            Id = new Guid("62a4724d-f9e1-4fb2-8a9d-99dcf84b3ccd"),
                             Age = "20",
                             Email = "ahihi490@gmail.com",
                             FirstName = "John490",
@@ -6148,11 +6644,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe490",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2fecd9ac-1a1c-4df8-9a5f-b93086d0df66"),
+                            Id = new Guid("f1534a26-fa57-4c3c-95c8-6b902537dfdf"),
                             Age = "20",
                             Email = "ahihi491@gmail.com",
                             FirstName = "John491",
@@ -6160,11 +6657,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe491",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7ba9b814-4968-4f8c-b60d-95276339e8bf"),
+                            Id = new Guid("a792a981-4b20-46e8-a881-22b8b1ba725b"),
                             Age = "20",
                             Email = "ahihi492@gmail.com",
                             FirstName = "John492",
@@ -6172,11 +6670,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe492",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8d7938b5-b26f-4d16-ad33-190f72180b4d"),
+                            Id = new Guid("dbd7d3af-adfe-4187-83b6-b88c258c853b"),
                             Age = "20",
                             Email = "ahihi493@gmail.com",
                             FirstName = "John493",
@@ -6184,11 +6683,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe493",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("24e9f60c-ee39-469e-b6ba-3f1803061fc3"),
+                            Id = new Guid("dc633e45-99a6-4a3f-97f8-42513a1f1d68"),
                             Age = "20",
                             Email = "ahihi494@gmail.com",
                             FirstName = "John494",
@@ -6196,11 +6696,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe494",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4c4eacd7-7886-4e52-b50b-a82368283e9f"),
+                            Id = new Guid("90b01e2b-f1e0-4bfd-bf74-5c332faca26a"),
                             Age = "20",
                             Email = "ahihi495@gmail.com",
                             FirstName = "John495",
@@ -6208,11 +6709,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe495",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fb8aa4ad-0193-4056-ab49-e2d6eefdf409"),
+                            Id = new Guid("d1a220c4-3483-4a5f-a7a7-cbd6051ccf8e"),
                             Age = "20",
                             Email = "ahihi496@gmail.com",
                             FirstName = "John496",
@@ -6220,11 +6722,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe496",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c55d83ec-1b31-468e-b0e6-94e1cabb44a0"),
+                            Id = new Guid("50fc95db-6dfa-4e33-8fcc-075d090a06e9"),
                             Age = "20",
                             Email = "ahihi497@gmail.com",
                             FirstName = "John497",
@@ -6232,11 +6735,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe497",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6f69f293-4737-4b35-93b5-ec43bc4d87c8"),
+                            Id = new Guid("a7968887-5aa3-4a19-a561-02e3ec16a6e9"),
                             Age = "20",
                             Email = "ahihi498@gmail.com",
                             FirstName = "John498",
@@ -6244,11 +6748,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe498",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a4ff9957-44ae-4f53-be0f-c79254a07231"),
+                            Id = new Guid("c6c5eba3-cdba-41d6-bc61-324780827905"),
                             Age = "20",
                             Email = "ahihi499@gmail.com",
                             FirstName = "John499",
@@ -6256,11 +6761,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe499",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("699e8af1-76f8-43a0-a55d-f944684e9935"),
+                            Id = new Guid("e0cc5700-49ce-4c7a-a0f1-f28ab54b7415"),
                             Age = "20",
                             Email = "ahihi500@gmail.com",
                             FirstName = "John500",
@@ -6268,11 +6774,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe500",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bd6e24f8-2226-49d8-a565-bf6d3ed581ff"),
+                            Id = new Guid("6e880030-c519-406f-a1b5-021487b20cf7"),
                             Age = "20",
                             Email = "ahihi501@gmail.com",
                             FirstName = "John501",
@@ -6280,11 +6787,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe501",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("daad6c07-e35b-476e-8ebb-24e70abfc6fb"),
+                            Id = new Guid("565d93ff-6496-4802-8291-2610e8c18aad"),
                             Age = "20",
                             Email = "ahihi502@gmail.com",
                             FirstName = "John502",
@@ -6292,11 +6800,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe502",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5fd55b26-1f50-4dff-8ae9-851431ac495d"),
+                            Id = new Guid("51b6f03f-7f9e-4f1f-b2d5-7392aa115df5"),
                             Age = "20",
                             Email = "ahihi503@gmail.com",
                             FirstName = "John503",
@@ -6304,11 +6813,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe503",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("117abcc0-539b-45d0-8af9-4573fd441bfe"),
+                            Id = new Guid("2f8d393f-c4e4-49f8-8d0b-d2ca7df0483f"),
                             Age = "20",
                             Email = "ahihi504@gmail.com",
                             FirstName = "John504",
@@ -6316,11 +6826,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe504",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8e841fd1-0e82-48a5-a932-62afe6c7fa4b"),
+                            Id = new Guid("9b4aed4d-5652-4a3c-8402-805f75d89388"),
                             Age = "20",
                             Email = "ahihi505@gmail.com",
                             FirstName = "John505",
@@ -6328,11 +6839,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe505",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7a54d002-c830-4e18-b09c-6dde996a503f"),
+                            Id = new Guid("0347ba3c-a376-498c-a336-7f1c7667d398"),
                             Age = "20",
                             Email = "ahihi506@gmail.com",
                             FirstName = "John506",
@@ -6340,11 +6852,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe506",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("97a89ef7-0c78-4a64-9196-e38f48f5d018"),
+                            Id = new Guid("5dde64b8-2955-4922-9828-9f27ccac8d3a"),
                             Age = "20",
                             Email = "ahihi507@gmail.com",
                             FirstName = "John507",
@@ -6352,11 +6865,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe507",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1c3596a4-2ba4-4ce8-8030-81d9fe1656ca"),
+                            Id = new Guid("267197ca-6784-4264-8e88-287b970188d4"),
                             Age = "20",
                             Email = "ahihi508@gmail.com",
                             FirstName = "John508",
@@ -6364,11 +6878,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe508",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f5a13787-7dba-49a0-b903-a5f69eb9ea0c"),
+                            Id = new Guid("bb85ae29-0403-4db0-942a-a7add6cf1d82"),
                             Age = "20",
                             Email = "ahihi509@gmail.com",
                             FirstName = "John509",
@@ -6376,11 +6891,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe509",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("92c0d56e-8590-471a-acdd-eb93e1af3457"),
+                            Id = new Guid("d971e536-c98e-41a1-92f0-82074d7fcaf3"),
                             Age = "20",
                             Email = "ahihi510@gmail.com",
                             FirstName = "John510",
@@ -6388,11 +6904,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe510",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b49bce65-3a62-4ed7-a3b4-5209e53d445a"),
+                            Id = new Guid("a97db6e9-366c-4b20-b11e-1cdfac56f07a"),
                             Age = "20",
                             Email = "ahihi511@gmail.com",
                             FirstName = "John511",
@@ -6400,11 +6917,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe511",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6ff09739-289a-4380-a917-10910342d3b3"),
+                            Id = new Guid("f1440f19-8744-46ab-aa41-32e04d6ebba8"),
                             Age = "20",
                             Email = "ahihi512@gmail.com",
                             FirstName = "John512",
@@ -6412,11 +6930,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe512",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7dbcf068-aefe-4150-ba4a-f8df23691b69"),
+                            Id = new Guid("cc60b51a-62bf-4175-b376-f79f82d80f21"),
                             Age = "20",
                             Email = "ahihi513@gmail.com",
                             FirstName = "John513",
@@ -6424,11 +6943,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe513",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("32cc351a-c0ac-4159-b694-3d550b3d41a1"),
+                            Id = new Guid("48d1574d-d5df-47d8-a9ef-0e2eea9f2ee9"),
                             Age = "20",
                             Email = "ahihi514@gmail.com",
                             FirstName = "John514",
@@ -6436,11 +6956,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe514",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ee4b2a2a-2ae6-4cdc-9f32-750ebb81ce34"),
+                            Id = new Guid("eae8ecc0-83fb-450a-8d3c-97532b359ac0"),
                             Age = "20",
                             Email = "ahihi515@gmail.com",
                             FirstName = "John515",
@@ -6448,11 +6969,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe515",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("826205b4-e92d-41ce-875e-81306a750a5d"),
+                            Id = new Guid("9b2264d6-d840-40a1-ab95-6202e865c1c9"),
                             Age = "20",
                             Email = "ahihi516@gmail.com",
                             FirstName = "John516",
@@ -6460,11 +6982,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe516",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("350ff5b5-c1d8-48a6-bde3-b0d5dc7d3ee0"),
+                            Id = new Guid("a1b1e1b6-bd4a-4a10-a572-c99c80368068"),
                             Age = "20",
                             Email = "ahihi517@gmail.com",
                             FirstName = "John517",
@@ -6472,11 +6995,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe517",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("69488b3c-0838-4f22-8c22-2c240dcd192d"),
+                            Id = new Guid("11c2e2d5-6526-4bf7-8172-89d2a3b18a18"),
                             Age = "20",
                             Email = "ahihi518@gmail.com",
                             FirstName = "John518",
@@ -6484,11 +7008,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe518",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ed720d85-a670-4299-9c69-d94683a73a99"),
+                            Id = new Guid("cc058913-174d-4b9e-aa90-e6cd79b81b4d"),
                             Age = "20",
                             Email = "ahihi519@gmail.com",
                             FirstName = "John519",
@@ -6496,11 +7021,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe519",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a0164349-a4c1-4cf5-ace4-8101ed621443"),
+                            Id = new Guid("28218223-39aa-48e0-8583-7cb07d58ade6"),
                             Age = "20",
                             Email = "ahihi520@gmail.com",
                             FirstName = "John520",
@@ -6508,11 +7034,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe520",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("187d20dc-261f-4607-baff-d8afeadd60de"),
+                            Id = new Guid("1863efee-ca06-4b73-99ce-acbb62374c4b"),
                             Age = "20",
                             Email = "ahihi521@gmail.com",
                             FirstName = "John521",
@@ -6520,11 +7047,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe521",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f9b0f3bc-9b72-4d9c-8afe-493d3bd929b6"),
+                            Id = new Guid("20313297-5e55-4efe-80cd-c11dd2f6062b"),
                             Age = "20",
                             Email = "ahihi522@gmail.com",
                             FirstName = "John522",
@@ -6532,11 +7060,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe522",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d420c359-e9c3-4d85-a311-76dc5c8bcb26"),
+                            Id = new Guid("bcbd1993-740d-4987-a78f-56210f89ff1c"),
                             Age = "20",
                             Email = "ahihi523@gmail.com",
                             FirstName = "John523",
@@ -6544,11 +7073,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe523",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("419db650-15f5-4d56-91c4-997b6dddb4ce"),
+                            Id = new Guid("fe413ce4-a4d8-4891-bcba-5b5313b4cba7"),
                             Age = "20",
                             Email = "ahihi524@gmail.com",
                             FirstName = "John524",
@@ -6556,11 +7086,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe524",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2acaaa27-62c7-4c79-ad7d-61f3616aebbf"),
+                            Id = new Guid("2bf7e92c-8ebf-49d1-9dc7-1c76f9f98667"),
                             Age = "20",
                             Email = "ahihi525@gmail.com",
                             FirstName = "John525",
@@ -6568,11 +7099,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe525",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("aca3fbd1-5de4-438c-9bfa-0ae33bab4511"),
+                            Id = new Guid("a3146421-0e5f-4b1e-ba22-4aae89146bbe"),
                             Age = "20",
                             Email = "ahihi526@gmail.com",
                             FirstName = "John526",
@@ -6580,11 +7112,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe526",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6f13aa41-de37-4335-9c13-c6e3664e31c4"),
+                            Id = new Guid("87b5af83-cfd7-45fc-b094-e055c55cc2ec"),
                             Age = "20",
                             Email = "ahihi527@gmail.com",
                             FirstName = "John527",
@@ -6592,11 +7125,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe527",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1fa501a9-d657-4b6c-951e-3403de09c215"),
+                            Id = new Guid("a5e86aef-4372-439e-876a-e046d7725d44"),
                             Age = "20",
                             Email = "ahihi528@gmail.com",
                             FirstName = "John528",
@@ -6604,11 +7138,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe528",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7beff959-5e19-44e7-ab5c-0079339dd273"),
+                            Id = new Guid("34c3f187-065e-4b9e-b7de-85628344c8ba"),
                             Age = "20",
                             Email = "ahihi529@gmail.com",
                             FirstName = "John529",
@@ -6616,11 +7151,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe529",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6c7bb129-4b59-4923-9de6-0419847f81cb"),
+                            Id = new Guid("9317b41e-7208-4194-a342-94b6e891c1e8"),
                             Age = "20",
                             Email = "ahihi530@gmail.com",
                             FirstName = "John530",
@@ -6628,11 +7164,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe530",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4079f4a1-86c1-4de5-b425-dadb82ebd446"),
+                            Id = new Guid("741715f2-ec7a-4820-9464-29b05353b6f5"),
                             Age = "20",
                             Email = "ahihi531@gmail.com",
                             FirstName = "John531",
@@ -6640,11 +7177,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe531",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("04ece12c-dc75-4a20-a700-78a586f940b9"),
+                            Id = new Guid("1a0e0243-f7ad-4246-abf7-b14d52a2f4b5"),
                             Age = "20",
                             Email = "ahihi532@gmail.com",
                             FirstName = "John532",
@@ -6652,11 +7190,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe532",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eae27043-e0ab-4b61-bf65-ec0ed7102385"),
+                            Id = new Guid("41b43d97-7469-4f79-a0e1-3e36d6d5e0fc"),
                             Age = "20",
                             Email = "ahihi533@gmail.com",
                             FirstName = "John533",
@@ -6664,11 +7203,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe533",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("570ed21b-63ce-41e4-b780-fbe171d77604"),
+                            Id = new Guid("9a6ef6de-f71e-4324-969c-8b225b813e1f"),
                             Age = "20",
                             Email = "ahihi534@gmail.com",
                             FirstName = "John534",
@@ -6676,11 +7216,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe534",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2e066162-800b-46f0-aae8-f39e25c1b09f"),
+                            Id = new Guid("f3e3fb35-7dd6-4781-ad34-5079693dc6d3"),
                             Age = "20",
                             Email = "ahihi535@gmail.com",
                             FirstName = "John535",
@@ -6688,11 +7229,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe535",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7d37fe08-93f6-43bf-8707-8b090e805c13"),
+                            Id = new Guid("8a1c0153-64cd-4a49-87dd-0c0889844370"),
                             Age = "20",
                             Email = "ahihi536@gmail.com",
                             FirstName = "John536",
@@ -6700,11 +7242,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe536",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c2ba52af-77da-4e23-8a21-0ba971bcf8e2"),
+                            Id = new Guid("8ee7925f-8814-458f-a462-7f5357540520"),
                             Age = "20",
                             Email = "ahihi537@gmail.com",
                             FirstName = "John537",
@@ -6712,11 +7255,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe537",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c5432cc3-2d19-4b4b-8b54-096dc856493d"),
+                            Id = new Guid("2b12b263-1332-4b9d-8775-d8b06779979d"),
                             Age = "20",
                             Email = "ahihi538@gmail.com",
                             FirstName = "John538",
@@ -6724,11 +7268,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe538",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a6b3cf69-b289-4dc6-831f-a4c7891167fd"),
+                            Id = new Guid("3bcfb34b-070f-4e74-8cff-a3582ce58c30"),
                             Age = "20",
                             Email = "ahihi539@gmail.com",
                             FirstName = "John539",
@@ -6736,11 +7281,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe539",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8d6213e5-c0a2-4ba4-9496-63c569a35d1a"),
+                            Id = new Guid("ce7c8696-7b78-4a04-964c-e0c8764731f8"),
                             Age = "20",
                             Email = "ahihi540@gmail.com",
                             FirstName = "John540",
@@ -6748,11 +7294,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe540",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bd4cdf06-e60c-4ec7-a8f5-d3bc6cc1d9c9"),
+                            Id = new Guid("b1ecbf52-3f45-4b4c-be7d-af1d33a5e6fd"),
                             Age = "20",
                             Email = "ahihi541@gmail.com",
                             FirstName = "John541",
@@ -6760,11 +7307,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe541",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2d63db1d-9702-47b1-97fc-21888846f60a"),
+                            Id = new Guid("584a0d16-6f18-4629-a84f-07ba8f30e4cd"),
                             Age = "20",
                             Email = "ahihi542@gmail.com",
                             FirstName = "John542",
@@ -6772,11 +7320,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe542",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("be358723-34da-4a1b-9afa-6858ecfd0a10"),
+                            Id = new Guid("b796d0dd-beff-430f-ae2e-81396b4dd94e"),
                             Age = "20",
                             Email = "ahihi543@gmail.com",
                             FirstName = "John543",
@@ -6784,11 +7333,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe543",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0802e49e-1c3f-4d26-a4cd-b89a47949532"),
+                            Id = new Guid("7bfbb3a4-abd6-482d-a296-f14140a7abef"),
                             Age = "20",
                             Email = "ahihi544@gmail.com",
                             FirstName = "John544",
@@ -6796,11 +7346,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe544",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0fbad2d7-1246-4e68-9f29-e263b615d5c4"),
+                            Id = new Guid("1ad6ff2a-b499-4edf-8a9e-daf78fcf84ba"),
                             Age = "20",
                             Email = "ahihi545@gmail.com",
                             FirstName = "John545",
@@ -6808,11 +7359,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe545",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1c59bc93-e369-4785-9af1-17c9317d2943"),
+                            Id = new Guid("263ba93d-8dcf-47ea-bd0f-0d138789e186"),
                             Age = "20",
                             Email = "ahihi546@gmail.com",
                             FirstName = "John546",
@@ -6820,11 +7372,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe546",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e4e52392-046e-402a-8b5a-e797df394349"),
+                            Id = new Guid("85cfc0e3-7b7f-4259-b75b-907165d15155"),
                             Age = "20",
                             Email = "ahihi547@gmail.com",
                             FirstName = "John547",
@@ -6832,11 +7385,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe547",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("98dfdd93-089e-4ae0-9f36-f8c668d0f23c"),
+                            Id = new Guid("470b46d1-6a06-46c3-b04a-161ebfc40ef6"),
                             Age = "20",
                             Email = "ahihi548@gmail.com",
                             FirstName = "John548",
@@ -6844,11 +7398,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe548",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f76c31d4-e422-4bf7-b746-531f5a027e1b"),
+                            Id = new Guid("4b71380e-380f-4d10-a648-32639b09c261"),
                             Age = "20",
                             Email = "ahihi549@gmail.com",
                             FirstName = "John549",
@@ -6856,11 +7411,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe549",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("54a9c3df-cc5e-4264-9317-773ecde835db"),
+                            Id = new Guid("e195c799-987b-4ca0-82b7-c09c39fbea63"),
                             Age = "20",
                             Email = "ahihi550@gmail.com",
                             FirstName = "John550",
@@ -6868,11 +7424,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe550",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dc399c44-70f7-487f-86dc-a9a5f300853f"),
+                            Id = new Guid("0d352a3d-07cf-495f-ae35-024c59f5fa3a"),
                             Age = "20",
                             Email = "ahihi551@gmail.com",
                             FirstName = "John551",
@@ -6880,11 +7437,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe551",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c65c2db6-a9cb-4212-a5c4-3c2d23736dc3"),
+                            Id = new Guid("f9f47996-ba77-4a2b-8d2e-6a1f83515122"),
                             Age = "20",
                             Email = "ahihi552@gmail.com",
                             FirstName = "John552",
@@ -6892,11 +7450,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe552",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5c835bf7-325a-4cdd-9cab-f1db934eedbf"),
+                            Id = new Guid("80f1a52c-98f5-429f-a0b9-47b74775f86f"),
                             Age = "20",
                             Email = "ahihi553@gmail.com",
                             FirstName = "John553",
@@ -6904,11 +7463,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe553",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b2c1da0f-ba27-4126-af75-865d36697940"),
+                            Id = new Guid("8dcd0f7a-7f4a-48fb-8073-b791b49c6a08"),
                             Age = "20",
                             Email = "ahihi554@gmail.com",
                             FirstName = "John554",
@@ -6916,11 +7476,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe554",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("61b39287-c50a-427c-b20c-9a9ed0d28520"),
+                            Id = new Guid("06d50aa4-3d38-401c-9279-0897bcc3a6a9"),
                             Age = "20",
                             Email = "ahihi555@gmail.com",
                             FirstName = "John555",
@@ -6928,11 +7489,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe555",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("31ffd8f9-e148-4ba3-ab6b-bd436a93e4d0"),
+                            Id = new Guid("f977fd80-c5d6-404c-ad14-955d31d75821"),
                             Age = "20",
                             Email = "ahihi556@gmail.com",
                             FirstName = "John556",
@@ -6940,11 +7502,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe556",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6328ef78-792e-41c6-8993-49a39ec31907"),
+                            Id = new Guid("72e0dd18-02dd-4a24-a017-0aa73f8b14f5"),
                             Age = "20",
                             Email = "ahihi557@gmail.com",
                             FirstName = "John557",
@@ -6952,11 +7515,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe557",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6d6827fa-75e3-4345-abf9-cc69c950f6c2"),
+                            Id = new Guid("59b96870-84fc-4581-85a7-2d8b421061e0"),
                             Age = "20",
                             Email = "ahihi558@gmail.com",
                             FirstName = "John558",
@@ -6964,11 +7528,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe558",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7af695ad-4973-41cd-bbf4-5b82e0854363"),
+                            Id = new Guid("b42cd95d-7e31-4a3a-bf1e-3402d4b6547c"),
                             Age = "20",
                             Email = "ahihi559@gmail.com",
                             FirstName = "John559",
@@ -6976,11 +7541,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe559",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f2076ad2-f30e-4265-842b-a9295e5e1633"),
+                            Id = new Guid("b7c2ee32-3444-453e-8cee-6ffde84444d3"),
                             Age = "20",
                             Email = "ahihi560@gmail.com",
                             FirstName = "John560",
@@ -6988,11 +7554,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe560",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("819694fe-33b6-4a6a-8703-e59df22b304e"),
+                            Id = new Guid("d9a474fd-3162-4a5b-a082-3a5dc2d9795c"),
                             Age = "20",
                             Email = "ahihi561@gmail.com",
                             FirstName = "John561",
@@ -7000,11 +7567,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe561",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ac3124e8-e17a-46b3-9816-8643a783901e"),
+                            Id = new Guid("59bbf713-aca0-46e8-b606-2ac2d21ced52"),
                             Age = "20",
                             Email = "ahihi562@gmail.com",
                             FirstName = "John562",
@@ -7012,11 +7580,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe562",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("313ffa77-9ddf-4ad3-842b-1594d1b94870"),
+                            Id = new Guid("7eb65801-02cd-40eb-9091-0ca60a70e3e8"),
                             Age = "20",
                             Email = "ahihi563@gmail.com",
                             FirstName = "John563",
@@ -7024,11 +7593,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe563",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("89bde5bb-43b6-42d1-9fa6-b821efe4d2b5"),
+                            Id = new Guid("231b1afa-dc92-470a-9f7f-bcabc0268928"),
                             Age = "20",
                             Email = "ahihi564@gmail.com",
                             FirstName = "John564",
@@ -7036,11 +7606,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe564",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cd05112f-880f-410c-8721-b21e3d20d49d"),
+                            Id = new Guid("7bd1a403-14e4-42ce-8d04-464b91f909b2"),
                             Age = "20",
                             Email = "ahihi565@gmail.com",
                             FirstName = "John565",
@@ -7048,11 +7619,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe565",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("62cdb0b9-858c-41b8-bb9c-2bab98bb0f7e"),
+                            Id = new Guid("64d1dfbd-7552-4da5-b73b-88e5d9d212db"),
                             Age = "20",
                             Email = "ahihi566@gmail.com",
                             FirstName = "John566",
@@ -7060,11 +7632,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe566",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f8f8e9bb-e903-43c5-bffc-fc4ff11860d3"),
+                            Id = new Guid("0db633c7-0c89-4bf9-b7be-41b069605f83"),
                             Age = "20",
                             Email = "ahihi567@gmail.com",
                             FirstName = "John567",
@@ -7072,11 +7645,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe567",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a59b53e5-7841-432e-8496-691982c5d0bf"),
+                            Id = new Guid("9baa4ff7-4eb0-4fb9-903e-5e835e96c5a5"),
                             Age = "20",
                             Email = "ahihi568@gmail.com",
                             FirstName = "John568",
@@ -7084,11 +7658,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe568",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4bd0181a-5e7d-46cf-90d9-fa43be5c4ac4"),
+                            Id = new Guid("70fea64e-7f5a-4dcc-b7b9-884dfadb440c"),
                             Age = "20",
                             Email = "ahihi569@gmail.com",
                             FirstName = "John569",
@@ -7096,11 +7671,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe569",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("43a4bf33-ad8e-4b38-9fe8-ba39a2f047e0"),
+                            Id = new Guid("96dcc713-1c9f-4989-b966-b88119babdc9"),
                             Age = "20",
                             Email = "ahihi570@gmail.com",
                             FirstName = "John570",
@@ -7108,11 +7684,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe570",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0baaee5b-8cb6-4166-9038-15c80df7eb99"),
+                            Id = new Guid("a2a22bac-422d-418a-9ae0-9b6560fe353b"),
                             Age = "20",
                             Email = "ahihi571@gmail.com",
                             FirstName = "John571",
@@ -7120,11 +7697,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe571",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("849cf9ef-acea-4ea8-8a31-dbb94aef1148"),
+                            Id = new Guid("16d9847c-6f8c-4d20-86a0-317917843f5d"),
                             Age = "20",
                             Email = "ahihi572@gmail.com",
                             FirstName = "John572",
@@ -7132,11 +7710,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe572",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d034a6b7-9c11-49e8-9117-52eab33bedd1"),
+                            Id = new Guid("a7da5a7e-2bdd-4131-b9a0-b9789b48f151"),
                             Age = "20",
                             Email = "ahihi573@gmail.com",
                             FirstName = "John573",
@@ -7144,11 +7723,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe573",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3fc9a752-5803-458f-ab8e-7b88305dda5e"),
+                            Id = new Guid("568a614c-e0ed-4ac8-a0a6-31b3c1977ece"),
                             Age = "20",
                             Email = "ahihi574@gmail.com",
                             FirstName = "John574",
@@ -7156,11 +7736,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe574",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6b737d63-ea25-42a3-91ff-30ddb7766b04"),
+                            Id = new Guid("7c4670ee-4d3a-4985-97a0-9e319b504810"),
                             Age = "20",
                             Email = "ahihi575@gmail.com",
                             FirstName = "John575",
@@ -7168,11 +7749,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe575",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("92f159c1-b052-4a3b-b8ba-4125a9fff13d"),
+                            Id = new Guid("f7a8d3aa-7624-4095-b54b-97282ba93cfc"),
                             Age = "20",
                             Email = "ahihi576@gmail.com",
                             FirstName = "John576",
@@ -7180,11 +7762,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe576",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b42e9360-19f9-4013-ba3a-5c4c4b3c7a05"),
+                            Id = new Guid("23c66440-27eb-4d66-ae1c-2438a84cf48a"),
                             Age = "20",
                             Email = "ahihi577@gmail.com",
                             FirstName = "John577",
@@ -7192,11 +7775,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe577",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8dc8cdd8-8f50-4181-ad34-53de0da92b00"),
+                            Id = new Guid("9c9ece0c-e4cd-458e-89fc-aedc8295c949"),
                             Age = "20",
                             Email = "ahihi578@gmail.com",
                             FirstName = "John578",
@@ -7204,11 +7788,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe578",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("aaac2dcd-e9f0-428b-a95e-9669ded635a4"),
+                            Id = new Guid("6a2c45c7-7ae8-4cf6-a8f0-2452440b2097"),
                             Age = "20",
                             Email = "ahihi579@gmail.com",
                             FirstName = "John579",
@@ -7216,11 +7801,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe579",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f73f9bb4-3a19-4738-a7f8-626cec2a5294"),
+                            Id = new Guid("c01dde11-9fc0-4ccc-aa87-12524ffbc9d8"),
                             Age = "20",
                             Email = "ahihi580@gmail.com",
                             FirstName = "John580",
@@ -7228,11 +7814,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe580",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("243752d7-c974-41f4-8325-3ef43bf12a7e"),
+                            Id = new Guid("2ba1dc42-03d9-492a-bb59-02076b78354d"),
                             Age = "20",
                             Email = "ahihi581@gmail.com",
                             FirstName = "John581",
@@ -7240,11 +7827,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe581",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("41305a29-243b-4f20-ac88-e743d7728917"),
+                            Id = new Guid("781dbf29-d8a6-4c32-9f4f-3dcc2cdd7067"),
                             Age = "20",
                             Email = "ahihi582@gmail.com",
                             FirstName = "John582",
@@ -7252,11 +7840,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe582",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dbc1b753-9d41-4ce3-abfc-e3071d4d56a1"),
+                            Id = new Guid("3a73bf51-156f-40cc-a17e-31290e57d024"),
                             Age = "20",
                             Email = "ahihi583@gmail.com",
                             FirstName = "John583",
@@ -7264,11 +7853,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe583",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("00a3d953-18ac-48ec-a52c-91377e7cecb6"),
+                            Id = new Guid("c5a37a4c-4498-41b2-9b44-79bc3049f3b8"),
                             Age = "20",
                             Email = "ahihi584@gmail.com",
                             FirstName = "John584",
@@ -7276,11 +7866,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe584",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("893a3f5b-ef0a-4445-b80d-a80c41f6204c"),
+                            Id = new Guid("1d26d9af-c90d-44b9-a918-b7928c1a6b20"),
                             Age = "20",
                             Email = "ahihi585@gmail.com",
                             FirstName = "John585",
@@ -7288,11 +7879,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe585",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2e57b1e2-90fd-49d5-9603-9c2ee12103c9"),
+                            Id = new Guid("15c56b4f-2854-46fd-8245-ea30798e9f2b"),
                             Age = "20",
                             Email = "ahihi586@gmail.com",
                             FirstName = "John586",
@@ -7300,11 +7892,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe586",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1f5b8da6-676c-41e9-bf1f-89db35e5047b"),
+                            Id = new Guid("86ffece4-18bb-4fe6-b12d-c0535f500f0c"),
                             Age = "20",
                             Email = "ahihi587@gmail.com",
                             FirstName = "John587",
@@ -7312,11 +7905,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe587",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ce46c5ef-cd72-4816-9f60-ff61b27a51e4"),
+                            Id = new Guid("f51e831e-6c4e-4156-947f-12286f3c446b"),
                             Age = "20",
                             Email = "ahihi588@gmail.com",
                             FirstName = "John588",
@@ -7324,11 +7918,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe588",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5164f408-fefe-4d0f-96c2-ef2b69b31eb8"),
+                            Id = new Guid("2532e1dd-55fe-404a-9312-aa8bd808ccdc"),
                             Age = "20",
                             Email = "ahihi589@gmail.com",
                             FirstName = "John589",
@@ -7336,11 +7931,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe589",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6352cc45-55fa-429f-a5be-3284e9134415"),
+                            Id = new Guid("7de6847b-1b6e-41db-a303-06a77f04622b"),
                             Age = "20",
                             Email = "ahihi590@gmail.com",
                             FirstName = "John590",
@@ -7348,11 +7944,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe590",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("40e3a4b2-10b9-4cd3-963e-d4ff797d7e8a"),
+                            Id = new Guid("02740656-64dd-48d0-bc8f-6a0babc99aa0"),
                             Age = "20",
                             Email = "ahihi591@gmail.com",
                             FirstName = "John591",
@@ -7360,11 +7957,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe591",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("01fed9f9-de34-4911-a453-faf93f61fc7c"),
+                            Id = new Guid("9447021a-d0ab-41f1-9fc8-a0c3959939a6"),
                             Age = "20",
                             Email = "ahihi592@gmail.com",
                             FirstName = "John592",
@@ -7372,11 +7970,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe592",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6c889c71-c8c7-4e4e-8b02-b9ff941cd682"),
+                            Id = new Guid("2f53c0e8-d500-4e4c-b6e6-fd0a5967ae79"),
                             Age = "20",
                             Email = "ahihi593@gmail.com",
                             FirstName = "John593",
@@ -7384,11 +7983,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe593",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("de132e6a-aef4-4f46-85de-3d7b08b5f1b0"),
+                            Id = new Guid("abb63fb5-f819-4f95-a1db-bfa7c85b866c"),
                             Age = "20",
                             Email = "ahihi594@gmail.com",
                             FirstName = "John594",
@@ -7396,11 +7996,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe594",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bd5cfcfe-d984-4cf7-9fc5-abd56c850a63"),
+                            Id = new Guid("a02436f7-cfbf-4fc8-9585-402ec1ff9467"),
                             Age = "20",
                             Email = "ahihi595@gmail.com",
                             FirstName = "John595",
@@ -7408,11 +8009,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe595",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5d4f0311-8120-48f6-83d0-534805c2387e"),
+                            Id = new Guid("95e3b45b-66c6-45c3-b980-099a693f68eb"),
                             Age = "20",
                             Email = "ahihi596@gmail.com",
                             FirstName = "John596",
@@ -7420,11 +8022,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe596",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8200eeb4-daef-4455-bdee-5abb8e289cab"),
+                            Id = new Guid("0966820c-3b0c-49c0-8868-151d53a64781"),
                             Age = "20",
                             Email = "ahihi597@gmail.com",
                             FirstName = "John597",
@@ -7432,11 +8035,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe597",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2a74bc62-8dcd-4768-af88-ab074d5f8db9"),
+                            Id = new Guid("941026aa-d021-42d0-af0e-7fed43d3dc13"),
                             Age = "20",
                             Email = "ahihi598@gmail.com",
                             FirstName = "John598",
@@ -7444,11 +8048,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe598",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("57ca37f2-8bdb-49f9-b00b-9df30a77aaa9"),
+                            Id = new Guid("786809ed-fa0a-4fd0-8125-19a4ddefa4c0"),
                             Age = "20",
                             Email = "ahihi599@gmail.com",
                             FirstName = "John599",
@@ -7456,11 +8061,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe599",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("417e9261-9ea3-4bc5-a0f4-448cd2d914bc"),
+                            Id = new Guid("3d34175c-20c4-44c1-92c0-159580c01833"),
                             Age = "20",
                             Email = "ahihi600@gmail.com",
                             FirstName = "John600",
@@ -7468,11 +8074,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe600",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f5561af7-4853-4cad-8b23-ad2668de0988"),
+                            Id = new Guid("ebe20308-b91a-4fa8-bb97-6a0f6316cfaa"),
                             Age = "20",
                             Email = "ahihi601@gmail.com",
                             FirstName = "John601",
@@ -7480,11 +8087,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe601",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f71bffba-d6ab-4dbb-b248-fe7692558ce0"),
+                            Id = new Guid("a3dbc1c9-4678-455d-be9d-9efdc0516cb8"),
                             Age = "20",
                             Email = "ahihi602@gmail.com",
                             FirstName = "John602",
@@ -7492,11 +8100,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe602",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bce47b98-516b-4121-a58f-0e624105aafa"),
+                            Id = new Guid("406c4cae-c3d1-465f-b4b4-cec7252bdc9a"),
                             Age = "20",
                             Email = "ahihi603@gmail.com",
                             FirstName = "John603",
@@ -7504,11 +8113,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe603",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f224c760-6bb1-44b2-8939-bb0195a4b475"),
+                            Id = new Guid("4d96e9d3-217e-4e7d-9633-4263b48ab005"),
                             Age = "20",
                             Email = "ahihi604@gmail.com",
                             FirstName = "John604",
@@ -7516,11 +8126,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe604",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2529d802-ae89-4721-b4ce-1cd5451ebad6"),
+                            Id = new Guid("01f69cee-4964-4b0e-92a3-8971baf86c35"),
                             Age = "20",
                             Email = "ahihi605@gmail.com",
                             FirstName = "John605",
@@ -7528,11 +8139,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe605",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7d9ce2b8-ff67-40ae-915d-51bbc5e75981"),
+                            Id = new Guid("4f85919b-dfb5-45c5-a10e-c208129208a7"),
                             Age = "20",
                             Email = "ahihi606@gmail.com",
                             FirstName = "John606",
@@ -7540,11 +8152,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe606",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b57b0d1a-1405-446b-9ec4-675ef8cc352e"),
+                            Id = new Guid("32afe83e-3d44-4a51-99cc-0a51e3661dc1"),
                             Age = "20",
                             Email = "ahihi607@gmail.com",
                             FirstName = "John607",
@@ -7552,11 +8165,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe607",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a805881a-cf67-4e35-b41e-35b2b7e058e8"),
+                            Id = new Guid("2f0138ff-7b5d-493b-bf85-d8f48a7e99ae"),
                             Age = "20",
                             Email = "ahihi608@gmail.com",
                             FirstName = "John608",
@@ -7564,11 +8178,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe608",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("67567a3c-82cc-4e71-855f-360eaa812cf0"),
+                            Id = new Guid("932323ea-c7fc-4d47-84ea-de4966ad91d6"),
                             Age = "20",
                             Email = "ahihi609@gmail.com",
                             FirstName = "John609",
@@ -7576,11 +8191,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe609",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c2a269ce-eb67-4076-a6ce-c6aca8741e1c"),
+                            Id = new Guid("db5be5a5-8008-49aa-aa01-38ad4bb51e0d"),
                             Age = "20",
                             Email = "ahihi610@gmail.com",
                             FirstName = "John610",
@@ -7588,11 +8204,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe610",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7e497d60-d049-42e1-bd96-c7ac708ed794"),
+                            Id = new Guid("dfe3bb12-7e39-497f-88c8-ea823e3e5c24"),
                             Age = "20",
                             Email = "ahihi611@gmail.com",
                             FirstName = "John611",
@@ -7600,11 +8217,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe611",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3ab268bc-8072-401a-920c-085dcf8355ff"),
+                            Id = new Guid("d512258a-1e98-4386-845c-231f2c6b4423"),
                             Age = "20",
                             Email = "ahihi612@gmail.com",
                             FirstName = "John612",
@@ -7612,11 +8230,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe612",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3fe42651-2a50-417d-b18c-14c73a675d0f"),
+                            Id = new Guid("6897debf-5d85-4d31-88c3-3536423ac76d"),
                             Age = "20",
                             Email = "ahihi613@gmail.com",
                             FirstName = "John613",
@@ -7624,11 +8243,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe613",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1d94b6ff-df03-4a95-8424-eea8620645df"),
+                            Id = new Guid("443ec067-c2b1-4b8e-8c21-6b873485c063"),
                             Age = "20",
                             Email = "ahihi614@gmail.com",
                             FirstName = "John614",
@@ -7636,11 +8256,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe614",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("679fb9e3-a772-4711-89f5-27cbf6390d5a"),
+                            Id = new Guid("8624a97b-3a8e-435c-97d9-0d75f082cc73"),
                             Age = "20",
                             Email = "ahihi615@gmail.com",
                             FirstName = "John615",
@@ -7648,11 +8269,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe615",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1b043d16-5b83-4801-bce5-1d2cdaa5adce"),
+                            Id = new Guid("988eb8e0-318a-45ce-8f23-f7f1a37481ee"),
                             Age = "20",
                             Email = "ahihi616@gmail.com",
                             FirstName = "John616",
@@ -7660,11 +8282,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe616",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b617bd50-766e-4cad-a8c0-c038d4f681dc"),
+                            Id = new Guid("3f6d2067-7fe7-4b6e-b39b-fb84b152afd5"),
                             Age = "20",
                             Email = "ahihi617@gmail.com",
                             FirstName = "John617",
@@ -7672,11 +8295,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe617",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("92f8a28f-430f-4778-8bf7-7ba3304edd38"),
+                            Id = new Guid("682bee3d-7113-49bd-a6ef-0a84ad286439"),
                             Age = "20",
                             Email = "ahihi618@gmail.com",
                             FirstName = "John618",
@@ -7684,11 +8308,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe618",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c64b9e7a-c36d-48cd-a5b3-381188cc3d90"),
+                            Id = new Guid("10666d08-cd2b-4044-8346-e5494d18f6ae"),
                             Age = "20",
                             Email = "ahihi619@gmail.com",
                             FirstName = "John619",
@@ -7696,11 +8321,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe619",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("46bd72aa-eac7-4b0f-88bf-d26b0f69494d"),
+                            Id = new Guid("e5d71114-d36b-4506-a301-d41eb6bd604d"),
                             Age = "20",
                             Email = "ahihi620@gmail.com",
                             FirstName = "John620",
@@ -7708,11 +8334,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe620",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("36e22b00-58f7-4357-8f98-7727fea5a3d9"),
+                            Id = new Guid("77226f5b-01b3-480e-b2ca-e7d1deff7536"),
                             Age = "20",
                             Email = "ahihi621@gmail.com",
                             FirstName = "John621",
@@ -7720,11 +8347,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe621",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("71180be6-9b4d-4926-a85b-f5c5ab65fc8e"),
+                            Id = new Guid("d07f2188-8def-48a5-8e03-ff4db735a711"),
                             Age = "20",
                             Email = "ahihi622@gmail.com",
                             FirstName = "John622",
@@ -7732,11 +8360,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe622",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2616722d-f746-4296-a16f-dad01260ca2e"),
+                            Id = new Guid("3edaaf15-0400-43fe-a7f8-e19e9c908028"),
                             Age = "20",
                             Email = "ahihi623@gmail.com",
                             FirstName = "John623",
@@ -7744,11 +8373,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe623",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ed830de8-c732-46dc-ad0a-58c39e671c1d"),
+                            Id = new Guid("f4e7d8b0-641a-42b0-9441-c73043dbd8a0"),
                             Age = "20",
                             Email = "ahihi624@gmail.com",
                             FirstName = "John624",
@@ -7756,11 +8386,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe624",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d4623441-62a3-49b7-b3f9-86c687f0316e"),
+                            Id = new Guid("c6a8e849-b405-4c57-94bc-514655b42752"),
                             Age = "20",
                             Email = "ahihi625@gmail.com",
                             FirstName = "John625",
@@ -7768,11 +8399,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe625",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2926f23f-04b6-4d8c-87bb-23be39deb602"),
+                            Id = new Guid("bb80073e-79f9-4c25-aa26-617e3ba84cdf"),
                             Age = "20",
                             Email = "ahihi626@gmail.com",
                             FirstName = "John626",
@@ -7780,11 +8412,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe626",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ae7a6b10-c7a7-4d62-a29d-99ac3487ec6f"),
+                            Id = new Guid("c83c4df5-6656-4534-933c-d366aaaad8be"),
                             Age = "20",
                             Email = "ahihi627@gmail.com",
                             FirstName = "John627",
@@ -7792,11 +8425,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe627",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9152e528-b774-461c-831a-68cd19e0eacd"),
+                            Id = new Guid("7766c75f-b3df-4cd9-a603-5e767a227f03"),
                             Age = "20",
                             Email = "ahihi628@gmail.com",
                             FirstName = "John628",
@@ -7804,11 +8438,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe628",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fdf30a46-7e9c-4ae4-9c1d-84c9e4a06a43"),
+                            Id = new Guid("649b9974-2851-4b6d-8364-3383f70b3984"),
                             Age = "20",
                             Email = "ahihi629@gmail.com",
                             FirstName = "John629",
@@ -7816,11 +8451,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe629",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4b57e8ff-165e-4e32-a117-fc42522626ec"),
+                            Id = new Guid("11dbd1ae-dfe6-4a95-af4f-0fb718dfa487"),
                             Age = "20",
                             Email = "ahihi630@gmail.com",
                             FirstName = "John630",
@@ -7828,11 +8464,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe630",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8e6eabca-7ecd-444b-aaf9-52c598945a08"),
+                            Id = new Guid("fa466591-a4d0-4b13-a085-1809b3ec55a3"),
                             Age = "20",
                             Email = "ahihi631@gmail.com",
                             FirstName = "John631",
@@ -7840,11 +8477,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe631",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0d6bdcfe-0c85-466a-b337-b8ef79757fdc"),
+                            Id = new Guid("f675e6ca-0bea-4ff3-81a7-2af749e9583c"),
                             Age = "20",
                             Email = "ahihi632@gmail.com",
                             FirstName = "John632",
@@ -7852,11 +8490,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe632",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ade6db78-c34d-4c8e-82a3-3c3fab6b4f6c"),
+                            Id = new Guid("70f05301-4a70-42e5-8456-f01302460d8d"),
                             Age = "20",
                             Email = "ahihi633@gmail.com",
                             FirstName = "John633",
@@ -7864,11 +8503,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe633",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a8670f31-7a85-483d-8f92-0187bee127ec"),
+                            Id = new Guid("8c4f1e8c-3a73-4bdb-8d43-4ca8b871c85c"),
                             Age = "20",
                             Email = "ahihi634@gmail.com",
                             FirstName = "John634",
@@ -7876,11 +8516,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe634",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8c55f707-af23-4e32-b86e-c53b1635a750"),
+                            Id = new Guid("186c8273-3dc7-4d3a-828a-c5577dcee7e1"),
                             Age = "20",
                             Email = "ahihi635@gmail.com",
                             FirstName = "John635",
@@ -7888,11 +8529,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe635",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bf37872a-9f57-4392-be4c-9a6f04e458bf"),
+                            Id = new Guid("3f5a492b-3cb6-4e35-842d-ad18c96cce53"),
                             Age = "20",
                             Email = "ahihi636@gmail.com",
                             FirstName = "John636",
@@ -7900,11 +8542,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe636",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("26db8e87-b683-48ef-b664-edeb6f53fc36"),
+                            Id = new Guid("5547ccb6-cf04-4206-92e0-904ee80df035"),
                             Age = "20",
                             Email = "ahihi637@gmail.com",
                             FirstName = "John637",
@@ -7912,11 +8555,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe637",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5a5f9910-1ab1-43e3-a3fb-f63f0eaf910e"),
+                            Id = new Guid("bdc81412-0738-4794-9adb-9f829a8b8ad1"),
                             Age = "20",
                             Email = "ahihi638@gmail.com",
                             FirstName = "John638",
@@ -7924,11 +8568,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe638",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7edafa88-f165-4c16-968c-ac3efcef578c"),
+                            Id = new Guid("e1920201-ffa3-4015-9935-2cbf46be2bd8"),
                             Age = "20",
                             Email = "ahihi639@gmail.com",
                             FirstName = "John639",
@@ -7936,11 +8581,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe639",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4953f9c9-1e03-4ed1-9412-a8e49ecd1d04"),
+                            Id = new Guid("1ec3f4a2-b731-4891-aec1-fbf2a7d30fbe"),
                             Age = "20",
                             Email = "ahihi640@gmail.com",
                             FirstName = "John640",
@@ -7948,11 +8594,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe640",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2e68d163-2bd1-4a64-b1b9-d57fba3e8998"),
+                            Id = new Guid("b0782fbc-5816-402f-bcc9-3d0aeac63667"),
                             Age = "20",
                             Email = "ahihi641@gmail.com",
                             FirstName = "John641",
@@ -7960,11 +8607,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe641",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4f1d2254-ad94-4010-ab74-5309be693a14"),
+                            Id = new Guid("451d8b3a-e77d-4115-9f91-417051125f6c"),
                             Age = "20",
                             Email = "ahihi642@gmail.com",
                             FirstName = "John642",
@@ -7972,11 +8620,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe642",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fca7d19e-a540-49d6-94ad-b8941e9b045c"),
+                            Id = new Guid("9d4fc497-93e7-4cea-ad31-95c67d7e8414"),
                             Age = "20",
                             Email = "ahihi643@gmail.com",
                             FirstName = "John643",
@@ -7984,11 +8633,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe643",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6df491b9-79e9-4a76-bab4-4394e04e5eda"),
+                            Id = new Guid("07eb751e-53db-45da-9ba4-a947befe4a9e"),
                             Age = "20",
                             Email = "ahihi644@gmail.com",
                             FirstName = "John644",
@@ -7996,11 +8646,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe644",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e25d9aaf-ef97-458f-81bd-df11ab60fef2"),
+                            Id = new Guid("f8c8b5cf-e3a5-4987-bb22-1237e1774e58"),
                             Age = "20",
                             Email = "ahihi645@gmail.com",
                             FirstName = "John645",
@@ -8008,11 +8659,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe645",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("df306227-fee7-40f1-8486-c87c75e11bae"),
+                            Id = new Guid("049ea9d4-42f5-4cb4-9622-b0f17f86e9c2"),
                             Age = "20",
                             Email = "ahihi646@gmail.com",
                             FirstName = "John646",
@@ -8020,11 +8672,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe646",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9edcb30c-6817-45b5-b3f9-5bd697a578fc"),
+                            Id = new Guid("9f5d3224-a2fa-4a67-8873-1c8e49ec6961"),
                             Age = "20",
                             Email = "ahihi647@gmail.com",
                             FirstName = "John647",
@@ -8032,11 +8685,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe647",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("01dac3de-2d69-49d4-b940-93c0b1692f88"),
+                            Id = new Guid("7100f78a-606f-443f-a619-88a23cce4ea1"),
                             Age = "20",
                             Email = "ahihi648@gmail.com",
                             FirstName = "John648",
@@ -8044,11 +8698,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe648",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d662c8ee-e456-4af1-8b2e-8ce79ffc9a49"),
+                            Id = new Guid("e7a4f3b8-3e04-4ad6-82b4-517f1cdbf439"),
                             Age = "20",
                             Email = "ahihi649@gmail.com",
                             FirstName = "John649",
@@ -8056,11 +8711,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe649",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("24d9ae41-b862-4d37-a062-67eae1fbb27f"),
+                            Id = new Guid("5fb43fb7-7279-44da-8007-44b69f22885f"),
                             Age = "20",
                             Email = "ahihi650@gmail.com",
                             FirstName = "John650",
@@ -8068,11 +8724,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe650",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("74d90bff-e02d-4bd2-838a-fefe5f446f53"),
+                            Id = new Guid("88d4ce43-37d2-48b6-a738-fa077acd19ee"),
                             Age = "20",
                             Email = "ahihi651@gmail.com",
                             FirstName = "John651",
@@ -8080,11 +8737,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe651",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b6d39624-0492-4cf2-ab0f-5f0dce8030ae"),
+                            Id = new Guid("c7a8b6b3-eaac-4c8e-9c87-37a33eba4640"),
                             Age = "20",
                             Email = "ahihi652@gmail.com",
                             FirstName = "John652",
@@ -8092,11 +8750,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe652",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5ac2b333-fd96-445c-92ae-9b7c4be32c61"),
+                            Id = new Guid("6e94a94b-d585-4642-9b3e-3ec66168abbd"),
                             Age = "20",
                             Email = "ahihi653@gmail.com",
                             FirstName = "John653",
@@ -8104,11 +8763,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe653",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a6878e8e-86da-47d3-9b35-3ebaa7938d26"),
+                            Id = new Guid("e413904f-e38a-46e1-9d75-63d9f5cfcbda"),
                             Age = "20",
                             Email = "ahihi654@gmail.com",
                             FirstName = "John654",
@@ -8116,11 +8776,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe654",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b33a0afa-c282-48ab-97ff-b06591689ac6"),
+                            Id = new Guid("0dca6eeb-fc2b-471f-b752-1b1c83ebea4e"),
                             Age = "20",
                             Email = "ahihi655@gmail.com",
                             FirstName = "John655",
@@ -8128,11 +8789,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe655",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9b66f88e-e92d-4d21-868e-996b2d1195bd"),
+                            Id = new Guid("8eb5390a-7ab5-4511-ab0d-dde7c7199739"),
                             Age = "20",
                             Email = "ahihi656@gmail.com",
                             FirstName = "John656",
@@ -8140,11 +8802,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe656",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("696accb2-ad96-47e2-bbee-689dbcf8b9ed"),
+                            Id = new Guid("b69f22af-379a-4f63-8ddc-b795e7b91234"),
                             Age = "20",
                             Email = "ahihi657@gmail.com",
                             FirstName = "John657",
@@ -8152,11 +8815,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe657",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7f2ed4a7-338c-4398-8d07-8181f1bee13c"),
+                            Id = new Guid("45ca0a63-a8a9-4b56-ada9-b1bdbe079a28"),
                             Age = "20",
                             Email = "ahihi658@gmail.com",
                             FirstName = "John658",
@@ -8164,11 +8828,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe658",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9c47f930-002f-41f8-99ce-668a90120afe"),
+                            Id = new Guid("06d2e2aa-e595-4726-9370-2ee5dc0af60f"),
                             Age = "20",
                             Email = "ahihi659@gmail.com",
                             FirstName = "John659",
@@ -8176,11 +8841,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe659",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("05e0924b-0e31-4ada-89b1-6167205d45a6"),
+                            Id = new Guid("23f26bed-3274-4d0f-b6cc-34a470b2e7aa"),
                             Age = "20",
                             Email = "ahihi660@gmail.com",
                             FirstName = "John660",
@@ -8188,11 +8854,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe660",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5aa88c7c-9303-4921-97ea-b5cb26c0059b"),
+                            Id = new Guid("ec7625fb-cf9f-43b3-b989-65aedda47739"),
                             Age = "20",
                             Email = "ahihi661@gmail.com",
                             FirstName = "John661",
@@ -8200,11 +8867,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe661",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("91dbef15-977f-45ba-a699-6aca3a88af9d"),
+                            Id = new Guid("14bf7c03-80e7-4d15-97d7-37c59b1e9e3f"),
                             Age = "20",
                             Email = "ahihi662@gmail.com",
                             FirstName = "John662",
@@ -8212,11 +8880,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe662",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("69641cf7-25e7-44a3-b853-87b825d1c7db"),
+                            Id = new Guid("888cddfc-7598-4eda-860a-af08cce25098"),
                             Age = "20",
                             Email = "ahihi663@gmail.com",
                             FirstName = "John663",
@@ -8224,11 +8893,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe663",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2b2b715d-ca63-4990-9f9d-4d10cfbad6b3"),
+                            Id = new Guid("5de0b6b8-9991-4dc4-8524-02ec141bddfd"),
                             Age = "20",
                             Email = "ahihi664@gmail.com",
                             FirstName = "John664",
@@ -8236,11 +8906,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe664",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("30304ef4-3b36-4dbf-8df1-8d2e80286c1f"),
+                            Id = new Guid("aa166342-7eb5-45ef-b3bd-3e546501f227"),
                             Age = "20",
                             Email = "ahihi665@gmail.com",
                             FirstName = "John665",
@@ -8248,11 +8919,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe665",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cdb31e92-7c0f-454f-ae05-f4c3bfdcfa5f"),
+                            Id = new Guid("54796f26-d7d8-4f62-ac8e-7d27e6684c75"),
                             Age = "20",
                             Email = "ahihi666@gmail.com",
                             FirstName = "John666",
@@ -8260,11 +8932,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe666",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1c4d55f4-41ec-4dcb-bcb6-ca35ae446f5d"),
+                            Id = new Guid("5cef2c59-9485-49ee-8010-1672dcf3668d"),
                             Age = "20",
                             Email = "ahihi667@gmail.com",
                             FirstName = "John667",
@@ -8272,11 +8945,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe667",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9e45c874-7c89-4143-a4ff-75f012b5cd1c"),
+                            Id = new Guid("e6f7bf1d-6860-4fb3-aabb-7f9661e0bce5"),
                             Age = "20",
                             Email = "ahihi668@gmail.com",
                             FirstName = "John668",
@@ -8284,11 +8958,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe668",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ef5b3576-3bb1-4e8b-812f-c3ce0fea278f"),
+                            Id = new Guid("2151c3e9-7782-4007-b164-e518e7f8b27a"),
                             Age = "20",
                             Email = "ahihi669@gmail.com",
                             FirstName = "John669",
@@ -8296,11 +8971,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe669",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f6ae3304-a5c5-4c96-92fd-a43a88b79df9"),
+                            Id = new Guid("a0f288af-c134-4919-8408-6141fd0c4a9a"),
                             Age = "20",
                             Email = "ahihi670@gmail.com",
                             FirstName = "John670",
@@ -8308,11 +8984,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe670",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a7938f32-d9ed-48a1-9a78-f1246d9854e5"),
+                            Id = new Guid("0796a042-532f-43b2-898c-5cd32fa643f6"),
                             Age = "20",
                             Email = "ahihi671@gmail.com",
                             FirstName = "John671",
@@ -8320,11 +8997,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe671",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0001fbb9-b8fc-43ef-af51-b92bbc0070ee"),
+                            Id = new Guid("f60b7a1c-8285-4bb8-b872-73464cc4ba00"),
                             Age = "20",
                             Email = "ahihi672@gmail.com",
                             FirstName = "John672",
@@ -8332,11 +9010,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe672",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6e70319d-09a2-462f-a544-4c2cfba598c1"),
+                            Id = new Guid("aaa9a102-47f7-4273-b1b4-6dec15c220bb"),
                             Age = "20",
                             Email = "ahihi673@gmail.com",
                             FirstName = "John673",
@@ -8344,11 +9023,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe673",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fec5fc96-2423-428a-9bb9-078a2e596748"),
+                            Id = new Guid("c218b9d6-b099-4217-a0d5-074d2f3f2a04"),
                             Age = "20",
                             Email = "ahihi674@gmail.com",
                             FirstName = "John674",
@@ -8356,11 +9036,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe674",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d0c9830b-462d-4d78-b16d-65c005f2bfb5"),
+                            Id = new Guid("13b5161f-afa8-4d2d-b70b-01e81d2ee6ee"),
                             Age = "20",
                             Email = "ahihi675@gmail.com",
                             FirstName = "John675",
@@ -8368,11 +9049,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe675",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f30e5992-c95d-4b97-a080-b4488c2db5d3"),
+                            Id = new Guid("96e69f02-af17-410a-ac90-ea351c1e3a05"),
                             Age = "20",
                             Email = "ahihi676@gmail.com",
                             FirstName = "John676",
@@ -8380,11 +9062,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe676",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9428406f-9d14-471c-b998-8a6bdec13c92"),
+                            Id = new Guid("c1394cf7-bf18-48c5-9e55-8b6e0acea109"),
                             Age = "20",
                             Email = "ahihi677@gmail.com",
                             FirstName = "John677",
@@ -8392,11 +9075,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe677",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6178f84c-6bdf-40d3-9c79-a565fd959a60"),
+                            Id = new Guid("adc4e8d7-683f-4679-9fd0-03b88a18268d"),
                             Age = "20",
                             Email = "ahihi678@gmail.com",
                             FirstName = "John678",
@@ -8404,11 +9088,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe678",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("44bf69ef-0a5e-4bf8-bc7a-87fde8999652"),
+                            Id = new Guid("9bf09dd1-eeab-4747-95eb-116774146309"),
                             Age = "20",
                             Email = "ahihi679@gmail.com",
                             FirstName = "John679",
@@ -8416,11 +9101,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe679",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("66aac04c-2f1f-42a2-85c4-22063e8b46f1"),
+                            Id = new Guid("1031c7f3-59ac-439b-9006-7627a8da8f6b"),
                             Age = "20",
                             Email = "ahihi680@gmail.com",
                             FirstName = "John680",
@@ -8428,11 +9114,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe680",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("764e6dde-39da-41ab-be28-0c54bd0542ee"),
+                            Id = new Guid("fd79280d-572d-4039-a9ad-553fb3c515c3"),
                             Age = "20",
                             Email = "ahihi681@gmail.com",
                             FirstName = "John681",
@@ -8440,11 +9127,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe681",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("808540e8-06f9-468e-911b-ea3f3dec09bc"),
+                            Id = new Guid("5b8a6b96-077c-4bfa-8cdd-f4e0afdb4086"),
                             Age = "20",
                             Email = "ahihi682@gmail.com",
                             FirstName = "John682",
@@ -8452,11 +9140,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe682",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("865ccf1f-c1f5-4198-bd05-02ff44ef0eec"),
+                            Id = new Guid("376381d9-8c51-48cc-875c-6568f014ca97"),
                             Age = "20",
                             Email = "ahihi683@gmail.com",
                             FirstName = "John683",
@@ -8464,11 +9153,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe683",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8d73f1b1-87f1-407b-ac90-6486aa04786a"),
+                            Id = new Guid("3b0f8f95-583b-4365-94ba-1845011e1355"),
                             Age = "20",
                             Email = "ahihi684@gmail.com",
                             FirstName = "John684",
@@ -8476,11 +9166,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe684",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f958c069-2b5e-4d07-977c-40e85a233892"),
+                            Id = new Guid("375720db-8cd5-4040-a406-59b077ef31a3"),
                             Age = "20",
                             Email = "ahihi685@gmail.com",
                             FirstName = "John685",
@@ -8488,11 +9179,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe685",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7973e40d-d6c8-4e0f-b74e-8109c3440aad"),
+                            Id = new Guid("40f576aa-2338-400d-b81d-9b2565eb5488"),
                             Age = "20",
                             Email = "ahihi686@gmail.com",
                             FirstName = "John686",
@@ -8500,11 +9192,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe686",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("04cefa8b-aeeb-4b25-a706-f29f65f81114"),
+                            Id = new Guid("7901c8b5-9ec8-4178-bf03-f6e65747ecc3"),
                             Age = "20",
                             Email = "ahihi687@gmail.com",
                             FirstName = "John687",
@@ -8512,11 +9205,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe687",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("47fc6c8f-3d9e-4852-bc5a-e64c2a5c2599"),
+                            Id = new Guid("c38d9926-1583-4be0-a6e5-41a732d8edad"),
                             Age = "20",
                             Email = "ahihi688@gmail.com",
                             FirstName = "John688",
@@ -8524,11 +9218,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe688",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3613e9f9-b62f-4f2d-9900-2e3ba20c467a"),
+                            Id = new Guid("8ef38b12-63bf-436e-bb10-4a000e9626b6"),
                             Age = "20",
                             Email = "ahihi689@gmail.com",
                             FirstName = "John689",
@@ -8536,11 +9231,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe689",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6ea19a0e-eecf-466b-bb8e-e4e03960aff2"),
+                            Id = new Guid("69ca2d3a-c6e5-4e2f-bfe1-17b2972aa6a4"),
                             Age = "20",
                             Email = "ahihi690@gmail.com",
                             FirstName = "John690",
@@ -8548,11 +9244,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe690",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ba543f1d-fef3-4b4c-a7f5-734d629e886c"),
+                            Id = new Guid("74fd378c-84cb-4742-97a4-3e4bd67bb0b0"),
                             Age = "20",
                             Email = "ahihi691@gmail.com",
                             FirstName = "John691",
@@ -8560,11 +9257,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe691",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("88c8bd10-e806-46e1-8951-4270b6e05e77"),
+                            Id = new Guid("c371b0f1-a830-4c26-8bd0-8fb8e9f92d41"),
                             Age = "20",
                             Email = "ahihi692@gmail.com",
                             FirstName = "John692",
@@ -8572,11 +9270,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe692",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bc149876-1f61-4505-9a95-3bfdcbe06c16"),
+                            Id = new Guid("cc3dbc8d-42f3-4980-b2b0-06b31eb01be7"),
                             Age = "20",
                             Email = "ahihi693@gmail.com",
                             FirstName = "John693",
@@ -8584,11 +9283,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe693",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d4ac2fa5-47bd-4964-bf02-45e61c6a9f0a"),
+                            Id = new Guid("08c62960-530b-4c7e-9b92-b20ca456670a"),
                             Age = "20",
                             Email = "ahihi694@gmail.com",
                             FirstName = "John694",
@@ -8596,11 +9296,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe694",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7c749801-ca6c-4ed9-848d-8374d4971c20"),
+                            Id = new Guid("d6d1217b-ac05-4b6e-a937-cdeea7f9fad6"),
                             Age = "20",
                             Email = "ahihi695@gmail.com",
                             FirstName = "John695",
@@ -8608,11 +9309,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe695",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("75354fe7-56e8-422a-bafb-dc284387396d"),
+                            Id = new Guid("46995f59-454a-42ae-9a0f-a26c6900f987"),
                             Age = "20",
                             Email = "ahihi696@gmail.com",
                             FirstName = "John696",
@@ -8620,11 +9322,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe696",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b52dbd02-9d20-4ff4-9dbb-86a8b5823ac5"),
+                            Id = new Guid("80af8659-0cfe-48eb-a927-10c8a1539b96"),
                             Age = "20",
                             Email = "ahihi697@gmail.com",
                             FirstName = "John697",
@@ -8632,11 +9335,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe697",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cffd74c3-fc8e-4440-8520-b5eb4d74d771"),
+                            Id = new Guid("a03c231c-130f-4303-b90d-cb4ac1311651"),
                             Age = "20",
                             Email = "ahihi698@gmail.com",
                             FirstName = "John698",
@@ -8644,11 +9348,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe698",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8a253ffe-36c7-41b3-9c42-abe0f454dddf"),
+                            Id = new Guid("7140522f-59b5-49a2-ae96-69d94401fe00"),
                             Age = "20",
                             Email = "ahihi699@gmail.com",
                             FirstName = "John699",
@@ -8656,11 +9361,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe699",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bfa161f5-769f-4a9c-80ec-b0bd754bb33a"),
+                            Id = new Guid("2b024c96-2721-41c8-b5f3-206af1d83b10"),
                             Age = "20",
                             Email = "ahihi700@gmail.com",
                             FirstName = "John700",
@@ -8668,11 +9374,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe700",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b1c34d79-0325-4a4c-b393-086f595ee581"),
+                            Id = new Guid("1e66c9e9-839d-43bc-a51c-f9b823484863"),
                             Age = "20",
                             Email = "ahihi701@gmail.com",
                             FirstName = "John701",
@@ -8680,11 +9387,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe701",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("da5c5e9c-0833-48bf-a980-4b9ea8e84679"),
+                            Id = new Guid("8f036699-bb66-49e9-8954-e8d795f6663d"),
                             Age = "20",
                             Email = "ahihi702@gmail.com",
                             FirstName = "John702",
@@ -8692,11 +9400,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe702",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("220d89d5-d575-46a0-b25f-6e69ba58f31a"),
+                            Id = new Guid("4d157de2-9e7d-461d-b3c2-b4600b8441f1"),
                             Age = "20",
                             Email = "ahihi703@gmail.com",
                             FirstName = "John703",
@@ -8704,11 +9413,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe703",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6ec099d3-53e2-4323-bdb7-ab1612ab2f00"),
+                            Id = new Guid("08da5991-c2bc-42fa-bbb0-117b73bbfe82"),
                             Age = "20",
                             Email = "ahihi704@gmail.com",
                             FirstName = "John704",
@@ -8716,11 +9426,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe704",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("369ff570-7a26-4491-8cf5-583a9e0da943"),
+                            Id = new Guid("01bccc33-dfcf-4e05-a132-ff37a30b04ae"),
                             Age = "20",
                             Email = "ahihi705@gmail.com",
                             FirstName = "John705",
@@ -8728,11 +9439,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe705",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ca4b9557-47ab-44d3-99ba-0adc47bc2397"),
+                            Id = new Guid("a5456039-beff-49c4-96aa-5abfc6defdd2"),
                             Age = "20",
                             Email = "ahihi706@gmail.com",
                             FirstName = "John706",
@@ -8740,11 +9452,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe706",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9e9da4eb-24fb-41e4-9098-56ebd0fa803a"),
+                            Id = new Guid("3080162a-cb57-4b98-8ab0-c2bed97f5856"),
                             Age = "20",
                             Email = "ahihi707@gmail.com",
                             FirstName = "John707",
@@ -8752,11 +9465,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe707",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("57532dd3-a419-4b67-ad85-135bb2769771"),
+                            Id = new Guid("917e2379-0a26-43c1-ae65-bd245e50eb9e"),
                             Age = "20",
                             Email = "ahihi708@gmail.com",
                             FirstName = "John708",
@@ -8764,11 +9478,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe708",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d7d58d04-e4ce-4058-a6c0-a6d4c10d334f"),
+                            Id = new Guid("7d080e53-41af-4610-8a91-943387125167"),
                             Age = "20",
                             Email = "ahihi709@gmail.com",
                             FirstName = "John709",
@@ -8776,11 +9491,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe709",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a6e829eb-947e-4f86-934c-5c0af450270a"),
+                            Id = new Guid("05d9137e-b103-4d3c-bce2-0473b4574542"),
                             Age = "20",
                             Email = "ahihi710@gmail.com",
                             FirstName = "John710",
@@ -8788,11 +9504,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe710",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("37ba66e3-1362-44ad-a2f8-05978a412546"),
+                            Id = new Guid("1fa06110-8340-49d6-9116-96aa33192986"),
                             Age = "20",
                             Email = "ahihi711@gmail.com",
                             FirstName = "John711",
@@ -8800,11 +9517,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe711",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("290a45cd-7a7b-403d-9d01-8f511b1ba68d"),
+                            Id = new Guid("a3633150-61f1-48b1-80c7-3d89765db7bc"),
                             Age = "20",
                             Email = "ahihi712@gmail.com",
                             FirstName = "John712",
@@ -8812,11 +9530,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe712",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5c7bc431-6cca-49e0-a0ff-e751b25ede56"),
+                            Id = new Guid("004556d6-0c64-4d17-8915-1918075b5270"),
                             Age = "20",
                             Email = "ahihi713@gmail.com",
                             FirstName = "John713",
@@ -8824,11 +9543,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe713",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("db526816-a83b-4ead-a38d-e59705cdc3b3"),
+                            Id = new Guid("82a2a438-9608-4ee3-b607-ff20368d368c"),
                             Age = "20",
                             Email = "ahihi714@gmail.com",
                             FirstName = "John714",
@@ -8836,11 +9556,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe714",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fc659d7e-2f52-4dd7-858c-3248db946329"),
+                            Id = new Guid("9694950c-0c3f-4549-bdb2-b87d232643de"),
                             Age = "20",
                             Email = "ahihi715@gmail.com",
                             FirstName = "John715",
@@ -8848,11 +9569,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe715",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("55b54875-17a1-428a-8ae8-1e232dd20124"),
+                            Id = new Guid("b5eb27f2-e9ba-4d0e-bea4-20bc283aaf87"),
                             Age = "20",
                             Email = "ahihi716@gmail.com",
                             FirstName = "John716",
@@ -8860,11 +9582,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe716",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("290596b0-f51a-4189-81ca-801ec60e32fd"),
+                            Id = new Guid("cb2769ae-0382-4459-a5c9-8c6b0e5c45d5"),
                             Age = "20",
                             Email = "ahihi717@gmail.com",
                             FirstName = "John717",
@@ -8872,11 +9595,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe717",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c63fdd53-d05a-445d-8f60-4f5f9554a004"),
+                            Id = new Guid("f9b96870-cec0-4873-b048-1e0573f24b23"),
                             Age = "20",
                             Email = "ahihi718@gmail.com",
                             FirstName = "John718",
@@ -8884,11 +9608,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe718",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ad3325f7-82a6-490c-9c21-df50a7be0841"),
+                            Id = new Guid("cef94166-f6bd-474f-b537-269c4a830cf7"),
                             Age = "20",
                             Email = "ahihi719@gmail.com",
                             FirstName = "John719",
@@ -8896,11 +9621,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe719",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fe1213f8-a4c2-474e-9832-50ef82a40373"),
+                            Id = new Guid("44cb9f82-55cb-427b-a756-57fabe48cc40"),
                             Age = "20",
                             Email = "ahihi720@gmail.com",
                             FirstName = "John720",
@@ -8908,11 +9634,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe720",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("27d0031e-3e45-4872-b1e1-8ff7e04a4aca"),
+                            Id = new Guid("affa61c0-12a1-45cd-9b3b-a98100a4eea8"),
                             Age = "20",
                             Email = "ahihi721@gmail.com",
                             FirstName = "John721",
@@ -8920,11 +9647,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe721",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("77ecea34-faa9-468e-9602-e4e7e960d59f"),
+                            Id = new Guid("eaf9e016-6a67-4097-b44d-76b08c45c0d9"),
                             Age = "20",
                             Email = "ahihi722@gmail.com",
                             FirstName = "John722",
@@ -8932,11 +9660,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe722",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a0526a9f-b460-4390-9e1c-70ece7ba2042"),
+                            Id = new Guid("33ed65db-051f-4659-9c0a-6ee52746e5b8"),
                             Age = "20",
                             Email = "ahihi723@gmail.com",
                             FirstName = "John723",
@@ -8944,11 +9673,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe723",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("04036da7-907f-4dae-9d24-2a70ca26f67a"),
+                            Id = new Guid("6af5ab70-c252-46e8-9142-fcd6c768db21"),
                             Age = "20",
                             Email = "ahihi724@gmail.com",
                             FirstName = "John724",
@@ -8956,11 +9686,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe724",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5734902d-9a63-48d6-8f89-9115ec06b18e"),
+                            Id = new Guid("94b672c0-26b3-47cd-ac37-b6ff7d5b81c0"),
                             Age = "20",
                             Email = "ahihi725@gmail.com",
                             FirstName = "John725",
@@ -8968,11 +9699,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe725",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6be42913-f7ec-452a-a15e-cc502900e7ba"),
+                            Id = new Guid("c8a47100-57e2-49ad-aeab-e409bb123c62"),
                             Age = "20",
                             Email = "ahihi726@gmail.com",
                             FirstName = "John726",
@@ -8980,11 +9712,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe726",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("53063cdf-ccee-41a0-aad6-67ac5ca970ef"),
+                            Id = new Guid("120b0bab-615f-46b9-80e9-431708800e3c"),
                             Age = "20",
                             Email = "ahihi727@gmail.com",
                             FirstName = "John727",
@@ -8992,11 +9725,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe727",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0d978f3d-85ec-4b12-9c22-0f28f7ae44c1"),
+                            Id = new Guid("73b970d9-c024-41e7-adb1-93fe548d947b"),
                             Age = "20",
                             Email = "ahihi728@gmail.com",
                             FirstName = "John728",
@@ -9004,11 +9738,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe728",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6e6627e7-eb10-4ae5-b46b-b07bfddcd4c0"),
+                            Id = new Guid("770f8212-caa2-42b4-872e-2bd593b1313e"),
                             Age = "20",
                             Email = "ahihi729@gmail.com",
                             FirstName = "John729",
@@ -9016,11 +9751,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe729",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eb913bae-c116-4c33-a3ec-b54a21cac290"),
+                            Id = new Guid("24b32e82-77e2-4253-98de-c0e12a36ed9e"),
                             Age = "20",
                             Email = "ahihi730@gmail.com",
                             FirstName = "John730",
@@ -9028,11 +9764,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe730",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("baf4031b-0b51-4245-b072-48e2cd3a7b62"),
+                            Id = new Guid("fe2d7461-eb30-4c89-bfcb-956ca7667c89"),
                             Age = "20",
                             Email = "ahihi731@gmail.com",
                             FirstName = "John731",
@@ -9040,11 +9777,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe731",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2c6a5c42-af24-44e8-bf34-3bf2121294c0"),
+                            Id = new Guid("699c2ef2-834f-4e80-b2db-a519fd03fb57"),
                             Age = "20",
                             Email = "ahihi732@gmail.com",
                             FirstName = "John732",
@@ -9052,11 +9790,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe732",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5c9a8942-47ee-4662-a604-08cf815390fe"),
+                            Id = new Guid("9b006652-ec15-42ae-b1fc-f92bce4f5669"),
                             Age = "20",
                             Email = "ahihi733@gmail.com",
                             FirstName = "John733",
@@ -9064,11 +9803,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe733",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c891ff54-9693-4d4a-b8c8-cad0accd2dde"),
+                            Id = new Guid("72c3de13-7fe1-4b78-8ca6-ac815a0a0117"),
                             Age = "20",
                             Email = "ahihi734@gmail.com",
                             FirstName = "John734",
@@ -9076,11 +9816,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe734",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a254bb6e-c166-4a1f-a84e-8a6e5c53195d"),
+                            Id = new Guid("ef5c2dcc-0fdf-419f-a14c-6a1d7cbeabdc"),
                             Age = "20",
                             Email = "ahihi735@gmail.com",
                             FirstName = "John735",
@@ -9088,11 +9829,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe735",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("85279a97-9277-4b50-a703-782aeb69c356"),
+                            Id = new Guid("5b011066-430e-4045-9ba8-17e1aa085e41"),
                             Age = "20",
                             Email = "ahihi736@gmail.com",
                             FirstName = "John736",
@@ -9100,11 +9842,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe736",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e9fc8909-93fe-4278-819e-14e56a8713c7"),
+                            Id = new Guid("c998122b-ba49-42fe-8a70-c591a9f856bc"),
                             Age = "20",
                             Email = "ahihi737@gmail.com",
                             FirstName = "John737",
@@ -9112,11 +9855,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe737",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8ed62a3b-3ee3-4fcb-b692-4a2b1d392040"),
+                            Id = new Guid("9d392ce4-164f-4d9e-9c09-4cb39a90057a"),
                             Age = "20",
                             Email = "ahihi738@gmail.com",
                             FirstName = "John738",
@@ -9124,11 +9868,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe738",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("47c8364e-f988-4fc0-bd4e-23149d0d607a"),
+                            Id = new Guid("f1420cae-ee2a-4b22-91f9-c010c2b31f49"),
                             Age = "20",
                             Email = "ahihi739@gmail.com",
                             FirstName = "John739",
@@ -9136,11 +9881,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe739",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9f305e6a-9fb5-4f0f-91fa-73844239bac7"),
+                            Id = new Guid("399827f9-38ab-4457-9c27-589d09e37a6d"),
                             Age = "20",
                             Email = "ahihi740@gmail.com",
                             FirstName = "John740",
@@ -9148,11 +9894,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe740",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ac82d89f-8e49-49dc-b82e-61e54bffe829"),
+                            Id = new Guid("7c04772c-98c8-4d78-85b0-243c1a6a718e"),
                             Age = "20",
                             Email = "ahihi741@gmail.com",
                             FirstName = "John741",
@@ -9160,11 +9907,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe741",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("672b89a6-5724-495e-aab1-05ebc0bab7c5"),
+                            Id = new Guid("22e4ee26-5afb-4467-83e2-a6fd73dad4ea"),
                             Age = "20",
                             Email = "ahihi742@gmail.com",
                             FirstName = "John742",
@@ -9172,11 +9920,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe742",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0caa276a-28cf-4c6d-b6cd-0b5595157def"),
+                            Id = new Guid("7de2f16a-f879-441f-b1e1-9d4c126cfec6"),
                             Age = "20",
                             Email = "ahihi743@gmail.com",
                             FirstName = "John743",
@@ -9184,11 +9933,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe743",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5c41fdc8-e1ef-4568-acfb-0b19d15d0528"),
+                            Id = new Guid("bebf3a7a-12f2-4524-a0a8-6e454f2c0635"),
                             Age = "20",
                             Email = "ahihi744@gmail.com",
                             FirstName = "John744",
@@ -9196,11 +9946,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe744",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("065883b7-b7af-4181-a2f9-7a72cbcb1a67"),
+                            Id = new Guid("f8aa412b-c71c-4a31-94f2-6a150ceeff95"),
                             Age = "20",
                             Email = "ahihi745@gmail.com",
                             FirstName = "John745",
@@ -9208,11 +9959,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe745",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("226ab68d-8401-4cf1-8629-3e3a66fc9fba"),
+                            Id = new Guid("aa7d5c19-b8bf-4f78-9dd1-38a90c9d7690"),
                             Age = "20",
                             Email = "ahihi746@gmail.com",
                             FirstName = "John746",
@@ -9220,11 +9972,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe746",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1059fa50-cf48-41bc-9b50-f3779eb42433"),
+                            Id = new Guid("b9f9312c-b06c-4a29-907d-b3832421a096"),
                             Age = "20",
                             Email = "ahihi747@gmail.com",
                             FirstName = "John747",
@@ -9232,11 +9985,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe747",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("af1a2b99-f51b-4c29-9b48-523e168c7723"),
+                            Id = new Guid("d9af7811-88a3-4b31-b747-e4b1a13a5f91"),
                             Age = "20",
                             Email = "ahihi748@gmail.com",
                             FirstName = "John748",
@@ -9244,11 +9998,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe748",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a075743a-180e-4edc-bb93-87ac660876c4"),
+                            Id = new Guid("11d68e3b-edbd-4c08-93f2-80276e91171e"),
                             Age = "20",
                             Email = "ahihi749@gmail.com",
                             FirstName = "John749",
@@ -9256,11 +10011,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe749",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9b218e25-6f13-49a7-bab0-50d21612a976"),
+                            Id = new Guid("19006eb6-f71b-488b-b7f8-2289ebe16f28"),
                             Age = "20",
                             Email = "ahihi750@gmail.com",
                             FirstName = "John750",
@@ -9268,11 +10024,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe750",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d7a21509-2c52-43ef-adbb-bf84309d6f3e"),
+                            Id = new Guid("1da5af71-e19b-4737-814a-dfc9fcbcd967"),
                             Age = "20",
                             Email = "ahihi751@gmail.com",
                             FirstName = "John751",
@@ -9280,11 +10037,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe751",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("68da70fc-5313-4de3-926d-3bfdeb14e8cf"),
+                            Id = new Guid("36231473-8740-401d-8561-dccbd80b4f2c"),
                             Age = "20",
                             Email = "ahihi752@gmail.com",
                             FirstName = "John752",
@@ -9292,11 +10050,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe752",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("98c80c2d-151d-45fb-a1ed-ed8a88a654a5"),
+                            Id = new Guid("b536bbe9-b3ac-4daf-a2e7-ce4938bddd36"),
                             Age = "20",
                             Email = "ahihi753@gmail.com",
                             FirstName = "John753",
@@ -9304,11 +10063,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe753",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b3bdec87-0e34-4968-9da5-a69617a4fd89"),
+                            Id = new Guid("602009b9-9dca-4c7e-a828-717641259b01"),
                             Age = "20",
                             Email = "ahihi754@gmail.com",
                             FirstName = "John754",
@@ -9316,11 +10076,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe754",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("06f3070b-ef89-4c90-bfa2-2d024ff01afc"),
+                            Id = new Guid("ca7d629e-5b45-4008-a979-f7a6ccb9fc18"),
                             Age = "20",
                             Email = "ahihi755@gmail.com",
                             FirstName = "John755",
@@ -9328,11 +10089,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe755",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("97fbae98-3466-44da-99d9-29eb834a2cfe"),
+                            Id = new Guid("fa8abf31-f557-4ada-a1ab-c44763b6924b"),
                             Age = "20",
                             Email = "ahihi756@gmail.com",
                             FirstName = "John756",
@@ -9340,11 +10102,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe756",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("db86df0b-4c76-463e-88f6-d46d6c9c91d4"),
+                            Id = new Guid("b3ae4182-961c-4474-bf18-60917f175617"),
                             Age = "20",
                             Email = "ahihi757@gmail.com",
                             FirstName = "John757",
@@ -9352,11 +10115,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe757",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ed7d8818-dec7-4e1f-9451-f8529fdc4851"),
+                            Id = new Guid("1de371c0-c18f-4f4a-8041-4ef9ef57ae6c"),
                             Age = "20",
                             Email = "ahihi758@gmail.com",
                             FirstName = "John758",
@@ -9364,11 +10128,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe758",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("71d90133-c04e-4e63-90e6-9c001d240cbf"),
+                            Id = new Guid("511e696b-8750-49b2-b04e-d091693c0e51"),
                             Age = "20",
                             Email = "ahihi759@gmail.com",
                             FirstName = "John759",
@@ -9376,11 +10141,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe759",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0c65a039-9929-4eb8-844e-7b82695dcca4"),
+                            Id = new Guid("ff091281-f332-4b41-8596-c897d8199806"),
                             Age = "20",
                             Email = "ahihi760@gmail.com",
                             FirstName = "John760",
@@ -9388,11 +10154,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe760",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f4bed646-2c08-4c44-ade5-6a78655c804b"),
+                            Id = new Guid("8aa144ee-16c0-4988-a2e2-ae78e9b8af84"),
                             Age = "20",
                             Email = "ahihi761@gmail.com",
                             FirstName = "John761",
@@ -9400,11 +10167,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe761",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cdd1790a-6eb6-48e8-ac54-d6a9ffa82a3c"),
+                            Id = new Guid("b0a38bb3-b794-4b0a-af90-8361f0cac0ed"),
                             Age = "20",
                             Email = "ahihi762@gmail.com",
                             FirstName = "John762",
@@ -9412,11 +10180,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe762",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("863bc65e-438a-4387-926f-c06e1a285d12"),
+                            Id = new Guid("7db8c0ca-4667-414e-bbbb-b310dc33fca3"),
                             Age = "20",
                             Email = "ahihi763@gmail.com",
                             FirstName = "John763",
@@ -9424,11 +10193,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe763",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("35755b78-d317-4039-a14d-da4341a86997"),
+                            Id = new Guid("2c0171f2-e6d2-4d79-abff-95d7a299104f"),
                             Age = "20",
                             Email = "ahihi764@gmail.com",
                             FirstName = "John764",
@@ -9436,11 +10206,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe764",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("11db139f-207a-49a8-81b3-ae4ad716efa7"),
+                            Id = new Guid("96b29892-589b-47c7-99c1-fa8090223d25"),
                             Age = "20",
                             Email = "ahihi765@gmail.com",
                             FirstName = "John765",
@@ -9448,11 +10219,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe765",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("16252f06-0a26-40f7-847e-fe00b9a62889"),
+                            Id = new Guid("3d94f0a0-8ba8-454f-9bb3-1a765a2f7a18"),
                             Age = "20",
                             Email = "ahihi766@gmail.com",
                             FirstName = "John766",
@@ -9460,11 +10232,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe766",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1646a7f9-644d-4f0c-9f2d-ce4dc2c38717"),
+                            Id = new Guid("b5fb9246-f069-486c-b1c4-88473fe73a17"),
                             Age = "20",
                             Email = "ahihi767@gmail.com",
                             FirstName = "John767",
@@ -9472,11 +10245,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe767",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fa364cf0-14a9-4893-90bc-a165856ee8f2"),
+                            Id = new Guid("bc0ccb49-155f-4a25-a94a-ecc7dd051ffd"),
                             Age = "20",
                             Email = "ahihi768@gmail.com",
                             FirstName = "John768",
@@ -9484,11 +10258,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe768",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("28a7306c-399f-45bb-bee8-5d6bb01a00b7"),
+                            Id = new Guid("0e268dcb-21e7-47e1-a829-ec789fc0d3c2"),
                             Age = "20",
                             Email = "ahihi769@gmail.com",
                             FirstName = "John769",
@@ -9496,11 +10271,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe769",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5766a977-ac5d-4d99-9dc8-7648055ee73b"),
+                            Id = new Guid("1a00e820-64e0-43e2-83f2-3809d3e0303a"),
                             Age = "20",
                             Email = "ahihi770@gmail.com",
                             FirstName = "John770",
@@ -9508,11 +10284,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe770",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("44ef4e28-fa32-41f1-8e19-2c4958edb071"),
+                            Id = new Guid("4ef642ca-1aae-43bb-96be-2d4d58fe115f"),
                             Age = "20",
                             Email = "ahihi771@gmail.com",
                             FirstName = "John771",
@@ -9520,11 +10297,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe771",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cac9da41-e741-4672-8890-ca3303d0c14e"),
+                            Id = new Guid("2bf9a90b-f7be-4a01-a4d6-5ff33c216a94"),
                             Age = "20",
                             Email = "ahihi772@gmail.com",
                             FirstName = "John772",
@@ -9532,11 +10310,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe772",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a8cc6877-783c-40a0-89c3-3041e4228f44"),
+                            Id = new Guid("f9aed221-7880-4c00-84c4-7a5a45e5b2b9"),
                             Age = "20",
                             Email = "ahihi773@gmail.com",
                             FirstName = "John773",
@@ -9544,11 +10323,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe773",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4bfa5654-7fad-4f19-b280-ae55ba99da1f"),
+                            Id = new Guid("eeaffab4-3c17-4f34-8348-5c43dbdb787d"),
                             Age = "20",
                             Email = "ahihi774@gmail.com",
                             FirstName = "John774",
@@ -9556,11 +10336,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe774",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cbe614e0-8ccf-4cf7-b65d-7e3d7149f2b9"),
+                            Id = new Guid("75882e1b-4a9c-48ce-802f-82b9c134be51"),
                             Age = "20",
                             Email = "ahihi775@gmail.com",
                             FirstName = "John775",
@@ -9568,11 +10349,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe775",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1fb9be4a-02a5-4865-b05f-8910aac23471"),
+                            Id = new Guid("8a939db6-0590-4be3-a7ba-c01626fe4cd4"),
                             Age = "20",
                             Email = "ahihi776@gmail.com",
                             FirstName = "John776",
@@ -9580,11 +10362,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe776",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("040919ca-f9b6-40a5-92f7-58c584b1000f"),
+                            Id = new Guid("e80b835b-2994-4c8a-8a9a-ce77682e4857"),
                             Age = "20",
                             Email = "ahihi777@gmail.com",
                             FirstName = "John777",
@@ -9592,11 +10375,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe777",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0ae46e6f-de9f-49b4-98a3-e8205ba4fedf"),
+                            Id = new Guid("38c7bd27-523f-440c-927d-ab60d70eb04f"),
                             Age = "20",
                             Email = "ahihi778@gmail.com",
                             FirstName = "John778",
@@ -9604,11 +10388,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe778",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d98c6908-19f1-4303-a185-22febac0db91"),
+                            Id = new Guid("6b25bf49-11ed-4bbb-8b75-60032585383a"),
                             Age = "20",
                             Email = "ahihi779@gmail.com",
                             FirstName = "John779",
@@ -9616,11 +10401,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe779",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1c830cfa-fc46-4e47-82f6-0d7f0ad5f093"),
+                            Id = new Guid("aa44c136-d6f7-4a83-b6e4-4aca558d06f5"),
                             Age = "20",
                             Email = "ahihi780@gmail.com",
                             FirstName = "John780",
@@ -9628,11 +10414,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe780",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b2ecb01a-cbb4-4f1f-930a-2c0283a910b7"),
+                            Id = new Guid("0f004472-0313-4f54-b549-31b24a68355b"),
                             Age = "20",
                             Email = "ahihi781@gmail.com",
                             FirstName = "John781",
@@ -9640,11 +10427,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe781",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2a60ef6a-bc4a-4516-8db3-dc91596f68a7"),
+                            Id = new Guid("c7065af4-c676-464c-8c2a-1e9106d4454a"),
                             Age = "20",
                             Email = "ahihi782@gmail.com",
                             FirstName = "John782",
@@ -9652,11 +10440,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe782",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("92c93069-12a2-4311-9c35-de8e313488d1"),
+                            Id = new Guid("22d3e114-844f-4785-90cf-e51a744794d6"),
                             Age = "20",
                             Email = "ahihi783@gmail.com",
                             FirstName = "John783",
@@ -9664,11 +10453,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe783",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ea63d573-3b72-45c3-8711-76f71a158249"),
+                            Id = new Guid("02c5dbf2-be2c-4cc7-bfe2-08ecd3bafbf6"),
                             Age = "20",
                             Email = "ahihi784@gmail.com",
                             FirstName = "John784",
@@ -9676,11 +10466,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe784",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4049868a-0b18-45b4-9f75-f39cf00292e8"),
+                            Id = new Guid("65fd1509-e90c-4b6a-afd7-63bae60a50a2"),
                             Age = "20",
                             Email = "ahihi785@gmail.com",
                             FirstName = "John785",
@@ -9688,11 +10479,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe785",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5bf8afdc-d242-40d0-b2d3-7f9a5fd47cba"),
+                            Id = new Guid("f56e39f3-2118-4978-8887-3d548b15ae9a"),
                             Age = "20",
                             Email = "ahihi786@gmail.com",
                             FirstName = "John786",
@@ -9700,11 +10492,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe786",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("06e720af-d195-4a01-bcac-902088700299"),
+                            Id = new Guid("54e3dc2a-19f5-4ee6-8a14-8d15bf88c0d9"),
                             Age = "20",
                             Email = "ahihi787@gmail.com",
                             FirstName = "John787",
@@ -9712,11 +10505,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe787",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c543a8d5-4e81-4fae-9ba3-68f099656187"),
+                            Id = new Guid("ac8b767d-5270-44ab-8fb2-c948ff49df4e"),
                             Age = "20",
                             Email = "ahihi788@gmail.com",
                             FirstName = "John788",
@@ -9724,11 +10518,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe788",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b0852f28-b2ce-421c-a054-556aea493fd3"),
+                            Id = new Guid("7d17f46d-c073-4d54-843c-d638e5eea8b5"),
                             Age = "20",
                             Email = "ahihi789@gmail.com",
                             FirstName = "John789",
@@ -9736,11 +10531,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe789",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("469543b5-ccb2-4d74-b54c-2ee71408dc6f"),
+                            Id = new Guid("a4b66606-cc39-4fe6-80bb-8ca91bcf266e"),
                             Age = "20",
                             Email = "ahihi790@gmail.com",
                             FirstName = "John790",
@@ -9748,11 +10544,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe790",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("27fb78a9-0735-4083-ae14-44b873e5dae1"),
+                            Id = new Guid("a8df836e-aca8-4e21-a76e-ecbdfcabaa74"),
                             Age = "20",
                             Email = "ahihi791@gmail.com",
                             FirstName = "John791",
@@ -9760,11 +10557,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe791",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ded3b843-534c-403c-869b-470659f034ef"),
+                            Id = new Guid("8a977313-8bb0-4811-94de-24001e84284d"),
                             Age = "20",
                             Email = "ahihi792@gmail.com",
                             FirstName = "John792",
@@ -9772,11 +10570,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe792",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dc9ca5e7-fa45-4b2b-9976-5d8c8d084965"),
+                            Id = new Guid("70436b89-3887-4392-b125-b615c312b92a"),
                             Age = "20",
                             Email = "ahihi793@gmail.com",
                             FirstName = "John793",
@@ -9784,11 +10583,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe793",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e463a535-e0f0-4cbb-8550-9d7de1c0347b"),
+                            Id = new Guid("1ab266b7-504d-4bb1-b9e2-bb61dabf09ec"),
                             Age = "20",
                             Email = "ahihi794@gmail.com",
                             FirstName = "John794",
@@ -9796,11 +10596,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe794",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e74b814c-0386-4826-9ee5-f0bfd075dd65"),
+                            Id = new Guid("e3d79545-a5a7-4e29-83e4-f976b1e043fe"),
                             Age = "20",
                             Email = "ahihi795@gmail.com",
                             FirstName = "John795",
@@ -9808,11 +10609,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe795",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("01ceb9dd-418d-4f69-a546-ffe0d04989f6"),
+                            Id = new Guid("91b05668-7642-45ba-83a4-4833a33f511c"),
                             Age = "20",
                             Email = "ahihi796@gmail.com",
                             FirstName = "John796",
@@ -9820,11 +10622,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe796",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c50af391-8ddd-4d64-93b0-e0ed80709bcb"),
+                            Id = new Guid("6077f5b6-dfaf-4bbc-8c8b-49eb4c8eb68c"),
                             Age = "20",
                             Email = "ahihi797@gmail.com",
                             FirstName = "John797",
@@ -9832,11 +10635,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe797",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("413fecb1-5ebb-4c0d-806f-2dccafe7b63b"),
+                            Id = new Guid("899bb476-023b-49c6-a8c5-ce601320abeb"),
                             Age = "20",
                             Email = "ahihi798@gmail.com",
                             FirstName = "John798",
@@ -9844,11 +10648,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe798",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bbb304f7-d183-4dd6-80b5-ce21d06624c1"),
+                            Id = new Guid("d0de2be3-d51d-4e74-9f31-79b94c7e3e74"),
                             Age = "20",
                             Email = "ahihi799@gmail.com",
                             FirstName = "John799",
@@ -9856,11 +10661,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe799",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7168ea10-c9ab-4570-a304-c69139f0ed50"),
+                            Id = new Guid("39666582-a385-4100-9f73-6231dbc9fe94"),
                             Age = "20",
                             Email = "ahihi800@gmail.com",
                             FirstName = "John800",
@@ -9868,11 +10674,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe800",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2e28c6b1-9ea4-4139-a6ae-4e9fb24010eb"),
+                            Id = new Guid("2a2268d3-89ab-42f5-8f4a-1cb13c525fe4"),
                             Age = "20",
                             Email = "ahihi801@gmail.com",
                             FirstName = "John801",
@@ -9880,11 +10687,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe801",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b44a66eb-c68d-46d8-8681-437a0427064a"),
+                            Id = new Guid("e2c56cd0-38a7-43e2-a3b1-99471161f1bf"),
                             Age = "20",
                             Email = "ahihi802@gmail.com",
                             FirstName = "John802",
@@ -9892,11 +10700,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe802",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("356e5882-c360-407d-8ab8-820eb870cec3"),
+                            Id = new Guid("34be1004-b58e-4717-a8da-ba8592eb2a55"),
                             Age = "20",
                             Email = "ahihi803@gmail.com",
                             FirstName = "John803",
@@ -9904,11 +10713,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe803",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4a8d330d-86f3-419e-99ec-991879c724eb"),
+                            Id = new Guid("8324efae-1a6d-4563-bed4-65326bc8d337"),
                             Age = "20",
                             Email = "ahihi804@gmail.com",
                             FirstName = "John804",
@@ -9916,11 +10726,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe804",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e231c776-b489-4aa8-82df-38c64e46d446"),
+                            Id = new Guid("bb23acfa-21a6-41bb-8ddb-761e1b2e80f9"),
                             Age = "20",
                             Email = "ahihi805@gmail.com",
                             FirstName = "John805",
@@ -9928,11 +10739,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe805",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1b172f99-83b0-49f5-8c9d-17146aba436b"),
+                            Id = new Guid("abfb3dfd-f3f1-4882-ab04-39ef140bbdd6"),
                             Age = "20",
                             Email = "ahihi806@gmail.com",
                             FirstName = "John806",
@@ -9940,11 +10752,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe806",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("13bf1c3b-41ff-402c-a431-4a8471f10fd0"),
+                            Id = new Guid("454dea1a-6af3-4cb1-85d4-833cd0ad7f73"),
                             Age = "20",
                             Email = "ahihi807@gmail.com",
                             FirstName = "John807",
@@ -9952,11 +10765,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe807",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bc8d0ab2-6b47-41f2-ba3a-eedaf840d45b"),
+                            Id = new Guid("0adf3c33-3e33-46fc-ac5e-58a050132014"),
                             Age = "20",
                             Email = "ahihi808@gmail.com",
                             FirstName = "John808",
@@ -9964,11 +10778,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe808",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0fc94e88-a89f-4c2d-ba5f-8adaab9bd6a7"),
+                            Id = new Guid("95c65c77-8652-4611-acc2-39f7ee422c37"),
                             Age = "20",
                             Email = "ahihi809@gmail.com",
                             FirstName = "John809",
@@ -9976,11 +10791,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe809",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eaf348d3-8e01-4eb9-916c-9f2f472752a7"),
+                            Id = new Guid("7ada471d-6c79-438d-8e7f-4ed1db116c85"),
                             Age = "20",
                             Email = "ahihi810@gmail.com",
                             FirstName = "John810",
@@ -9988,11 +10804,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe810",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bae569c0-02a1-423b-9336-5ae2e1d57760"),
+                            Id = new Guid("8717e0e6-d706-4220-88a8-3d5d996a15fe"),
                             Age = "20",
                             Email = "ahihi811@gmail.com",
                             FirstName = "John811",
@@ -10000,11 +10817,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe811",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dec5289d-4dc7-47c7-bd65-9c36cd0983a6"),
+                            Id = new Guid("ae385375-7bd7-4819-86a2-c606dca35518"),
                             Age = "20",
                             Email = "ahihi812@gmail.com",
                             FirstName = "John812",
@@ -10012,11 +10830,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe812",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fc7e3fcb-9f20-42fb-af83-832f1a212ce7"),
+                            Id = new Guid("f3381e62-4d9b-43af-8cb0-1a26b3f97a04"),
                             Age = "20",
                             Email = "ahihi813@gmail.com",
                             FirstName = "John813",
@@ -10024,11 +10843,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe813",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c69539cc-263f-4750-8bd4-533a4a8502c3"),
+                            Id = new Guid("e7a3d752-e9f3-4d8b-a53b-75967c38a054"),
                             Age = "20",
                             Email = "ahihi814@gmail.com",
                             FirstName = "John814",
@@ -10036,11 +10856,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe814",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8d709406-a357-4af5-8dd1-2caf88265d27"),
+                            Id = new Guid("ad9b9733-1fb1-469e-aac6-abb50296ab09"),
                             Age = "20",
                             Email = "ahihi815@gmail.com",
                             FirstName = "John815",
@@ -10048,11 +10869,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe815",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9936ce04-16e2-4fcb-8b15-ec90eeac7d31"),
+                            Id = new Guid("06815a34-9cbd-45df-be9b-731194b51093"),
                             Age = "20",
                             Email = "ahihi816@gmail.com",
                             FirstName = "John816",
@@ -10060,11 +10882,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe816",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("aa8918a9-7773-4f9e-ae2c-a2eb9bf9b674"),
+                            Id = new Guid("13477265-c745-44e2-ad21-96a29e1ee2c6"),
                             Age = "20",
                             Email = "ahihi817@gmail.com",
                             FirstName = "John817",
@@ -10072,11 +10895,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe817",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("549f2a63-4d46-4469-bafc-8f7b805e47ca"),
+                            Id = new Guid("1dd34c19-83e2-483e-aabd-6c9e4b5af411"),
                             Age = "20",
                             Email = "ahihi818@gmail.com",
                             FirstName = "John818",
@@ -10084,11 +10908,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe818",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dc92279f-cd62-4072-976b-8478db088c96"),
+                            Id = new Guid("c75795cd-4238-4907-bf70-68728ada8e37"),
                             Age = "20",
                             Email = "ahihi819@gmail.com",
                             FirstName = "John819",
@@ -10096,11 +10921,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe819",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8fe9073d-e480-4484-ae4e-6d798997126d"),
+                            Id = new Guid("1a012ca2-bafb-4439-a2ca-2090a2aa747a"),
                             Age = "20",
                             Email = "ahihi820@gmail.com",
                             FirstName = "John820",
@@ -10108,11 +10934,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe820",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c9b96441-4783-4967-84dd-72cb3bf4c15b"),
+                            Id = new Guid("4625a459-f3f0-4335-b0c7-63615140e3f6"),
                             Age = "20",
                             Email = "ahihi821@gmail.com",
                             FirstName = "John821",
@@ -10120,11 +10947,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe821",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("95013c9e-f463-457b-9094-d8ac5687bb69"),
+                            Id = new Guid("d745e065-94df-4863-ac79-f97f4e54a578"),
                             Age = "20",
                             Email = "ahihi822@gmail.com",
                             FirstName = "John822",
@@ -10132,11 +10960,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe822",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8d13f9c2-cae8-44ce-afaf-c527da387f7a"),
+                            Id = new Guid("6d9cbac2-fc4c-4ad2-8dfc-31262dc7507e"),
                             Age = "20",
                             Email = "ahihi823@gmail.com",
                             FirstName = "John823",
@@ -10144,11 +10973,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe823",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ba5f5870-269d-45f8-8a9f-1fd6bdd94f54"),
+                            Id = new Guid("a97850bf-3ba8-4731-a537-3f6e9a0ac0f6"),
                             Age = "20",
                             Email = "ahihi824@gmail.com",
                             FirstName = "John824",
@@ -10156,11 +10986,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe824",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e4c4a10b-76e2-4185-9c26-393bb13274ec"),
+                            Id = new Guid("104a5b5c-a526-4642-9011-e6ccc13ebee3"),
                             Age = "20",
                             Email = "ahihi825@gmail.com",
                             FirstName = "John825",
@@ -10168,11 +10999,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe825",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("055e0d06-09fc-4f7b-8d80-4cddb271727e"),
+                            Id = new Guid("5856b0f3-d343-44f3-be91-68eaae4d0598"),
                             Age = "20",
                             Email = "ahihi826@gmail.com",
                             FirstName = "John826",
@@ -10180,11 +11012,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe826",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ea3cab41-b4a2-4643-bda3-953bd94b229a"),
+                            Id = new Guid("22d81d5e-304c-4c67-aa9f-a6a00b099280"),
                             Age = "20",
                             Email = "ahihi827@gmail.com",
                             FirstName = "John827",
@@ -10192,11 +11025,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe827",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d5253e0c-8984-4bf6-9fbd-8b3e7b864083"),
+                            Id = new Guid("ba39f137-f57f-452a-b237-c423ff2bb384"),
                             Age = "20",
                             Email = "ahihi828@gmail.com",
                             FirstName = "John828",
@@ -10204,11 +11038,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe828",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2ec70366-c4a8-426e-9b0f-fc5343b522cd"),
+                            Id = new Guid("5721ed2c-8da9-4fb7-b952-13b298f3b546"),
                             Age = "20",
                             Email = "ahihi829@gmail.com",
                             FirstName = "John829",
@@ -10216,11 +11051,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe829",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("275ac407-48f0-4acc-8cbc-49cf4dda45bd"),
+                            Id = new Guid("bb388ac7-735c-441d-92fa-ae3ed1c0c82b"),
                             Age = "20",
                             Email = "ahihi830@gmail.com",
                             FirstName = "John830",
@@ -10228,11 +11064,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe830",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("025c079c-e301-4a48-879b-f1af62adc22d"),
+                            Id = new Guid("2608ea59-bf16-437c-8328-7a21d7587c79"),
                             Age = "20",
                             Email = "ahihi831@gmail.com",
                             FirstName = "John831",
@@ -10240,11 +11077,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe831",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("88069b2c-9afb-4ab8-8d6d-c49dea083e0c"),
+                            Id = new Guid("bd151479-6b03-4a65-9c7b-f6e3cf709ee4"),
                             Age = "20",
                             Email = "ahihi832@gmail.com",
                             FirstName = "John832",
@@ -10252,11 +11090,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe832",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("40e2e43f-562c-4783-bcd9-901352fe753e"),
+                            Id = new Guid("0d3937db-f3c0-49e7-b935-392c18e6450e"),
                             Age = "20",
                             Email = "ahihi833@gmail.com",
                             FirstName = "John833",
@@ -10264,11 +11103,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe833",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d85c6cd4-bfa2-42cb-8405-810cdffb7576"),
+                            Id = new Guid("7bd30df3-2469-4214-a976-6ae9ade09da9"),
                             Age = "20",
                             Email = "ahihi834@gmail.com",
                             FirstName = "John834",
@@ -10276,11 +11116,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe834",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e91edd0c-4173-4167-8bb4-d81834990d97"),
+                            Id = new Guid("f8641c27-617c-4f18-a94f-99c2dee1ce99"),
                             Age = "20",
                             Email = "ahihi835@gmail.com",
                             FirstName = "John835",
@@ -10288,11 +11129,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe835",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e7ad2236-8fc6-4fcd-ba9d-4ae40f1595e1"),
+                            Id = new Guid("62c53f67-fa69-4a5a-acc1-7b1fbee5c7aa"),
                             Age = "20",
                             Email = "ahihi836@gmail.com",
                             FirstName = "John836",
@@ -10300,11 +11142,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe836",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3d2556f7-6a36-4553-9e5e-3bdefff606fd"),
+                            Id = new Guid("e6f4e206-e7ad-4655-a039-5079bf93cc4b"),
                             Age = "20",
                             Email = "ahihi837@gmail.com",
                             FirstName = "John837",
@@ -10312,11 +11155,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe837",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("68b0623f-ca9a-4d85-a552-66e7923ac3d9"),
+                            Id = new Guid("55953484-28bf-44e6-8606-84229f3d4661"),
                             Age = "20",
                             Email = "ahihi838@gmail.com",
                             FirstName = "John838",
@@ -10324,11 +11168,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe838",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d8847259-af28-4056-8581-1a46aad5ea81"),
+                            Id = new Guid("3d731ba8-b56e-4a75-b272-1cabec23b293"),
                             Age = "20",
                             Email = "ahihi839@gmail.com",
                             FirstName = "John839",
@@ -10336,11 +11181,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe839",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c3066e84-2664-4d9b-9635-7f8f4c6503a5"),
+                            Id = new Guid("7be4d263-f33c-4973-b3f9-e95cdddba23e"),
                             Age = "20",
                             Email = "ahihi840@gmail.com",
                             FirstName = "John840",
@@ -10348,11 +11194,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe840",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("05cb8387-819d-44ef-8100-2e1dc2f842a0"),
+                            Id = new Guid("876766c3-31f3-4650-9358-25987a75c0ba"),
                             Age = "20",
                             Email = "ahihi841@gmail.com",
                             FirstName = "John841",
@@ -10360,11 +11207,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe841",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("00da694e-0032-42e0-995a-fe79862e21c8"),
+                            Id = new Guid("e6575a48-193c-46e7-8cac-0c945c2fb8d4"),
                             Age = "20",
                             Email = "ahihi842@gmail.com",
                             FirstName = "John842",
@@ -10372,11 +11220,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe842",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("923a5f61-4a10-47a4-a0e4-5445256920bc"),
+                            Id = new Guid("af619b40-22a6-42bb-9b5e-7487aa2bf58a"),
                             Age = "20",
                             Email = "ahihi843@gmail.com",
                             FirstName = "John843",
@@ -10384,11 +11233,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe843",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7df79a2e-a549-4604-84d8-6a9b9bd6bb56"),
+                            Id = new Guid("2310f312-a0d6-4ff1-8660-13a05ee3ffaa"),
                             Age = "20",
                             Email = "ahihi844@gmail.com",
                             FirstName = "John844",
@@ -10396,11 +11246,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe844",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ef36e171-a7ff-45fd-a987-2af88e82afd1"),
+                            Id = new Guid("cae2aa44-efad-4ab9-99f3-1fe56e98ae03"),
                             Age = "20",
                             Email = "ahihi845@gmail.com",
                             FirstName = "John845",
@@ -10408,11 +11259,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe845",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("de1a688c-13a4-49c7-b68e-bd01a5ae9ddb"),
+                            Id = new Guid("c12c021a-a23d-440c-8638-6a8468df4b32"),
                             Age = "20",
                             Email = "ahihi846@gmail.com",
                             FirstName = "John846",
@@ -10420,11 +11272,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe846",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fe7ad7e5-f76e-46bc-8982-acf218189471"),
+                            Id = new Guid("00b95a47-0711-402f-933e-92af69cd8e7c"),
                             Age = "20",
                             Email = "ahihi847@gmail.com",
                             FirstName = "John847",
@@ -10432,11 +11285,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe847",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a87742c0-81f2-48f7-931b-8bd7e57ad600"),
+                            Id = new Guid("50511747-10c5-49c8-aa36-e8164f9bc4f1"),
                             Age = "20",
                             Email = "ahihi848@gmail.com",
                             FirstName = "John848",
@@ -10444,11 +11298,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe848",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("648c1d34-6bc3-422e-b7c7-3cb1b83deccc"),
+                            Id = new Guid("36d927db-0832-4d5c-b554-c8343485dbe1"),
                             Age = "20",
                             Email = "ahihi849@gmail.com",
                             FirstName = "John849",
@@ -10456,11 +11311,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe849",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0e0e9131-1089-471b-a59f-f9a2240d1aca"),
+                            Id = new Guid("0b689852-0f15-4e8e-a92d-93664bcd5166"),
                             Age = "20",
                             Email = "ahihi850@gmail.com",
                             FirstName = "John850",
@@ -10468,11 +11324,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe850",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e51a1d13-9d59-4f6b-8ab1-68f68179540a"),
+                            Id = new Guid("c4fffe3a-72d7-4ac0-a1f8-d2878e233b65"),
                             Age = "20",
                             Email = "ahihi851@gmail.com",
                             FirstName = "John851",
@@ -10480,11 +11337,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe851",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6872eac2-a9ee-42f5-be88-88d890b6298b"),
+                            Id = new Guid("3d60dbda-1c4b-4b53-9da1-b5c3c17df754"),
                             Age = "20",
                             Email = "ahihi852@gmail.com",
                             FirstName = "John852",
@@ -10492,11 +11350,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe852",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bae9cddf-3725-4882-ab4c-58341e86813f"),
+                            Id = new Guid("b1870335-d56d-44f9-81f8-acd695104099"),
                             Age = "20",
                             Email = "ahihi853@gmail.com",
                             FirstName = "John853",
@@ -10504,11 +11363,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe853",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("94be338e-0b54-453f-93e6-6044d54b197c"),
+                            Id = new Guid("55056251-d873-4a39-9c40-aae4b7d388c0"),
                             Age = "20",
                             Email = "ahihi854@gmail.com",
                             FirstName = "John854",
@@ -10516,11 +11376,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe854",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("07ac7be3-41a0-47fc-8e09-463d7f26eb28"),
+                            Id = new Guid("a6df8006-8263-44b9-85e6-4cc424a95eae"),
                             Age = "20",
                             Email = "ahihi855@gmail.com",
                             FirstName = "John855",
@@ -10528,11 +11389,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe855",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0a7eeec0-a339-4b9a-a6e7-3291009fffe6"),
+                            Id = new Guid("6b6334d3-c333-45e9-ab1a-d9fa6802f063"),
                             Age = "20",
                             Email = "ahihi856@gmail.com",
                             FirstName = "John856",
@@ -10540,11 +11402,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe856",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("29cd2952-b319-471e-bc97-0a3ca40b4b86"),
+                            Id = new Guid("9b87c8b3-693f-45e1-9cde-1acede22f708"),
                             Age = "20",
                             Email = "ahihi857@gmail.com",
                             FirstName = "John857",
@@ -10552,11 +11415,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe857",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e18b89c6-bbc4-44e8-9bbb-dc2224dbb87a"),
+                            Id = new Guid("c2c6d999-ae2d-40ae-b5b7-47790c3966a4"),
                             Age = "20",
                             Email = "ahihi858@gmail.com",
                             FirstName = "John858",
@@ -10564,11 +11428,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe858",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c4e6e41b-af5b-4d59-a2f6-5a15806ed2aa"),
+                            Id = new Guid("ce6db9d5-c5ee-4e23-aba9-f52370038e16"),
                             Age = "20",
                             Email = "ahihi859@gmail.com",
                             FirstName = "John859",
@@ -10576,11 +11441,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe859",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3d873a54-fac9-4f28-af34-50944f923622"),
+                            Id = new Guid("caa32cef-e630-4f71-808e-0f2ca83e6c01"),
                             Age = "20",
                             Email = "ahihi860@gmail.com",
                             FirstName = "John860",
@@ -10588,11 +11454,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe860",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0bb6c4c2-391f-4b75-94e4-5beba87a1a4c"),
+                            Id = new Guid("24ca0c7b-43c5-4484-afab-94f4f6b681b4"),
                             Age = "20",
                             Email = "ahihi861@gmail.com",
                             FirstName = "John861",
@@ -10600,11 +11467,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe861",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b0f02e2e-9dd8-4c39-b3e7-8f1c5628692e"),
+                            Id = new Guid("80611e70-76e8-47ca-8b4c-bd532d24aefa"),
                             Age = "20",
                             Email = "ahihi862@gmail.com",
                             FirstName = "John862",
@@ -10612,11 +11480,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe862",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("18f8e262-4dce-49ee-869f-079a3d9231fc"),
+                            Id = new Guid("c0a44ae3-ca29-480e-8d51-8b7e117d3578"),
                             Age = "20",
                             Email = "ahihi863@gmail.com",
                             FirstName = "John863",
@@ -10624,11 +11493,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe863",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("81be07a5-fb60-4045-b942-d231049921b6"),
+                            Id = new Guid("e3425e49-7330-4952-8c33-e679c5090aa8"),
                             Age = "20",
                             Email = "ahihi864@gmail.com",
                             FirstName = "John864",
@@ -10636,11 +11506,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe864",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("23f7c7d2-f302-46b1-9644-3292206046f4"),
+                            Id = new Guid("6dbd2a11-70ea-4b72-a57d-64ed7c333609"),
                             Age = "20",
                             Email = "ahihi865@gmail.com",
                             FirstName = "John865",
@@ -10648,11 +11519,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe865",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("945b8f39-b385-4652-b143-9b2a6e42c60e"),
+                            Id = new Guid("510586ce-cc6c-4bdd-b51c-2eef00e870b0"),
                             Age = "20",
                             Email = "ahihi866@gmail.com",
                             FirstName = "John866",
@@ -10660,11 +11532,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe866",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("03dd21cf-fd55-4283-a2ec-545195246509"),
+                            Id = new Guid("2b48fcbe-9a46-495d-9656-e4a62705a25e"),
                             Age = "20",
                             Email = "ahihi867@gmail.com",
                             FirstName = "John867",
@@ -10672,11 +11545,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe867",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bf279a83-5bb6-441a-b8f6-ed81ae0901fc"),
+                            Id = new Guid("20884922-c671-4333-aae8-d3a151d0dbfe"),
                             Age = "20",
                             Email = "ahihi868@gmail.com",
                             FirstName = "John868",
@@ -10684,11 +11558,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe868",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("98236e9c-4a82-4cff-a6d6-24b3711f453f"),
+                            Id = new Guid("f32e4fde-43c4-4f5e-b4f6-6c05bce6b0f2"),
                             Age = "20",
                             Email = "ahihi869@gmail.com",
                             FirstName = "John869",
@@ -10696,11 +11571,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe869",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("22497280-de28-4342-ba50-38e5cf91e524"),
+                            Id = new Guid("26d3e4c5-aec1-46d9-9fc6-ef0ed0b79ade"),
                             Age = "20",
                             Email = "ahihi870@gmail.com",
                             FirstName = "John870",
@@ -10708,11 +11584,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe870",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("770715c8-2b65-4f23-ab1b-212bb17d7294"),
+                            Id = new Guid("d18c33e1-d7d2-42a3-86ac-500b2d0b4fdb"),
                             Age = "20",
                             Email = "ahihi871@gmail.com",
                             FirstName = "John871",
@@ -10720,11 +11597,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe871",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f9cec985-bbc0-497a-b52f-38f3929798d6"),
+                            Id = new Guid("5e8a197d-a625-4bf2-b866-fdd4df0a8ce1"),
                             Age = "20",
                             Email = "ahihi872@gmail.com",
                             FirstName = "John872",
@@ -10732,11 +11610,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe872",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7cc14af1-3fb4-4e09-8cfb-51f4c003ce2a"),
+                            Id = new Guid("c8d8fdeb-88e2-4af1-b327-b12749a83764"),
                             Age = "20",
                             Email = "ahihi873@gmail.com",
                             FirstName = "John873",
@@ -10744,11 +11623,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe873",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5a0d9b6b-ebc4-44b0-a650-8a4e5d0dd98e"),
+                            Id = new Guid("3fca765c-826f-4f14-9b91-086607fb316a"),
                             Age = "20",
                             Email = "ahihi874@gmail.com",
                             FirstName = "John874",
@@ -10756,11 +11636,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe874",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e0f8cd0c-69b1-4004-afa4-6573dcad1a29"),
+                            Id = new Guid("6666b3a7-48fb-4919-a13b-9d6b711576e5"),
                             Age = "20",
                             Email = "ahihi875@gmail.com",
                             FirstName = "John875",
@@ -10768,11 +11649,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe875",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0a43df4b-5ffe-4274-b226-2f1e419359b4"),
+                            Id = new Guid("18903b5f-0e77-4118-9d73-94d38a53d2c7"),
                             Age = "20",
                             Email = "ahihi876@gmail.com",
                             FirstName = "John876",
@@ -10780,11 +11662,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe876",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f6004c2a-e4ae-4ff5-b871-0d16f672625b"),
+                            Id = new Guid("4068732f-f86f-4aa1-a6fb-e770c08834e2"),
                             Age = "20",
                             Email = "ahihi877@gmail.com",
                             FirstName = "John877",
@@ -10792,11 +11675,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe877",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a286f93b-0c7e-4e9b-8a3d-db91d97d78f8"),
+                            Id = new Guid("7b99334a-f48e-4907-a67a-efa577082081"),
                             Age = "20",
                             Email = "ahihi878@gmail.com",
                             FirstName = "John878",
@@ -10804,11 +11688,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe878",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f62a9bbe-248f-4d1b-933c-17036d34783a"),
+                            Id = new Guid("151dc991-7f12-4f57-8102-fc5735c5bd36"),
                             Age = "20",
                             Email = "ahihi879@gmail.com",
                             FirstName = "John879",
@@ -10816,11 +11701,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe879",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7cf639cf-4880-423e-b0e3-3271a3754fe7"),
+                            Id = new Guid("d6ffa9ae-e7ce-4958-a77d-f5429822f22e"),
                             Age = "20",
                             Email = "ahihi880@gmail.com",
                             FirstName = "John880",
@@ -10828,11 +11714,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe880",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fe47295c-3ba9-4a91-bd28-eda220743f0a"),
+                            Id = new Guid("43259e08-ddbc-4430-b2f0-ab0f09d8a2bd"),
                             Age = "20",
                             Email = "ahihi881@gmail.com",
                             FirstName = "John881",
@@ -10840,11 +11727,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe881",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("443d21c3-9889-4086-ac1c-9fff7fbd4651"),
+                            Id = new Guid("07773e49-33ab-441b-a04d-229eb40d4f11"),
                             Age = "20",
                             Email = "ahihi882@gmail.com",
                             FirstName = "John882",
@@ -10852,11 +11740,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe882",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a14e2131-ef57-4b51-b47f-0042482ea5a7"),
+                            Id = new Guid("29920794-78d0-4e7a-8b9b-de8dfc1055d0"),
                             Age = "20",
                             Email = "ahihi883@gmail.com",
                             FirstName = "John883",
@@ -10864,11 +11753,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe883",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("eabb6c27-fe37-49d5-9fe8-998e980d3a8a"),
+                            Id = new Guid("6dd8545d-a490-4f66-a0f5-c9c42d8ef8de"),
                             Age = "20",
                             Email = "ahihi884@gmail.com",
                             FirstName = "John884",
@@ -10876,11 +11766,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe884",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("29443e85-3b61-4af3-8c28-b34e94f10e4e"),
+                            Id = new Guid("ec8e83aa-3e95-45af-9393-89d8cecc44cf"),
                             Age = "20",
                             Email = "ahihi885@gmail.com",
                             FirstName = "John885",
@@ -10888,11 +11779,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe885",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("281fee9e-b149-40ba-8199-d5330130695a"),
+                            Id = new Guid("2112b144-cb64-447d-a9b2-fc810a146392"),
                             Age = "20",
                             Email = "ahihi886@gmail.com",
                             FirstName = "John886",
@@ -10900,11 +11792,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe886",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("912b526b-be6e-4058-91f1-d066b0ef2d9a"),
+                            Id = new Guid("97604f2b-4665-49a3-819a-181bcfee431f"),
                             Age = "20",
                             Email = "ahihi887@gmail.com",
                             FirstName = "John887",
@@ -10912,11 +11805,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe887",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6ba456b9-342b-4782-8ba6-ce95b9658701"),
+                            Id = new Guid("b8bc0d2d-5532-4b0c-aafa-78aa6ff2dc31"),
                             Age = "20",
                             Email = "ahihi888@gmail.com",
                             FirstName = "John888",
@@ -10924,11 +11818,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe888",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("34bcc5fe-98e2-43fb-b06f-6af46e85ea2d"),
+                            Id = new Guid("a907e70a-4bff-49f6-92d8-8da2ac00a819"),
                             Age = "20",
                             Email = "ahihi889@gmail.com",
                             FirstName = "John889",
@@ -10936,11 +11831,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe889",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5f2ed327-5afd-404f-a170-8192f263bfa0"),
+                            Id = new Guid("f9b28014-b987-4fb8-8661-5982ef21cbf0"),
                             Age = "20",
                             Email = "ahihi890@gmail.com",
                             FirstName = "John890",
@@ -10948,11 +11844,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe890",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b40e54f2-9c4f-4e72-b61a-a585267d333a"),
+                            Id = new Guid("5613586d-2380-4d78-84af-5a34738ea175"),
                             Age = "20",
                             Email = "ahihi891@gmail.com",
                             FirstName = "John891",
@@ -10960,11 +11857,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe891",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cf737f16-a211-41d4-9481-0d199974da56"),
+                            Id = new Guid("f679ae0d-f2e7-4f2f-8cfb-fb216c7847de"),
                             Age = "20",
                             Email = "ahihi892@gmail.com",
                             FirstName = "John892",
@@ -10972,11 +11870,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe892",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("7884c65e-166b-4fb3-a3cc-fbafde717145"),
+                            Id = new Guid("7ff5560a-8ab4-47c1-89c9-3c4a543174e4"),
                             Age = "20",
                             Email = "ahihi893@gmail.com",
                             FirstName = "John893",
@@ -10984,11 +11883,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe893",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a4fe502a-a100-4564-8f9a-e96022ae09cf"),
+                            Id = new Guid("174305b3-b61c-47df-b9eb-396f6d862316"),
                             Age = "20",
                             Email = "ahihi894@gmail.com",
                             FirstName = "John894",
@@ -10996,11 +11896,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe894",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2895b1ae-db1f-41a2-8da5-3f730eec4c58"),
+                            Id = new Guid("ae293b60-8186-421f-b8e8-03da2be51b07"),
                             Age = "20",
                             Email = "ahihi895@gmail.com",
                             FirstName = "John895",
@@ -11008,11 +11909,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe895",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f9181025-edcd-4749-9d83-aebc368b230b"),
+                            Id = new Guid("39456e4e-b341-4b0f-b7d5-2dfbd09ffcb7"),
                             Age = "20",
                             Email = "ahihi896@gmail.com",
                             FirstName = "John896",
@@ -11020,11 +11922,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe896",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5689dcbc-9183-4404-acfc-29ca1f72ed7a"),
+                            Id = new Guid("489ea5d7-db47-4862-8140-cf768c06b170"),
                             Age = "20",
                             Email = "ahihi897@gmail.com",
                             FirstName = "John897",
@@ -11032,11 +11935,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe897",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("04c390cf-19cf-4544-b5a0-8c909a6d7998"),
+                            Id = new Guid("3ca2e019-3e7e-421e-b8c5-34fc541c11ab"),
                             Age = "20",
                             Email = "ahihi898@gmail.com",
                             FirstName = "John898",
@@ -11044,11 +11948,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe898",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("965afe88-d0f6-4df3-8bb1-a7e6351f05f5"),
+                            Id = new Guid("4bde28d2-646d-499e-bc52-58871b0492f4"),
                             Age = "20",
                             Email = "ahihi899@gmail.com",
                             FirstName = "John899",
@@ -11056,11 +11961,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe899",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("9dc2474c-8ce9-42a3-96e1-c6eaf9d62f72"),
+                            Id = new Guid("9a095cbc-1aa2-4e49-99e5-516d58d45578"),
                             Age = "20",
                             Email = "ahihi900@gmail.com",
                             FirstName = "John900",
@@ -11068,11 +11974,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe900",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("949c1e4f-d8e1-40d5-bb3f-9960f1d5b0ce"),
+                            Id = new Guid("4e1818cf-3daa-40ec-af2a-3a3cbd941ca4"),
                             Age = "20",
                             Email = "ahihi901@gmail.com",
                             FirstName = "John901",
@@ -11080,11 +11987,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe901",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("330b64b1-3fb3-419a-9349-304bc214aeb2"),
+                            Id = new Guid("514f8ee9-370f-4bf2-a642-d73bea084d40"),
                             Age = "20",
                             Email = "ahihi902@gmail.com",
                             FirstName = "John902",
@@ -11092,11 +12000,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe902",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("694ebcb7-0080-4459-8583-200792feef26"),
+                            Id = new Guid("286fb0d4-7a5d-4c69-ab93-086a0cc6f1ad"),
                             Age = "20",
                             Email = "ahihi903@gmail.com",
                             FirstName = "John903",
@@ -11104,11 +12013,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe903",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("783dfa80-1df8-4179-88e0-41b8d4658762"),
+                            Id = new Guid("a469afb1-dc5b-4e6d-9332-f78b6dfce9c4"),
                             Age = "20",
                             Email = "ahihi904@gmail.com",
                             FirstName = "John904",
@@ -11116,11 +12026,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe904",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("6ed24113-f77c-447a-8162-d7b07a12037f"),
+                            Id = new Guid("dec0bbd3-3d72-41ed-b813-5831bc662f12"),
                             Age = "20",
                             Email = "ahihi905@gmail.com",
                             FirstName = "John905",
@@ -11128,11 +12039,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe905",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ac0cdc0d-5c91-4c99-bdbd-843d8633c694"),
+                            Id = new Guid("eda41d78-dd9d-4f11-941f-f237e80c7901"),
                             Age = "20",
                             Email = "ahihi906@gmail.com",
                             FirstName = "John906",
@@ -11140,11 +12052,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe906",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("46fd0731-d024-451c-afa2-e7fd566f87fb"),
+                            Id = new Guid("6a9f9838-d56a-4833-913d-24ebabf1e988"),
                             Age = "20",
                             Email = "ahihi907@gmail.com",
                             FirstName = "John907",
@@ -11152,11 +12065,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe907",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0b0026d6-2169-4dbd-83c6-e22cf3fda98a"),
+                            Id = new Guid("1be99c14-9a47-4143-b7aa-a8a745d893b7"),
                             Age = "20",
                             Email = "ahihi908@gmail.com",
                             FirstName = "John908",
@@ -11164,11 +12078,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe908",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e49f0a85-de2a-4d23-b8cc-c6737c27c519"),
+                            Id = new Guid("dd9438ce-118b-4f5e-bc26-0935a03b2305"),
                             Age = "20",
                             Email = "ahihi909@gmail.com",
                             FirstName = "John909",
@@ -11176,11 +12091,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe909",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("78b8997b-21a0-4db2-9458-4689c3f81321"),
+                            Id = new Guid("43198bfb-c481-4aa4-a7f0-1ea50b0717ff"),
                             Age = "20",
                             Email = "ahihi910@gmail.com",
                             FirstName = "John910",
@@ -11188,11 +12104,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe910",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("68bf4756-c3f9-474a-9b57-a1ac8504605c"),
+                            Id = new Guid("53a97d6e-6483-42bd-9bf6-0b7efa5fbc89"),
                             Age = "20",
                             Email = "ahihi911@gmail.com",
                             FirstName = "John911",
@@ -11200,11 +12117,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe911",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f76a6da1-b64b-4e95-af20-3e8f35436185"),
+                            Id = new Guid("ca81f444-f56e-404a-a7d6-bb325e480204"),
                             Age = "20",
                             Email = "ahihi912@gmail.com",
                             FirstName = "John912",
@@ -11212,11 +12130,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe912",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e644c8a6-0477-4d18-9f1c-fefd180afbca"),
+                            Id = new Guid("1015bff6-c2b6-4e6d-91c3-4ebbfd12b566"),
                             Age = "20",
                             Email = "ahihi913@gmail.com",
                             FirstName = "John913",
@@ -11224,11 +12143,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe913",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bd99ea80-343c-46db-bd93-92f7199ea821"),
+                            Id = new Guid("5582809d-b592-4c99-a160-4f08c87f0a75"),
                             Age = "20",
                             Email = "ahihi914@gmail.com",
                             FirstName = "John914",
@@ -11236,11 +12156,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe914",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c4904836-d477-4f39-9b79-ad7d6ad2a4c4"),
+                            Id = new Guid("80cb3ac9-11cf-4a68-9dbc-ed882476478b"),
                             Age = "20",
                             Email = "ahihi915@gmail.com",
                             FirstName = "John915",
@@ -11248,11 +12169,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe915",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("919081b8-baf9-431b-8c8d-c521b551f18a"),
+                            Id = new Guid("b0990d2a-92ee-4013-942b-8af75d7bc3a4"),
                             Age = "20",
                             Email = "ahihi916@gmail.com",
                             FirstName = "John916",
@@ -11260,11 +12182,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe916",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e4dc4d41-f36a-4e79-9127-321a8ab18302"),
+                            Id = new Guid("bd43f8e7-819c-49c9-b4b3-bce7fcb02193"),
                             Age = "20",
                             Email = "ahihi917@gmail.com",
                             FirstName = "John917",
@@ -11272,11 +12195,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe917",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4d204d7f-20f4-46ee-aba6-dcfc701b75ab"),
+                            Id = new Guid("b6a9239b-6d6e-4a75-aa6e-6c2b288261b3"),
                             Age = "20",
                             Email = "ahihi918@gmail.com",
                             FirstName = "John918",
@@ -11284,11 +12208,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe918",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("aeec3847-4889-44b1-b7f0-acbce0856270"),
+                            Id = new Guid("dbb3b812-be36-48b9-961b-5535cefbc926"),
                             Age = "20",
                             Email = "ahihi919@gmail.com",
                             FirstName = "John919",
@@ -11296,11 +12221,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe919",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("05ec8331-8878-4cec-99cc-38acdcfdff75"),
+                            Id = new Guid("4e4a0a86-5b2b-4019-a80a-97692425542f"),
                             Age = "20",
                             Email = "ahihi920@gmail.com",
                             FirstName = "John920",
@@ -11308,11 +12234,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe920",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("87ae7624-ae15-40f0-b220-fd3723d39a8e"),
+                            Id = new Guid("fa7cfc18-9c08-4641-9c81-77ece9304713"),
                             Age = "20",
                             Email = "ahihi921@gmail.com",
                             FirstName = "John921",
@@ -11320,11 +12247,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe921",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3b0d3498-42b6-43bf-b1f4-f606e94d2936"),
+                            Id = new Guid("23245c8b-b8ad-40f6-ba6b-20855b2ac635"),
                             Age = "20",
                             Email = "ahihi922@gmail.com",
                             FirstName = "John922",
@@ -11332,11 +12260,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe922",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("882719ce-e199-40d9-aa55-8ef876c6b261"),
+                            Id = new Guid("f3574478-06a6-4e4b-8590-4905c5a142c1"),
                             Age = "20",
                             Email = "ahihi923@gmail.com",
                             FirstName = "John923",
@@ -11344,11 +12273,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe923",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dad9ca22-ce10-4633-9d64-8c38d9c05028"),
+                            Id = new Guid("b70b7d87-e5fe-4a6a-8653-bc46e20311a3"),
                             Age = "20",
                             Email = "ahihi924@gmail.com",
                             FirstName = "John924",
@@ -11356,11 +12286,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe924",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2b5ba93d-4dd1-4f71-9f6d-aafaaebb3541"),
+                            Id = new Guid("fc3413ea-c5f0-4efd-8dba-de0ef107cbec"),
                             Age = "20",
                             Email = "ahihi925@gmail.com",
                             FirstName = "John925",
@@ -11368,11 +12299,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe925",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bb3b5806-50f0-4b73-9d54-01ac959dd3d9"),
+                            Id = new Guid("52a58a37-6a77-430a-b6f4-8ad2dd198a64"),
                             Age = "20",
                             Email = "ahihi926@gmail.com",
                             FirstName = "John926",
@@ -11380,11 +12312,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe926",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8eff26d3-0916-412b-885f-9c36c84a9539"),
+                            Id = new Guid("6d09cf47-565b-4a12-8e16-54eff56324d7"),
                             Age = "20",
                             Email = "ahihi927@gmail.com",
                             FirstName = "John927",
@@ -11392,11 +12325,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe927",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5704043e-6859-47c2-a1f2-ac902b67a0f3"),
+                            Id = new Guid("d0255f20-12c2-4062-905e-4e1ac84482cf"),
                             Age = "20",
                             Email = "ahihi928@gmail.com",
                             FirstName = "John928",
@@ -11404,11 +12338,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe928",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c0a31b12-c8a5-4101-9604-fd1ba49bd8e8"),
+                            Id = new Guid("8992b964-51c4-4e0e-8e1d-341d6f6a66bf"),
                             Age = "20",
                             Email = "ahihi929@gmail.com",
                             FirstName = "John929",
@@ -11416,11 +12351,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe929",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b94e7ea7-b8d2-4b1f-8bf8-3be0ef7372db"),
+                            Id = new Guid("fed88e85-ddaa-433e-b676-6836704f3503"),
                             Age = "20",
                             Email = "ahihi930@gmail.com",
                             FirstName = "John930",
@@ -11428,11 +12364,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe930",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("efc27acf-4390-4d73-aa47-f687a04a3576"),
+                            Id = new Guid("a5b00c71-4c62-4dc8-9f14-bc2661f10aff"),
                             Age = "20",
                             Email = "ahihi931@gmail.com",
                             FirstName = "John931",
@@ -11440,11 +12377,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe931",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b0e65307-bdd7-4cbe-81e1-947e3c38a5f7"),
+                            Id = new Guid("b1a7be53-aaa7-47b2-89df-9fec49c7d312"),
                             Age = "20",
                             Email = "ahihi932@gmail.com",
                             FirstName = "John932",
@@ -11452,11 +12390,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe932",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("47e5f617-58f3-4601-82fd-fe7fa3ef3fa6"),
+                            Id = new Guid("0e7a4e43-d97d-48a6-a6c4-62f8f2c5af82"),
                             Age = "20",
                             Email = "ahihi933@gmail.com",
                             FirstName = "John933",
@@ -11464,11 +12403,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe933",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("1be5f4b7-9cce-43a4-b6fe-81f7b96e875c"),
+                            Id = new Guid("3eabe2bf-84e4-43a4-9133-cf1bd324464c"),
                             Age = "20",
                             Email = "ahihi934@gmail.com",
                             FirstName = "John934",
@@ -11476,11 +12416,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe934",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a8df830b-ec01-44d9-a43c-8ca09f8e0a5b"),
+                            Id = new Guid("ffd23849-e5b0-4a5f-8c9e-3cd1213a4e1a"),
                             Age = "20",
                             Email = "ahihi935@gmail.com",
                             FirstName = "John935",
@@ -11488,11 +12429,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe935",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("94068176-af16-44f7-b633-5575bcb0ee3c"),
+                            Id = new Guid("068d49d1-c37b-4953-9e25-e6cca805d64a"),
                             Age = "20",
                             Email = "ahihi936@gmail.com",
                             FirstName = "John936",
@@ -11500,11 +12442,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe936",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2e2b8028-5f5a-4bf6-bce5-367de70160b5"),
+                            Id = new Guid("0b0b015b-3999-497f-8e27-fc4606d96aee"),
                             Age = "20",
                             Email = "ahihi937@gmail.com",
                             FirstName = "John937",
@@ -11512,11 +12455,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe937",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("51ee8547-d339-47a6-b357-b8e18c253250"),
+                            Id = new Guid("de533030-adea-4f25-be1b-f091edc14237"),
                             Age = "20",
                             Email = "ahihi938@gmail.com",
                             FirstName = "John938",
@@ -11524,11 +12468,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe938",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("fac11385-b1e7-456f-832e-399ee60b9b3d"),
+                            Id = new Guid("5044d7f1-8944-4b36-a0be-75cde0ed9b0b"),
                             Age = "20",
                             Email = "ahihi939@gmail.com",
                             FirstName = "John939",
@@ -11536,11 +12481,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe939",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("df67baa6-0fee-49ae-9a6b-b49f80e70456"),
+                            Id = new Guid("0b518d37-c820-4fa0-b433-28379aa32efe"),
                             Age = "20",
                             Email = "ahihi940@gmail.com",
                             FirstName = "John940",
@@ -11548,11 +12494,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe940",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("437c712b-4b52-4ecf-a0db-136b500efc98"),
+                            Id = new Guid("7d2c6a2c-77d3-4dff-aac0-862090fc1108"),
                             Age = "20",
                             Email = "ahihi941@gmail.com",
                             FirstName = "John941",
@@ -11560,11 +12507,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe941",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5dcfd06a-42b3-4634-8c80-24a9d0307c3a"),
+                            Id = new Guid("1aa6f0f8-10da-49cf-9429-c619e8170e5b"),
                             Age = "20",
                             Email = "ahihi942@gmail.com",
                             FirstName = "John942",
@@ -11572,11 +12520,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe942",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0141eaf7-ab22-4815-9870-c29033c31aef"),
+                            Id = new Guid("2396a19f-942d-48d6-9da9-20ca724f6173"),
                             Age = "20",
                             Email = "ahihi943@gmail.com",
                             FirstName = "John943",
@@ -11584,11 +12533,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe943",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a968b469-6107-4b4a-b760-fa01b1fcf774"),
+                            Id = new Guid("a0f7f1a6-5877-4360-98d3-c41bbee55a2c"),
                             Age = "20",
                             Email = "ahihi944@gmail.com",
                             FirstName = "John944",
@@ -11596,11 +12546,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe944",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bc8774ef-15d4-49a8-8d90-07b209b5d1a1"),
+                            Id = new Guid("a7b5ad76-f92d-476a-8db6-28da950a8582"),
                             Age = "20",
                             Email = "ahihi945@gmail.com",
                             FirstName = "John945",
@@ -11608,11 +12559,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe945",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3c4a0b88-0a7e-4780-9ec3-486f7e2fb8b2"),
+                            Id = new Guid("63e57d55-e0cb-4d0c-b5b3-f9f32303d237"),
                             Age = "20",
                             Email = "ahihi946@gmail.com",
                             FirstName = "John946",
@@ -11620,11 +12572,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe946",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("15449fd6-cb59-40c4-b187-739c8ec60c3a"),
+                            Id = new Guid("0c21dcf3-2c7e-40ac-b48d-2fb8fd82812a"),
                             Age = "20",
                             Email = "ahihi947@gmail.com",
                             FirstName = "John947",
@@ -11632,11 +12585,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe947",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e80c8f70-3a81-444b-a9c4-f945199607b8"),
+                            Id = new Guid("51387155-9bb1-49b0-a3fa-b8716fc0863c"),
                             Age = "20",
                             Email = "ahihi948@gmail.com",
                             FirstName = "John948",
@@ -11644,11 +12598,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe948",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("641dced5-b886-4f60-b5e1-b209dec41f7c"),
+                            Id = new Guid("83abf0e7-256b-4590-ac13-12d251cd84e1"),
                             Age = "20",
                             Email = "ahihi949@gmail.com",
                             FirstName = "John949",
@@ -11656,11 +12611,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe949",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("739849e5-542d-4f50-9e91-e358373a6e5a"),
+                            Id = new Guid("48eb952b-64ab-40b6-b5ce-989091003521"),
                             Age = "20",
                             Email = "ahihi950@gmail.com",
                             FirstName = "John950",
@@ -11668,11 +12624,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe950",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2507111a-cbc5-4028-8ad9-630977818dc2"),
+                            Id = new Guid("4426e10d-c065-4ca6-80e4-8a1b2545bf9a"),
                             Age = "20",
                             Email = "ahihi951@gmail.com",
                             FirstName = "John951",
@@ -11680,11 +12637,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe951",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5a1a09ac-9dbe-4044-b569-95d90d8d950d"),
+                            Id = new Guid("7f865a3e-dbb9-4a51-aff6-8bd3ba5afb6c"),
                             Age = "20",
                             Email = "ahihi952@gmail.com",
                             FirstName = "John952",
@@ -11692,11 +12650,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe952",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("abad4344-b1b3-44eb-9878-31686c601863"),
+                            Id = new Guid("c66abfbc-e497-4393-9183-8f1e3389fc6e"),
                             Age = "20",
                             Email = "ahihi953@gmail.com",
                             FirstName = "John953",
@@ -11704,11 +12663,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe953",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f276700b-6250-43e1-85a3-8845d3946012"),
+                            Id = new Guid("fe7766ed-3f91-4647-870a-3e7fe1475889"),
                             Age = "20",
                             Email = "ahihi954@gmail.com",
                             FirstName = "John954",
@@ -11716,11 +12676,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe954",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("72872d79-6a41-45a0-8562-ac50ab95a0dd"),
+                            Id = new Guid("a2266a35-8eb1-4367-b3ff-aa7ff7d542e6"),
                             Age = "20",
                             Email = "ahihi955@gmail.com",
                             FirstName = "John955",
@@ -11728,11 +12689,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe955",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("a860d3f2-e28d-42e4-a9ff-7b5c7ea771bf"),
+                            Id = new Guid("294b14ab-0fa8-46c8-b81d-cf0b5f23f5da"),
                             Age = "20",
                             Email = "ahihi956@gmail.com",
                             FirstName = "John956",
@@ -11740,11 +12702,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe956",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e046d2ac-aefc-4c96-8c6f-84cd4bdcc61d"),
+                            Id = new Guid("8623961f-bb7d-4d2d-9dbb-344306c594e3"),
                             Age = "20",
                             Email = "ahihi957@gmail.com",
                             FirstName = "John957",
@@ -11752,11 +12715,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe957",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ca19f4aa-3ae3-40e6-96b1-55f57764ab08"),
+                            Id = new Guid("f96b9f1d-26f7-43c2-9d59-0a91750f8e1c"),
                             Age = "20",
                             Email = "ahihi958@gmail.com",
                             FirstName = "John958",
@@ -11764,11 +12728,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe958",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c275ebb8-1491-47e2-8c76-25ad83873f9c"),
+                            Id = new Guid("2528186a-0af2-4673-9dbe-a5a3b7ff322c"),
                             Age = "20",
                             Email = "ahihi959@gmail.com",
                             FirstName = "John959",
@@ -11776,11 +12741,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe959",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("bf8e5807-d4eb-4005-9169-3c3cb4cd65b7"),
+                            Id = new Guid("e78cb2e0-6749-472f-9745-1d89cb5038bf"),
                             Age = "20",
                             Email = "ahihi960@gmail.com",
                             FirstName = "John960",
@@ -11788,11 +12754,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe960",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("46153bd2-2373-498e-a25a-194510db775e"),
+                            Id = new Guid("0c55dc53-c730-4b92-aea4-6215833d2ab4"),
                             Age = "20",
                             Email = "ahihi961@gmail.com",
                             FirstName = "John961",
@@ -11800,11 +12767,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe961",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("5c62b256-0d45-4f44-9e40-c075be3ca51b"),
+                            Id = new Guid("9e0c8ddf-ee7a-4165-a6d0-709aa7fbf0cf"),
                             Age = "20",
                             Email = "ahihi962@gmail.com",
                             FirstName = "John962",
@@ -11812,11 +12780,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe962",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("464c8fd0-691d-4f81-81af-bb0de4e3f786"),
+                            Id = new Guid("dfcf3a66-0cde-4b00-9ff8-6183ea9a2054"),
                             Age = "20",
                             Email = "ahihi963@gmail.com",
                             FirstName = "John963",
@@ -11824,11 +12793,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe963",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("3541815f-9146-4282-8ce0-5151891a714c"),
+                            Id = new Guid("f402f87b-ac21-4253-a913-e291a8b68cf4"),
                             Age = "20",
                             Email = "ahihi964@gmail.com",
                             FirstName = "John964",
@@ -11836,11 +12806,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe964",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("48a4b9b5-98d7-4581-8aab-ea72eeb9a565"),
+                            Id = new Guid("99498c2d-4fb6-4a90-903c-8f391e343fbc"),
                             Age = "20",
                             Email = "ahihi965@gmail.com",
                             FirstName = "John965",
@@ -11848,11 +12819,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe965",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f0522704-54d6-4e54-997d-096e088543fe"),
+                            Id = new Guid("2b5afb91-5634-4e2f-8564-270407f32854"),
                             Age = "20",
                             Email = "ahihi966@gmail.com",
                             FirstName = "John966",
@@ -11860,11 +12832,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe966",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("24a20b7a-6df1-48cd-9d3c-2a8ed6901206"),
+                            Id = new Guid("c4376640-2a7c-40a2-987a-521f54356ba8"),
                             Age = "20",
                             Email = "ahihi967@gmail.com",
                             FirstName = "John967",
@@ -11872,11 +12845,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe967",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("59b00c22-e2cf-4e34-8349-597e2a7349c4"),
+                            Id = new Guid("861d5658-29a0-413e-ae87-d56b6280474e"),
                             Age = "20",
                             Email = "ahihi968@gmail.com",
                             FirstName = "John968",
@@ -11884,11 +12858,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe968",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b4108c7a-8101-4060-a644-d55ff9dd1664"),
+                            Id = new Guid("660ecd52-b5b4-4182-baa2-dbdc56f52bde"),
                             Age = "20",
                             Email = "ahihi969@gmail.com",
                             FirstName = "John969",
@@ -11896,11 +12871,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe969",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("45466b91-1624-4376-adda-aa69bd3e4043"),
+                            Id = new Guid("77c4c67a-069a-48c3-84f4-b7dd13a7eb77"),
                             Age = "20",
                             Email = "ahihi970@gmail.com",
                             FirstName = "John970",
@@ -11908,11 +12884,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe970",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dddbd3ad-9411-4a33-be1c-8b8acefe0c9e"),
+                            Id = new Guid("8cf57a64-0396-48ec-aa5c-3cfb3568141c"),
                             Age = "20",
                             Email = "ahihi971@gmail.com",
                             FirstName = "John971",
@@ -11920,11 +12897,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe971",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("dda648a2-e263-4268-8153-bed7c854c73a"),
+                            Id = new Guid("bf2b4303-32ee-478f-9474-b7d4f22faa84"),
                             Age = "20",
                             Email = "ahihi972@gmail.com",
                             FirstName = "John972",
@@ -11932,11 +12910,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe972",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e788c430-9c3e-4fd2-8e4f-92e5c0f7c92e"),
+                            Id = new Guid("2d9c8c42-98eb-4e9a-af81-deb49bd3eec4"),
                             Age = "20",
                             Email = "ahihi973@gmail.com",
                             FirstName = "John973",
@@ -11944,11 +12923,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe973",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("16546405-8c32-4817-8b39-696993262db4"),
+                            Id = new Guid("beec4d0c-1983-4bc3-8490-142d34ef507a"),
                             Age = "20",
                             Email = "ahihi974@gmail.com",
                             FirstName = "John974",
@@ -11956,11 +12936,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe974",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8e78bcc6-88cb-4a4d-9e49-477e6507e6ce"),
+                            Id = new Guid("96aae48a-f716-49ad-81e2-dc3691de6601"),
                             Age = "20",
                             Email = "ahihi975@gmail.com",
                             FirstName = "John975",
@@ -11968,11 +12949,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe975",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f29c4aab-fd43-4a12-a826-78df3b038928"),
+                            Id = new Guid("eebe69c4-85c3-4899-8056-ec5467b0dfc2"),
                             Age = "20",
                             Email = "ahihi976@gmail.com",
                             FirstName = "John976",
@@ -11980,11 +12962,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe976",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("84e901d0-ce3b-47c6-a98e-99a8534e3712"),
+                            Id = new Guid("7d979631-525c-45e7-a4cc-186acae69cce"),
                             Age = "20",
                             Email = "ahihi977@gmail.com",
                             FirstName = "John977",
@@ -11992,11 +12975,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe977",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("f60b8cba-1800-4c41-9515-baa5f33b5f75"),
+                            Id = new Guid("e18461ef-c525-4aa1-b179-78920b598c58"),
                             Age = "20",
                             Email = "ahihi978@gmail.com",
                             FirstName = "John978",
@@ -12004,11 +12988,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe978",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("52534f66-f6d8-49b2-a9f6-6f3b39a93d90"),
+                            Id = new Guid("25b2b60b-d8b6-45ef-95c7-b6f111e85c5d"),
                             Age = "20",
                             Email = "ahihi979@gmail.com",
                             FirstName = "John979",
@@ -12016,11 +13001,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe979",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("e87e6ebd-7bc2-46ba-bff7-d75baf2e6d2a"),
+                            Id = new Guid("d1ae91b8-a364-456a-a966-991f707f2fdc"),
                             Age = "20",
                             Email = "ahihi980@gmail.com",
                             FirstName = "John980",
@@ -12028,11 +13014,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe980",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4ccb8701-8b92-4519-a0fd-bc6a97f74f3f"),
+                            Id = new Guid("e6614928-bb48-4e9d-ade5-3327e321bfd5"),
                             Age = "20",
                             Email = "ahihi981@gmail.com",
                             FirstName = "John981",
@@ -12040,11 +13027,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe981",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("08a7342f-5afa-4128-a270-a6648c95642a"),
+                            Id = new Guid("8f804458-53f2-4710-aced-70721611cae6"),
                             Age = "20",
                             Email = "ahihi982@gmail.com",
                             FirstName = "John982",
@@ -12052,11 +13040,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe982",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("64239b4b-ed29-4b1d-a828-097cb11eafb6"),
+                            Id = new Guid("91832aca-09b2-4260-9539-98f867bd6340"),
                             Age = "20",
                             Email = "ahihi983@gmail.com",
                             FirstName = "John983",
@@ -12064,11 +13053,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe983",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("75beb992-5efc-49ff-94fe-8f6fc1037ba8"),
+                            Id = new Guid("22f2b5f8-bf1d-45a1-8a0f-9f0ae290e938"),
                             Age = "20",
                             Email = "ahihi984@gmail.com",
                             FirstName = "John984",
@@ -12076,11 +13066,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe984",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("086e8638-cafc-4f89-a025-5a1665562eb3"),
+                            Id = new Guid("df949b9b-9521-46a8-be24-e18a4dbcbfae"),
                             Age = "20",
                             Email = "ahihi985@gmail.com",
                             FirstName = "John985",
@@ -12088,11 +13079,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe985",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("2083698e-16ac-4976-86e8-2d992c0ef1a5"),
+                            Id = new Guid("fe7e7732-324c-4db7-aa46-1480ca02b250"),
                             Age = "20",
                             Email = "ahihi986@gmail.com",
                             FirstName = "John986",
@@ -12100,11 +13092,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe986",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("b1fb4df3-eb51-4b57-a612-1e578f7a78d2"),
+                            Id = new Guid("b529aba0-34f4-4dd3-808e-ced765ad19fd"),
                             Age = "20",
                             Email = "ahihi987@gmail.com",
                             FirstName = "John987",
@@ -12112,11 +13105,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe987",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d5ad9452-0a37-4431-985d-d7bb31d51d3e"),
+                            Id = new Guid("73fa59fe-3468-4791-ae1f-885e61941197"),
                             Age = "20",
                             Email = "ahihi988@gmail.com",
                             FirstName = "John988",
@@ -12124,11 +13118,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe988",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0086e9fa-4141-404b-8848-ee7b5034822e"),
+                            Id = new Guid("d8640f94-739a-42c2-9cd6-c51a8aed0a9e"),
                             Age = "20",
                             Email = "ahihi989@gmail.com",
                             FirstName = "John989",
@@ -12136,11 +13131,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe989",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("8a2bc762-8eea-4db8-8663-b4be433f477a"),
+                            Id = new Guid("786d66b6-b9f7-411a-81e7-c0517e0a6955"),
                             Age = "20",
                             Email = "ahihi990@gmail.com",
                             FirstName = "John990",
@@ -12148,11 +13144,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe990",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("4d0be225-2b26-4674-9b4c-6c26efdf5983"),
+                            Id = new Guid("e69bb3b7-00c2-407b-8763-3f8ff026da68"),
                             Age = "20",
                             Email = "ahihi991@gmail.com",
                             FirstName = "John991",
@@ -12160,11 +13157,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe991",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("0ea9be84-e4c9-4995-8085-d300f09183c0"),
+                            Id = new Guid("c47238fc-64dc-47d5-80b4-9a5f1d5e0f98"),
                             Age = "20",
                             Email = "ahihi992@gmail.com",
                             FirstName = "John992",
@@ -12172,11 +13170,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe992",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("ddbc213b-c8d1-4a4c-806e-f9c6064c9605"),
+                            Id = new Guid("92fb3a17-6b82-4071-a745-b3b7076e526b"),
                             Age = "20",
                             Email = "ahihi993@gmail.com",
                             FirstName = "John993",
@@ -12184,11 +13183,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe993",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("400e78cb-4032-405f-87b6-66b8e0eaef8c"),
+                            Id = new Guid("6986d46a-cc98-4c18-9cfa-2502764cca26"),
                             Age = "20",
                             Email = "ahihi994@gmail.com",
                             FirstName = "John994",
@@ -12196,11 +13196,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe994",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c5dda49a-07aa-458b-a0b6-393e71f834e3"),
+                            Id = new Guid("249309e3-ec2b-47b7-bb1f-fd02e84e8952"),
                             Age = "20",
                             Email = "ahihi995@gmail.com",
                             FirstName = "John995",
@@ -12208,11 +13209,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe995",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("07742e6d-3b61-4756-ac4d-8bd0750f47de"),
+                            Id = new Guid("c3fcb58d-3de1-4fae-87d8-491f92f57e3d"),
                             Age = "20",
                             Email = "ahihi996@gmail.com",
                             FirstName = "John996",
@@ -12220,11 +13222,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe996",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("cc76153a-3a0d-4835-9da4-e8fb662951b7"),
+                            Id = new Guid("4eb57fc7-b73a-45d3-b721-6d565742f64e"),
                             Age = "20",
                             Email = "ahihi997@gmail.com",
                             FirstName = "John997",
@@ -12232,11 +13235,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe997",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("abed59a0-f503-41b6-b81a-e4c19d9a61d8"),
+                            Id = new Guid("275de1b3-51c5-4c38-9e51-6016ec24c577"),
                             Age = "20",
                             Email = "ahihi998@gmail.com",
                             FirstName = "John998",
@@ -12244,11 +13248,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe998",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("c18cb2d3-a483-433c-9c60-a358d81fc167"),
+                            Id = new Guid("6dc916ca-cc66-47fc-bbe3-f28de5b02b6a"),
                             Age = "20",
                             Email = "ahihi999@gmail.com",
                             FirstName = "John999",
@@ -12256,11 +13261,12 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe999",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         },
                         new
                         {
-                            Id = new Guid("d48b7656-651e-4367-b692-508150add7d1"),
+                            Id = new Guid("fd361b45-3b73-40cc-a22e-762ddcd5e6b3"),
                             Age = "20",
                             Email = "ahihi1000@gmail.com",
                             FirstName = "John1000",
@@ -12268,7 +13274,8 @@ namespace piedteam_hocmienphi.repository.Migrations
                             LastName = "Doe1000",
                             Password = "123456",
                             Phone = "01301320",
-                            Role = "Student"
+                            Role = "Student",
+                            SendDate = new DateOnly(1, 1, 1)
                         });
                 });
 

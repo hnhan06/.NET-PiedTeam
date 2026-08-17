@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using piedteam_hocmienphi.api.Extensions;
 using piedteam_hocmienphi.repository;
 using piedteam_hocmienphi.repository.entity;
 using piedteam_hocmienphi.repository.enums;
@@ -80,6 +82,8 @@ public class ApplyRequestController : ControllerBase
         return Ok();
     }
     
+    // Tôi sẽ apply Authorization theo policy (quy tắc) là AdminPolicy
+    [Authorize(Policy = JwtExtensions.AdminPolicy)]
     [HttpGet("")]
     public IActionResult GetAllApplyRequest(string? searchTerm = null, 
         ApplyRequestStatus? status = null,
@@ -153,12 +157,28 @@ public class ApplyRequestController : ControllerBase
         return Ok(result);
     }
     
+    // Lấy ra những đơn apply của tôi
+    // Khi mà đã Authentication và Authorization thì có nghĩa là gì?
+        // bạn chính là user trong hệ thống của chúng tôi
+        // và bạn có quyền hạn truy cập các api mà chúng tôi cho phép
+    // Vì hệ thống đã biết chúng ta là ai rồi thế nên chúng ta có thể lược bỏ
+        // và k cần truyền những field k cần thiết ví dụ: Guid userId,
+    // Vậy thì hệ thống biết người là ai, userId, email, firstName, lastName bằng cách nào?\
+    // Hệ thống sẽ biết được, tại vì chúng ta đã ghi lại những thông tin đó vào
+        // payload mà (xem lại ở phần Login)
+    [Authorize(Policy = JwtExtensions.MentorPolicy)]
     [HttpGet("me")]
-    public IActionResult GetMyApplyRequest(Guid userId, 
+    public IActionResult GetMyApplyRequest(
         ApplyRequestStatus? status = null, 
         int pageIndex = 1, 
         int pageSize = 10)
     {
+        var userIdString = HttpContext.User.Claims.FirstOrDefault(
+            x => x.Type.Equals("userId")
+        )!.Value;
+        
+        var userId = Guid.Parse(userIdString);
+        
         var query = _dbcontext.ApplyRequests.Where(x => x.IsDeleted == false);
         
         query = query.Where(x => x.UserId == userId);
